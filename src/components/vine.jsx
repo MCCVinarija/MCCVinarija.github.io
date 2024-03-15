@@ -14,11 +14,14 @@ export const Vine = (props) => {
   useEffect(() => {
     // Scroll to the specified anchor when the page mounts
     if (window.location.hash) {
-      const targetElement = document.querySelector(window.location.hash);
+      const hashParts = window.location.hash.split('#'); // Split the hash by '#'
+      const targetID = hashParts[hashParts.length - 1]; // Get the last part, which should be the desired ID
+      const targetElement = document.getElementById(targetID); // Find the element by its ID
       if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
+        targetElement.scrollIntoView({ behavior: "smooth" }); // Scroll to the element
       }
     }
+    
   }, []);
 
   return (
@@ -49,12 +52,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <Link to={"/shop"}>
+            <a href={"#shop"}>
               <h4>
                 {" "}
                 <FontAwesomeIcon icon={faShoppingBasket} /> Poruči
               </h4>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -83,11 +86,11 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <Link to={"/shop"}>
+            <a href={"#shop"}>
               <h4>
                 Poruči <FontAwesomeIcon icon={faShoppingBasket} />
               </h4>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -118,12 +121,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <Link to={"/shop"}>
+            <a href={"#shop"}>
               <h4>
                 {" "}
                 <FontAwesomeIcon icon={faShoppingBasket} /> Poruči
               </h4>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -155,12 +158,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <Link to={"/shop"}>
+            <a href={"#shop"}>
               <h4>
                 {" "}
                 Poruči <FontAwesomeIcon icon={faShoppingBasket} />
               </h4>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -195,12 +198,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <Link to={"/shop"}>
+            <a href={"#shop"}>
               <h4>
                 {" "}
                 <FontAwesomeIcon icon={faShoppingBasket} /> Poruči
               </h4>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -230,12 +233,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <Link to={"/shop"}>
+            <a href={"#shop"}>
               <h4>
                 {" "}
                 Poruči  <FontAwesomeIcon icon={faShoppingBasket} />
               </h4>
-            </Link>
+            </a>
           </div>
         </div>
         <div class="card" id="pinot">
@@ -268,12 +271,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <Link to={"/shop"}>
+            <a href={"#shop"}>
               <h4>
                 {" "}
                 <FontAwesomeIcon icon={faShoppingBasket} /> Poruči
               </h4>
-            </Link>
+            </a>
           </div>
         </div>
         <div class="card" id="rose">
@@ -303,12 +306,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <Link to={"/shop"}>
+            <a href={"#shop"}>
               <h4>
                 {" "}
                 Poruči <FontAwesomeIcon icon={faShoppingBasket} />
               </h4>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

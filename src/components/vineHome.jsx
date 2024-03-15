@@ -7,7 +7,7 @@ import "react-multi-carousel/lib/styles.css";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 4,
+    items: 5,
     slidesToSlide: 2 // optional, default to 1.
   },
   tablet: {
@@ -35,9 +35,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3" >
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                        <Link to="/vines#caberne" className="page-scroll">
+                        <a href="#vines#caberne" className="page-scroll">
                             <img src="img\velika vina\cabernet.png" alt="Product" class="img-responsive" />
-                        </Link>
+                        </a>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -61,9 +61,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <Link to="/vines#coupage" className="page-scroll">
+                    <a href="#vines#coupage" className="page-scroll">
                         <img src="/img/velika vina/coupage.png" alt="Product" class="img-responsive" />
-                    </Link>
+                    </a>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -86,9 +86,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <Link to="/vines#pinot" className="page-scroll">
+                    <a href="#vines#pinot" className="page-scroll">
                         <img src="/img/velika vina/pinot.png" alt="Product" class="img-responsive" />
-                        </Link>
+                        </a>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -111,9 +111,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <Link to="/vines#rizling" className="page-scroll">
+                    <a href="#vines#rizling" className="page-scroll">
                         <img src="/img/velika vina/rajski.png" alt="Product" class="img-responsive" />
-                        </Link>
+                        </a>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -136,10 +136,10 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <Link to="/vines#blanc" className="page-scroll">
+                    <a href="#vines#blanc" className="page-scroll">
                   
                         <img src="/img/velika vina/sauvignon.png" alt="Product" class="img-responsive" />
-                        </Link>
+                        </a>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -163,10 +163,10 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <Link to="/vines#rose" className="page-scroll">
+                    <a href="#vines#rose" className="page-scroll">
                    
                         <img src="/img/velika vina/tajna.png" alt="Product" class="img-responsive" />
-                        </Link>
+                        </a>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -190,10 +190,10 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <Link to="/vines#traminac" className="page-scroll">
+                    <a href="#vines#traminac" className="page-scroll">
                    
                         <img src="/img/velika vina/traminac.png" alt="Product" class="img-responsive" />
-                        </Link>
+                        </a>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -217,10 +217,10 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <Link to="/vines#merlot" className="page-scroll">
+                    <a href="#vines#merlot" className="page-scroll">
                     
                         <img src="/img/velika vina/merlot.png" alt="Product" class="img-responsive" />
-                        </Link>
+                        </a>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">

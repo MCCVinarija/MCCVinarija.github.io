@@ -8,48 +8,49 @@ import Shops from './pages/Shops';
 import Gallerys from './pages/Gallerys';
 import About from './pages/About';
 import NewsPage from './pages/News';
-import SingleNewsPage from './pages/singleNews'
+import SingleNewsPage from './pages/singleNews';
 
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
-import {  createBrowserRouter,  RouterProvider,} from "react-router-dom";
-
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
-    element: <App/>,
+    element: <App />,
   },
   {
-    path: '/vines',
-    element: <Vines/>, 
+    path: 'vines',
+    element: <Vines />, 
   },
   {
-    path: '/shop',
-    element: <Shops/>, 
+    path: 'shop',
+    element: <Shops />, 
   },
   {
-    path: '/gallery',
-    element: <Gallerys/>, 
+    path: 'gallery',
+    element: <Gallerys />, 
   },
   {
-    path: '/about',
-    element: <About/>, 
+    path: 'about',
+    element: <About />, 
   },
   {
-    path: '/news',
-    element: <NewsPage/>, 
+    path: 'news',
+    element: <NewsPage />, 
   },
   {
-    path: '/news/:id',
-    element: <SingleNewsPage/>, 
+    path: 'news/:id',
+    element: <SingleNewsPage />, 
+  },
+  {
+    path: 'contact',
+    element: <App />, 
   },
 ]);
 
-
 ReactDOM.render(
-  
   <React.StrictMode>
-  <RouterProvider router={router} />
-</React.StrictMode>,
+    <RouterProvider router={router} />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

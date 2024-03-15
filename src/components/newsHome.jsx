@@ -8,14 +8,14 @@ export const NewsHome = (props) => {
         <div class="col-lg-4">
       
           <div class="p-5 mt-4">
-          <Link to="/about#Vinarija" className="page-scroll">
+          <a href="#about#Vinarija" className="page-scroll">
             <h1
               class="display-4"
               style={{ fontWeight: 500, textAlign: "center" }}
             >
               Vinarija
             </h1>
-            </Link>
+            </a>
             <p class="lead" style={{ fontSize: 18, textAlign: "justify",padding:30 }}>
               Naša vinarija je simbol posvećenosti kvalitetu i tradiciji. Ovdje
               se spoj tradicije i modernog pristupa stapa u nezaboravno iskustvo
@@ -23,25 +23,25 @@ export const NewsHome = (props) => {
               svaka čaša postaje priča, a svaki trenutak nezaboravan doživljaj.{" "}
             </p>
           </div>
-          <Link to="/about#Vinarija" className="page-scroll">
+          <a href="#about#Vinarija" className="page-scroll">
           <img
             class="w-100 shadow"
-            style={{ borderRadius: 10 }}
+            style={{ borderRadius: 10,margin:10 }}
             src="img\Galerija\31.jpg"
           />
-          </Link>
+          </a>
         </div>
 
         <div class="col-lg-4">
-        <Link to="/about#Turizam" className="page-scroll">
+        <a href="#about#Turizam" className="page-scroll">
           <img
             class="w-100 shadow"
-            style={{ borderRadius: 10 }}
+            style={{ borderRadius: 10,margin:10 }}
             src="img\Galerija\0.jpg"
           />
-           </Link>
+           </a>
           <div class="p-5 mt-4">
-          <Link to="/about#Turizam" className="page-scroll">
+          <a href="#about#Turizam" className="page-scroll">
             <h1
               class="display-4"
               style={{ fontWeight: 500, textAlign: "center" }}
@@ -49,7 +49,7 @@ export const NewsHome = (props) => {
               Degustacija i posete
            
             </h1>
-            </Link>
+            </a>
             <p class="lead" style={{ fontSize: 18, textAlign: "justify",padding:30 }}>
               U srcu naše vinarije, svaka čaša vina nosi dah posvećenosti,
               ljubavi i predanosti prema vinogradima koje smo pažljivo uzgajali.
@@ -63,14 +63,14 @@ export const NewsHome = (props) => {
         </div>
         <div class="col-lg-4  ">
           <div class="p-5 mt-4">
-          <Link to="/about#Organski" className="page-scroll">
+          <a href="#about#Organski" className="page-scroll">
             <h1
               class="display-4"
               style={{ fontWeight: 500, textAlign: "center" }}
             >
               Organski i biodinamicki sertifikat
             </h1>
-            </Link>
+            </a>
             <p class="lead" style={{ fontSize: 18, textAlign: "justify",padding:30 }}>
               U svetu organske proizvodnje vina, svaka loza postaje priča, svaki
               grozd nosi sa sobom notu brižne pažnje prema prirodi. U svakoj
@@ -78,13 +78,13 @@ export const NewsHome = (props) => {
               stvarajući čarobnu simfoniju ukusa koja oduševljava sva čula.{" "}
             </p>
           </div>
-          <Link to="/about#Organski" className="page-scroll">
+          <a href="#about#Organski" className="page-scroll">
           <img
             class="w-100 shadow"
-            style={{ borderRadius: 10, }}
+            style={{ borderRadius: 10,margin:10}}
             src="img\intro-bg1.jpg"
           />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

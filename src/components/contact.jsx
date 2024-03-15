@@ -109,7 +109,7 @@ export const Contact = (props) => {
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-phone"></i> Telefon
+                  <i className="fa fa-phone"></i> Telefon komercijala
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
               </p>
@@ -128,7 +128,7 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-map-marker"></i> Ogranak: MCC Vinarija
                 </span>
-                Milin Do 21
+                Milin Do 21, 22230 Erdevik
               </p>
             </div>
             <div className="contact-item">
@@ -136,7 +136,18 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-phone"></i> Telefon
                 </span>{" "}
-                022 752 486
+                
+                +381 61 565 6465 Branka
+                <br/>
+                +381 22 752 486
+              </p>
+            </div>
+            <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-envelope-o"></i> Email
+                </span>{" "}
+                MCCkancelarija@gmail.com
               </p>
             </div>
           </div>
