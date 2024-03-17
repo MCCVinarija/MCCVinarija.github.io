@@ -17,9 +17,9 @@ export const NewsHome = (props) => {
             </h1>
             </a>
             <p class="lead" style={{ fontSize: 18, textAlign: "justify",padding:30 }}>
-              Naša vinarija je simbol posvećenosti kvalitetu i tradiciji. Ovdje
+              Naša vinarija je simbol posvećenosti kvalitetu i tradiciji. Ovde
               se spoj tradicije i modernog pristupa stapa u nezaboravno iskustvo
-              za sve ljubitelje dobrog vina. Dobrodošli u našu vinariju, gdje
+              za sve ljubitelje dobrog vina. Dobrodošli u našu vinariju, gde
               svaka čaša postaje priča, a svaki trenutak nezaboravan doživljaj.{" "}
             </p>
           </div>
