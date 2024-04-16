@@ -145,7 +145,7 @@ export const AboutCmp = (props) => {
                 Da bismo osigurali vaše
                 neometano uživanje, molimo vas da posetu najavite dan ranije, a
                 za vikend posete preporučujemo da to učinite dva dana unapred.<br/>
-                Za vise informacija i rezervaciju pozovite nas na telefon:<br/> +381 63 653 202
+                Za vise informacija i rezervaciju pozovite nas na telefon:<br/> +381 63 653 202  ili na <a href="https://liderlimo.rs/usluge/vinski-turizam/">linku</a>
               </p>
             </div>
           </div>

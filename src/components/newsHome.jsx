@@ -57,7 +57,7 @@ export const NewsHome = (props) => {
               već i priču o našem posvećenom radu i strasti. Dobrodošli u naš
               kutak vinarske umetnosti, gde svaki trenutak postaje nezaboravno
               iskustvo puno uživanja i prijateljstva.
-              Rezervisite degustacija organskog i biodinamičkog vina{" "}
+              Rezervisite degustacija organskog i biodinamičkog vina sa prevozom luksuznim vozilom na <a href="https://liderlimo.rs/usluge/vinski-turizam/">linku</a>{" "}
             </p>
           </div>
         </div>
