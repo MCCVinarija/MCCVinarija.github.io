@@ -1,6 +1,6 @@
 {
-  "homepage": "https://mccvinarija.github.io/",
-  "name": "landingpage-react-template",
+  "homepage": "https://www.mccorganskovino.com/",
+  "name": "mccvinarija",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
