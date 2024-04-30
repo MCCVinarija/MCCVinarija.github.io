@@ -407,7 +407,39 @@ export const Shop = (props) => {
                 </p>
               </div>
 
+              <div class="title-product">
+                <h3>NANA WINE&BRENDY SHOP</h3>
+              </div>
+              <div class="description-prodShop">
+                <p>
+                  Dunavska, 17-pasaz 
+                  
+                </p>
+              </div>
+
               <h2 style={{ marginTop: 30 }}>Restorani</h2>
+
+
+              <div class="title-product">
+                <h3>PIVNICA TATA BRADA</h3>
+              </div>
+              <div class="description-prodShop">
+                <p>
+                  Mite Ruzica, 4
+                  <br />
+                </p>
+              </div>
+
+              <div class="title-product">
+                <h3>CAFFE KNJIZARA NUBLU</h3>
+              </div>
+              <div class="description-prodShop">
+                <p>
+                  Zarka Zrenjanina, 12
+                  <br />
+                </p>
+              </div>
+
 
               <div class="title-product">
                 <h3>Caffe 7</h3>
@@ -505,6 +537,39 @@ export const Shop = (props) => {
               <div class="description-prodShop">
                 <p>
                   Petrovaradinska Tvrđava (Pored Hotela Leopold)
+                  <br />
+                </p>
+              </div>
+              <h2 style={{ marginTop: 30 }}>Hoteli u Beogradu</h2>
+
+
+              <div class="title-product">
+                <h3>HILTON</h3>
+              </div>
+              <div class="description-prodShop">
+              <p>
+                  Kralja Milana, 35
+                  <br />
+                </p>
+              </div>
+
+
+              <div class="title-product">
+                <h3>SQUARE NINE</h3>
+              </div>
+              <div class="description-prodShop">
+                <p>
+                  Studentski trg, 9
+                  <br />
+                </p>
+              </div>
+
+              <div class="title-product">
+                <h3>SAINT TEN HOTEL</h3>
+              </div>
+              <div class="description-prodShop">
+                <p>
+                  Svetog Save, 10
                   <br />
                 </p>
               </div>
