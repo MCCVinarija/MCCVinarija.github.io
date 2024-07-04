@@ -371,7 +371,43 @@ export const Shop = (props) => {
                   <br />
                 </p>
               </div>
+
+              <h2 style={{ marginTop: 30 }}>Hoteli u Beogradu</h2>
+
+
+<div class="title-product">
+  <h3>HILTON</h3>
+</div>
+<div class="description-prodShop">
+<p>
+    Kralja Milana, 35
+    <br />
+  </p>
+</div>
+
+
+<div class="title-product">
+  <h3>SQUARE NINE</h3>
+</div>
+<div class="description-prodShop">
+  <p>
+    Studentski trg, 9
+    <br />
+  </p>
+</div>
+
+<div class="title-product">
+  <h3>SAINT TEN HOTEL</h3>
+</div>
+<div class="description-prodShop">
+  <p>
+    Svetog Save, 10
+    <br />
+  </p>
+</div>
             </div>
+
+             
 
             <div class="col-md-5" style={{ marginRight:10, textAlign: "right"}}>
 
@@ -397,6 +433,50 @@ export const Shop = (props) => {
                 </p>
               </div>
 
+
+
+              <div class="title-product">
+                <h3>NANA-VINO,RAKIJA SHOP BAR</h3>
+              </div>
+              <div class="description-prodShop">
+                <p>Dunavska 17<br></br> Tel: 069/2761425
+                  <br />
+                </p>
+              </div>
+
+
+              <div class="title-product">
+                <h3>KORPA DELI MARKET</h3>
+              </div>
+              <div class="description-prodShop">
+                <p>
+                 vesellina maslase 2<br></br> Tel: 021/2102523 mob:064/647-6370
+                  <br />
+                </p>
+              </div>
+
+
+              <div class="title-product">
+                <h3>ZDRAVOLOGIJA</h3>
+              </div>
+              <div class="description-prodShop">
+                <p>
+                  Bul Kralja Petra | 7<br></br> Tel: 021/6320504 mob:064/643-4599
+                  <br />
+                </p>
+              </div>
+
+              <div class="title-product">
+                <h3>KRIVINA</h3>
+              </div>
+              <div class="description-prodShop">
+                <p>
+                  Sremska 9<br></br> Mob:061/2323866
+                  <br />
+                </p>
+              </div>
+
+
               <div class="title-product">
                 <h3>TEPLICA-EKOLOSKA PRODAVNICA</h3>
               </div>
@@ -407,172 +487,219 @@ export const Shop = (props) => {
                 </p>
               </div>
 
+
               <div class="title-product">
-                <h3>NANA WINE&BRENDY SHOP</h3>
+                <h3>SLATINA</h3>
               </div>
               <div class="description-prodShop">
                 <p>
-                  Dunavska, 17-pasaz 
-                  
+                 Veselina Maslase 32<br></br> Mob:063/724-2784
+                  <br />
+                </p>
+              </div>
+
+              <div class="title-product">
+                <h3>VINO I VANILI WINE SHOP BAR</h3>
+              </div>
+              <div class="description-prodShop">
+                <p>
+                 Zitni trg 20<br></br> mob:065/543-2200
+                  <br />
                 </p>
               </div>
 
               <h2 style={{ marginTop: 30 }}>Restorani</h2>
 
+              
+
+<div class="title-product">
+  <h3>Tako je suđeno</h3>
+</div>
+<div class="description-prodShop">
+  <p>
+    Ribnjak-Gornji Put 15
+    <br />
+  </p>
+</div>
+
+<div class="title-product">
+  <h3>Garden I</h3>
+</div>
+<div class="description-prodShop">
+  <p>
+    Vase Stajića 27
+    <br />
+  </p>
+</div>
+
+<div class="title-product">
+  <h3>PIVNICA TATA BRADA</h3>
+</div>
+<div class="description-prodShop">
+  <p>
+    Mite Ruzica, 4
+    <br />
+  </p>
+</div>
+
+<div class="title-product">
+  <h3>TD ROCK CAFEE</h3>
+</div>
+<div class="description-prodShop">
+  <p>
+    Zmaj Jovina, pasaz Lupusa
+    <br />
+  </p>
+</div>
+
+<div class="title-product">
+  <h3>I Beer Concept Bar</h3>
+</div>
+<div class="description-prodShop">
+  <p>
+    Danila Kiša 12
+    <br />
+  </p>
+</div>
+
+<div class="title-product">
+  <h3>Caffe Sedmica i Picerija Sedmica</h3>
+</div>
+<div class="description-prodShop">
+  <p>
+    Bul Kralja Petra 7
+    <br />
+    Kraljevica Marka 23, br:064/1082585
+    <br />
+  </p>
+</div>
+
+<div class="title-product">
+  <h3>Restoran I Hotel "Veliki</h3>
+</div>
+<div class="description-prodShop">
+  <p>
+    Nikole Pašića 24
+    <br />
+  </p>
+</div>
+
+<div class="title-product">
+  <h3>BEERAJ</h3>
+</div>
+<div class="description-prodShop">
+  <p>
+    Trg Republike 18/L5
+    <br />
+    tel: 063/761-5877
+    <br />
+  </p>
+</div>
+
+<div class="title-product">
+  <h3>Udruženje Klub Ljubitelja Pasti</h3>
+</div>
+<div class="description-prodShop">
+  <p>
+    Maksima Gorkog 17
+    <br />
+  </p>
+</div>
+
+<h2 style={{ marginTop: 30 }}>VOJVODINA</h2>
+
+
+
 
               <div class="title-product">
-                <h3>PIVNICA TATA BRADA</h3>
+                <h3>DVE KULE RESORT</h3>
               </div>
               <div class="description-prodShop">
                 <p>
-                  Mite Ruzica, 4
+                  Bacinci
                   <br />
                 </p>
               </div>
 
               <div class="title-product">
-                <h3>CAFFE KNJIZARA NUBLU</h3>
+                <h3>ETNO RESTORAN TRECA RAMPA</h3>
               </div>
               <div class="description-prodShop">
                 <p>
-                  Zarka Zrenjanina, 12
+                 Curug
                   <br />
                 </p>
               </div>
 
 
               <div class="title-product">
-                <h3>Caffe 7</h3>
+                <h3>Premier Aqua Hotel</h3>
               </div>
               <div class="description-prodShop">
                 <p>
-                  Bul.Kralja Petra I, 7
+                  Martina Klisaca 16, Vrdnik
                   <br />
                 </p>
               </div>
 
+
               <div class="title-product">
-                <h3>Picerija Sedmica</h3>
+                <h3>Etno kompleks Vrdnicka Kula</h3>
               </div>
               <div class="description-prodShop">
                 <p>
-                  Preko puta
+                  Potez pod kulom bb, Vrdnik
                   <br />
                 </p>
               </div>
 
+
               <div class="title-product">
-                <h3>Korpa</h3>
+                <h3>Hotel Fruske Terme</h3>
               </div>
               <div class="description-prodShop">
                 <p>
-                  Veselina Masleše 2
+                Potez pod kulom bb, Vrdnik
+                 
                   <br />
                 </p>
               </div>
 
+
               <div class="title-product">
-                <h3>Tako je suđeno</h3>
+                <h3>Hotel Elite Palic</h3>
               </div>
               <div class="description-prodShop">
                 <p>
-                  Ribnjak-Gornji Put 15
+                 Park Heroja 15, Palic
                   <br />
                 </p>
               </div>
 
+              <h2 style={{ marginTop: 30 }}>Backa Palanka</h2>
+
+
               <div class="title-product">
-                <h3>Garden I</h3>
+                <h3>Salas Idila</h3>
               </div>
               <div class="description-prodShop">
                 <p>
-                  Vase Stajića 27
+                Obrovacki put
                   <br />
                 </p>
               </div>
-
               <div class="title-product">
-                <h3>I Beer Concept Bar</h3>
+                <h3>Stara Kuca</h3>
               </div>
               <div class="description-prodShop">
                 <p>
-                  Danila Kiša 12
+                 Ive Lole Ribara 84
+                 
                   <br />
                 </p>
               </div>
 
-              <div class="title-product">
-                <h3>Restoran I Hotel "Veliki</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Nikole Pašića 24
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Beeraj</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Trg Republike 18/L5
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Udruženje Klub Ljubitelja Pasti</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Maksima Gorkog 17
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Karlo</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Petrovaradinska Tvrđava (Pored Hotela Leopold)
-                  <br />
-                </p>
-              </div>
-              <h2 style={{ marginTop: 30 }}>Hoteli u Beogradu</h2>
-
-
-              <div class="title-product">
-                <h3>HILTON</h3>
-              </div>
-              <div class="description-prodShop">
-              <p>
-                  Kralja Milana, 35
-                  <br />
-                </p>
-              </div>
-
-
-              <div class="title-product">
-                <h3>SQUARE NINE</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Studentski trg, 9
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>SAINT TEN HOTEL</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Svetog Save, 10
-                  <br />
-                </p>
-              </div>
+             
             </div>
           </div>
         </div>
