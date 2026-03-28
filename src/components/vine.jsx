@@ -52,12 +52,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <a href={"#shop"}>
+            <Link to="/shop">
               <h4>
                 {" "}
                 <FontAwesomeIcon icon={faShoppingBasket} /> Poruči
               </h4>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -86,11 +86,11 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <a href={"#shop"}>
+            <Link to="/shop">
               <h4>
                 Poruči <FontAwesomeIcon icon={faShoppingBasket} />
               </h4>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -121,12 +121,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <a href={"#shop"}>
+            <Link to="/shop">
               <h4>
                 {" "}
                 <FontAwesomeIcon icon={faShoppingBasket} /> Poruči
               </h4>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -158,12 +158,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <a href={"#shop"}>
+            <Link to="/shop">
               <h4>
                 {" "}
                 Poruči <FontAwesomeIcon icon={faShoppingBasket} />
               </h4>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -198,12 +198,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <a href={"#shop"}>
+            <Link to="/shop">
               <h4>
                 {" "}
                 <FontAwesomeIcon icon={faShoppingBasket} /> Poruči
               </h4>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -233,12 +233,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <a href={"#shop"}>
+            <Link to="/shop">
               <h4>
                 {" "}
                 Poruči  <FontAwesomeIcon icon={faShoppingBasket} />
               </h4>
-            </a>
+            </Link>
           </div>
         </div>
         <div class="card" id="pinot">
@@ -271,12 +271,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <a href={"#shop"}>
+            <Link to="/shop">
               <h4>
                 {" "}
                 <FontAwesomeIcon icon={faShoppingBasket} /> Poruči
               </h4>
-            </a>
+            </Link>
           </div>
         </div>
         <div class="card" id="rose">
@@ -306,12 +306,12 @@ export const Vine = (props) => {
               </h4>
             </a>
 
-            <a href={"#shop"}>
+            <Link to="/shop">
               <h4>
                 {" "}
                 Poruči <FontAwesomeIcon icon={faShoppingBasket} />
               </h4>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,683 +1,140 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/gallery.css";
 
 export const Gallery = (props) => {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const images = [
+    "/img/Galerija/0.jpg",
+    "/img/Galerija/0a.jpg",
+    "/img/Galerija/0b.jpg",
+    "/img/Galerija/0c.jpg",
+    "/img/Galerija/0d.jpg",
+    "/img/Galerija/12.jpg",
+    "/img/Galerija/13.jpg",
+    "/img/Galerija/14.jpg",
+    "/img/Galerija/15.jpg",
+    "/img/Galerija/16.jpg",
+    "/img/Galerija/0l.jpg",
+    "/img/Galerija/18.jpg",
+    "/img/Galerija/30.jpg",
+    "/img/Galerija/31.jpg",
+    "/img/Galerija/32.jpg",
+    "/img/Galerija/33.jpg",
+    "/img/Galerija/34.jpg",
+    "/img/Galerija/35.jpg",
+    "/img/Galerija/36.jpg",
+    "/img/Galerija/37.jpg",
+    "/img/Galerija/1.jpg",
+    "/img/Galerija/3.jpg",
+    "/img/Galerija/5.jpg",
+    "/img/Galerija/6.jpg",
+    "/img/Galerija/7.jpg",
+    "/img/Galerija/8.jpg",
+    "/img/Galerija/9.jpg",
+    "/img/Galerija/10.jpg",
+    "/img/Galerija/11.jpg",
+    "/img/Galerija/0e.jpg",
+    "/img/Galerija/0f.jpg",
+    "/img/Galerija/0g.jpg",
+    "/img/Galerija/0h.jpg",
+    "/img/Galerija/0i.jpg",
+    "/img/Galerija/0j.jpg",
+    "/img/Galerija/0k.jpg",
+    "/img/Galerija/19.jpg",
+    "/img/Galerija/20.jpg",
+    "/img/Galerija/21.jpg",
+    "/img/Galerija/22.jpg",
+    "/img/Galerija/23.jpg",
+    "/img/Galerija/24.jpg",
+    "/img/Galerija/25.jpg",
+    "/img/Galerija/26.jpg",
+    "/img/Galerija/27.jpg",
+    "/img/Galerija/28.jpg",
+    "/img/Galerija/29.jpg",
+    "/img/Galerija/0m.jpg",
+    "/img/Galerija/0n.jpg",
+    "/img/Galerija/0o.jpg",
+    "/img/Galerija/0p.jpg",
+    "/img/Galerija/0r.jpg",
+    "/img/Galerija/0s.jpg",
+    "/img/Galerija/38.jpg",
+    "/img/Galerija/39.jpg",
+  ];
+
+  const openLightbox = (index) => {
+    setCurrentIndex(index);
+    setSelectedImage(images[index]);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
+
+  const goToPrevious = () => {
+    const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+    setSelectedImage(images[newIndex]);
+  };
+
+  const goToNext = () => {
+    const newIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+    setSelectedImage(images[newIndex]);
+  };
+
+  // Handle keyboard navigation
+  React.useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!selectedImage) return;
+      if (e.key === "ArrowLeft") goToPrevious();
+      if (e.key === "ArrowRight") goToNext();
+      if (e.key === "Escape") closeLightbox();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImage, currentIndex]);
+
   return (
-    <body class="bodyGallery">
-      <div class="grid-container" style={{ marginTop: 140 }}>
-        <div>
-          <img
-            class="grid-item grid-item-1"
-            img
-            src="/img/Galerija/0.jpg"
-            alt="galerija"
-          />
-          
-        </div>
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0a.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0b.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0c.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0d.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/12.jpg"
-            alt="galerija"
-          />
-        </div>
-
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/13.jpg"
-            alt="galerija"
-          />
-        </div>
-
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/14.jpg"
-            alt="galerija"
-          />
-        </div>
-
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/15.jpg"
-            alt="galerija"
-          />
-        </div>
-
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/16.jpg"
-            alt="galerija"
-          />
-        </div>
-
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0l.jpg"
-            alt="galerija"
-          />
-        </div>
-
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/18.jpg"
-            alt="galerija"
-          />
-        </div>
-
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/30.jpg"
-            alt="galerija"
-          />
-        </div>
-
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/31.jpg"
-            alt="galerija"
-          />
-        </div>
-
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/32.jpg"
-            alt="galerija"
-          />
-        </div>
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/33.jpg"
-            alt="galerija"
-          />
-        </div>
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/34.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/35.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/36.jpg"
-            alt="galerija"
-          />
-        </div>
-
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/37.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/1.jpg"
-            alt="galerija"
-          />
-        </div>
-        <div>
-          <img
-            class="grid-item grid-item-3"
-            src="/img/Galerija/3.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/5.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/6.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/7.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/8.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/9.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/10.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/11.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/1.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0e.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0f.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0g.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0h.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0i.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0j.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0k.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/19.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/20.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/21.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/22.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/23.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/24.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/25.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/26.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/27.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/28.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/29.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0m.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0n.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0o.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0p.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0r.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/0s.jpg"
-            alt="galerija"
-          />
-        </div>
-
-       
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/38.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/39.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/40.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/41.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/42.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/43.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/44.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/45.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/46.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/47.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/48.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/49.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/50.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/51.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/52.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/53.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/54.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/55.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/56.jpg"
-            alt="galerija"
-          />
-        </div>
-
-        <div>
-          <img
-            class="grid-item grid-item-2"
-            img
-            src="/img/Galerija/57.jpg"
-            alt="galerija"
-          />
+    <div className="bodyGallery">
+      <div className="gallery-container">
+        <div className="grid-container">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="grid-item-wrapper"
+              onClick={() => openLightbox(index)}
+            >
+              <img src={image} alt={`Gallery ${index + 1}`} className="grid-item" />
+            </div>
+          ))}
         </div>
       </div>
-    </body>
+
+      {selectedImage && (
+        <div className="lightbox-modal" onClick={closeLightbox}>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <span className="lightbox-close" onClick={closeLightbox}>
+              ×
+            </span>
+            <span className="lightbox-nav lightbox-prev" onClick={goToPrevious}>
+              ‹
+            </span>
+            <img src={selectedImage} alt="Full size" className="lightbox-image" />
+            <span className="lightbox-nav lightbox-next" onClick={goToNext}>
+              ›
+            </span>
+            <div className="lightbox-counter">
+              {currentIndex + 1} / {images.length}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
+
+export default Gallery;
+         

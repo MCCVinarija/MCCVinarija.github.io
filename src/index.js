@@ -9,41 +9,42 @@ import Gallerys from './pages/Gallerys';
 import About from './pages/About';
 import NewsPage from './pages/News';
 import SingleNewsPage from './pages/singleNews';
+import { Layout } from './components/Layout';
 
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Layout><App /></Layout>,
   },
   {
     path: 'vines',
-    element: <Vines />, 
+    element: <Layout><Vines /></Layout>, 
   },
   {
     path: 'shop',
-    element: <Shops />, 
+    element: <Layout><Shops /></Layout>, 
   },
   {
     path: 'gallery',
-    element: <Gallerys />, 
+    element: <Layout><Gallerys /></Layout>, 
   },
   {
     path: 'about',
-    element: <About />, 
+    element: <Layout><About /></Layout>, 
   },
   {
     path: 'news',
-    element: <NewsPage />, 
+    element: <Layout><NewsPage /></Layout>, 
   },
   {
     path: 'news/:id',
-    element: <SingleNewsPage />, 
+    element: <Layout><SingleNewsPage /></Layout>, 
   },
   {
     path: 'contact',
-    element: <App />, 
+    element: <Layout><App /></Layout>, 
   },
 ]);
 

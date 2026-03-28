@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Navigation = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+    <nav 
+      id="menu" 
+      className="navbar navbar-default navbar-fixed-top"
+    >
       <div className="container">
         <div className="navbar-header">
           <button
@@ -17,9 +21,9 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="page-scroll" href="/">
-            <img src="img\logo2.png" alt="Logo"  style={{ width: '50%'}}></img>
-          </a>{" "}
+          <Link to="/" style={{ outline: 'none' }}>
+            <img src="img/logo2.png" alt="Logo" style={{ height: '48px' }}></img>
+          </Link>{" "}
         </div>
 
         <div
@@ -28,33 +32,33 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#vines">
+              <Link to="/vines">
                 Vina
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" >
+              <Link to="/about">
                 O nama
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#news">
+              <Link to="/news">
                 Novosti
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#gallery">
+              <Link to="/gallery">
                 Galerija
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#shop">
+              <Link to="/shop">
                 Shop
-              </a>
+              </Link>
             </li>
            
             <li>
-              <a href="#contact" className="page-scroll">
+              <a href="/#contact" style={{ color: '#fff', textDecoration: 'none', display: 'block', padding: '15px 12px' }}>
                 Kontakt
               </a>
             </li>

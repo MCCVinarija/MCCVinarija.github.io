@@ -35,9 +35,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3" >
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                        <a href="#vines#caberne" className="page-scroll">
-                            <img src="img\velika vina\cabernet.png" alt="Product" class="img-responsive" />
-                        </a>
+                        <Link to="/vines#caberne">
+                            <img src="img/velika vina/cabernet.png" alt="Product" class="img-responsive" />
+                        </Link>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -61,9 +61,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <a href="#vines#coupage" className="page-scroll">
+                    <Link to="/vines#coupage">
                         <img src="/img/velika vina/coupage.png" alt="Product" class="img-responsive" />
-                    </a>
+                    </Link>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -86,9 +86,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <a href="#vines#pinot" className="page-scroll">
+                    <Link to="/vines#pinot">
                         <img src="/img/velika vina/pinot.png" alt="Product" class="img-responsive" />
-                        </a>
+                    </Link>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -111,9 +111,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <a href="#vines#rizling" className="page-scroll">
+                    <Link to="/vines#rizling">
                         <img src="/img/velika vina/rajski.png" alt="Product" class="img-responsive" />
-                        </a>
+                    </Link>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -136,10 +136,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <a href="#vines#blanc" className="page-scroll">
-                  
+                    <Link to="/vines#blanc">
                         <img src="/img/velika vina/sauvignon.png" alt="Product" class="img-responsive" />
-                        </a>
+                    </Link>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -163,10 +162,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <a href="#vines#rose" className="page-scroll">
-                   
+                    <Link to="/vines#rose">
                         <img src="/img/velika vina/tajna.png" alt="Product" class="img-responsive" />
-                        </a>
+                    </Link>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -190,10 +188,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <a href="#vines#traminac" className="page-scroll">
-                   
+                    <Link to="/vines#traminac">
                         <img src="/img/velika vina/traminac.png" alt="Product" class="img-responsive" />
-                        </a>
+                    </Link>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">
@@ -217,10 +214,9 @@ export const VineHome = (props) => {
                 <div class="col-md-3">
                     <div class="wsk-cp-product">
                     <div class="wsk-cp-img">
-                    <a href="#vines#merlot" className="page-scroll">
-                    
+                    <Link to="/vines#malbec">
                         <img src="/img/velika vina/merlot.png" alt="Product" class="img-responsive" />
-                        </a>
+                    </Link>
                     </div>
                     <div class="wsk-cp-text">
                         <div class="category">

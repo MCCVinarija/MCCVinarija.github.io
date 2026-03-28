@@ -1,120 +1,64 @@
 import React from "react";
 import jsonData from "../data/dataNews.json";
-import { Link, useParams } from "react-router-dom"; // Import useParams
+import { Link, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-
+import "../css/singleNews.css";
 
 const SingleNews = () => {
-  const { id } = useParams(); // Using useParams to access URL parameters
+  const { id } = useParams();
 
-  // Find the news item with the matching id
   const newsItem = jsonData.find((item) => item.id === id);
 
-  // Check if newsItem exists and render its details
   if (!newsItem) {
-    return <div>News not found!</div>;
+    return <div className="single-news-container">News not found!</div>;
   }
 
+  // Collect all description fields
+  const descriptions = [
+    newsItem.opis1,
+    newsItem.opis2,
+    newsItem.opis3,
+    newsItem.opis4,
+    newsItem.opis5,
+    newsItem.opis6,
+    newsItem.opis7,
+    newsItem.opis8,
+    newsItem.opis9,
+    newsItem.opis10,
+    newsItem.opis11,
+    newsItem.opis12,
+    newsItem.opis13
+  ].filter(Boolean);
+
   return (
-    
-    <div style={{marginTop:100}}>
-      <div class="container my-5">
-        <div class="row">
-        <Link to={'/news'}> <FontAwesomeIcon icon={faChevronLeft}/>Nazad na novosti</Link>
-          <h1
-            class="display-4"
-            style={{ textAlign: "center", fontWeight: 500, borderBottom: 2 }}
-          >
-            {newsItem.naziv}
-          </h1>
-          <h4 style={{ textAlign: "right" }}>{newsItem.datum4}</h4>
-          <p class="lead" style={{ fontSize: 22 }}>
-            {newsItem.opis1}.{" "}
+    <div className="single-news-container">
+      <Link to="/news" className="single-news-back-link">
+        <FontAwesomeIcon icon={faChevronLeft} />
+        Nazad na novosti
+      </Link>
+
+      <div className="single-news-header">
+        <h1 className="single-news-title">{newsItem.naziv}</h1>
+        <p className="single-news-date">{newsItem.datum4}</p>
+      </div>
+
+      <div className="single-news-content">
+        {descriptions.map((description, index) => (
+          <p key={index} className="single-news-text">
+            {description}.
           </p>
-          {newsItem.opis2 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis2}.{" "}
-            </p>
-          )}
-          {newsItem.opis3 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis3}.{" "}
-            </p>
-          )}
-          {newsItem.opis4 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis4}.{" "}
-            </p>
-          )}
-          {newsItem.opis5 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis5}.{" "}
-            </p>
-          )}
-          {newsItem.opis6 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis6}.{" "}
-            </p>
-          )}
-          {newsItem.opis7 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis7}.{" "}
-            </p>
-          )}
-          {newsItem.opis8 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis8}.{" "}
-            </p>
-          )}
-          {newsItem.opis9 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis9}.{" "}
-            </p>
-          )}
-          {newsItem.opis10 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis10}.{" "}
-            </p>
-          )}
-          {newsItem.opis11 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis11}.{" "}
-            </p>
-          )}
-          {newsItem.opis12 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis12}.{" "}
-            </p>
-          )}
-          {newsItem.opis13 && ( // Condition to check if opis2 exists
-            <p class="lead" style={{ fontSize: 22 }}>
-              {newsItem.opis13}.{" "}
-            </p>
-          )}
-          
-        </div>
+        ))}
 
-        
-          {newsItem.slike && newsItem.slike.length > 0 && (
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <div class='row'>  
-              {newsItem.slike.map((image, index) => (        
-                     
-                <img
-                  key={index}
-                  class="w-100 shadow"
-                  style={{ borderRadius: 10 }}
-                  src={image}
-                  alt={`Image ${index + 1}`}
-                />
-
-              ))}
+        {newsItem.slike && newsItem.slike.length > 0 && (
+          <div className="single-news-gallery">
+            {newsItem.slike.map((image, index) => (
+              <div key={index} className="single-news-gallery-item">
+                <img src={image} alt={`${newsItem.naziv} ${index + 1}`} />
               </div>
-            </div>
-          )}
-       
-
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

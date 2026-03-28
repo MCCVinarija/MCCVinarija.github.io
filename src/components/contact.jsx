@@ -38,18 +38,21 @@ export const Contact = (props) => {
   return (
     <div>
       <div id="contact">
-        <div className="container">
-          <div className="col-md-8">
-            <div className="row">
-              <div className="section-title">
-                <h2>Kontaktirajte nas</h2>
-                <p>
-                Molimo vas popunite dole navedeni obrazac kako biste nam poslali email, i odgovorićemo vam što je pre moguće.</p>
-              </div>
+        <div className="container" style={{ maxWidth: "1200px" }}>
+          <div style={{ marginBottom: "50px" }}>
+            <div className="section-title">
+              <h2>Kontaktirajte nas</h2>
+              <p>
+                Molimo vas popunite obrazac i posaljite nam email, odgovorićemo vam što je pre moguće.
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-8">
               <form name="sentMessage" validate onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
-                    <div className="form-group">
+                    <div className="form-group" style={{ marginBottom: "20px" }}>
                       <input
                         type="text"
                         id="name"
@@ -58,12 +61,13 @@ export const Contact = (props) => {
                         placeholder="Ime"
                         required
                         onChange={handleChange}
+                        value={name}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="form-group">
+                    <div className="form-group" style={{ marginBottom: "20px" }}>
                       <input
                         type="email"
                         id="email"
@@ -72,111 +76,93 @@ export const Contact = (props) => {
                         placeholder="Email"
                         required
                         onChange={handleChange}
+                        value={email}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
                 </div>
-                <div className="form-group">
+                <div className="form-group" style={{ marginBottom: "20px" }}>
                   <textarea
                     name="message"
                     id="message"
                     className="form-control"
-                    rows="4"
+                    rows="5"
                     placeholder="Poruka"
                     required
                     onChange={handleChange}
+                    value={message}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Posalji
+                  Pošalji
                 </button>
               </form>
             </div>
-          </div>
-          <div className="col-md-3 col-md-offset-1 contact-info">
-            <div className="contact-item">
-              <h3>Kontakt</h3>
-              <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Adresa
-                </span>
-                {props.data ? props.data.address : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Telefon komercijala
-                </span>{" "}
-                {props.data ? props.data.phone : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-envelope-o"></i> Email
-                </span>{" "}
-                {props.data ? props.data.email : "loading"}
-              </p>
-            </div>
-
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Ogranak: MCC Vinarija
-                </span>
-                Milin Do 21, 22230 Erdevik
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Telefon
-                </span>{" "}
-                
-                +381 61 565 6465 Branka
-                <br/>
-                +381 22 752 486
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-envelope-o"></i> Email
-                </span>{" "}
-                MCCkancelarija@gmail.com
-              </p>
-            </div>
-          </div>
-          
-          <div className="col-md-12">
-            <div className="row">
-              <div className="social">
-                <ul>
-                  <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/vinarijamcc/?hl=en">
-                      <i className="fa fa-instagram" style={{marginLeft: 10}}></i>
-                    </a>
-                  </li>
-                </ul>
+            <div className="col-md-4" style={{ paddingLeft: "20px" }}>
+              <div className="row">
+                <div className="col-md-6">
+                  <h3>Informacije</h3>
+                  <div className="contact-item">
+                    <span>
+                      <i className="fa fa-map-marker"></i> Adresa
+                    </span>
+                    <p>{props.data ? props.data.address : "loading"}</p>
+                  </div>
+                  <div className="contact-item">
+                    <span>
+                      <i className="fa fa-phone"></i> Telefon komercijala
+                    </span>
+                    <p>{props.data ? props.data.phone : "loading"}</p>
+                  </div>
+                  <div className="contact-item">
+                    <span>
+                      <i className="fa fa-envelope-o"></i> Email
+                    </span>
+                    <p>
+                      <a href={`mailto:${props.data?.email}`} style={{ color: "#9b0038" }}>
+                        {props.data ? props.data.email : "loading"}
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <h3>Ogranak</h3>
+                  <div className="contact-item">
+                    <span>
+                      <i className="fa fa-location-arrow"></i> MCC Vinarija
+                    </span>
+                    <p>Milin Do 21, 22230 Erdevik</p>
+                  </div>
+                  <div className="contact-item">
+                    <span>
+                      <i className="fa fa-phone"></i> Telefon
+                    </span>
+                    <p>
+                      +381 61 565 6465 Branka
+                      <br />
+                      +381 22 752 486
+                    </p>
+                  </div>
+                  <div className="contact-item">
+                    <span>
+                      <i className="fa fa-envelope-o"></i> Email
+                    </span>
+                    <p>
+                      <a href="mailto:MCCkancelarija@gmail.com" style={{ color: "#9b0038" }}>
+                        MCCkancelarija@gmail.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="footer">
-        <div className="container text-center">
-          <p>
-            
-          </p>
-        </div>
-      </div>
     </div>
   );
 };
+             

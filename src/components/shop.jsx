@@ -1,706 +1,208 @@
 import React from "react";
 import "../css/vineHome.css";
+import "../css/shop.css";
 import { Link } from "react-router-dom";
 
 export const Shop = (props) => {
+  const beogradWine = [
+    { name: "Enoteka Fino Vino", address: "Pop Lukina 6, Stari Grad", phone: "011/403-0962", info: "Rade dostavu!" },
+    { name: "Ours Vinoteka & Rakija Shop", address: "Ilije Stojadinovića 63, Čukarica", phone: "062/244111", website: "https://ours.rs/" },
+    { name: "Srpska Kuća Vina", address: "Antifašističke borbe 15, Novi Beograd", phone: "069/2137475", website: "www.enotria.rs" },
+    { name: "Enoteka Premier", address: "Vojvođanska 63, lokal 13, Novi Beograd", phone: "+381 63 86 38 217", info: "Rade dostavu!", address2: "Bul. Zorana Đinđića 125đ" },
+    { name: "Vinoteka Ukusa", address: "Nikole Tesle 2, Zemun", phone: "+381 63 317 306", info: "Rade dostavu!" },
+    { name: "Stara Kapetanija shop", address: "Kej Oslobođenja 8, Zemun", phone: "011/316-1965", info: "Rade dostavu!" },
+    { name: "Vinoteka Vino I Vinogradarstvo - Vina Mosaica", address: "Zmaj od Noćaja 9, Dorćol", info: "Vino će biti isporučena u roku od 48h." },
+    { name: "Vinomond", address: "Lagumska 16, Zemun", phone: "011/277-3023", info: "Rade dostavu!" },
+    { name: "Drink Story - Vinoarija", address: "Jedaneste krajiške divizije 72, Rakovica", phone: "069/1991961" },
+  ];
+
+  const beogradRestaurants = [
+    { name: "Madera", address: "Bul. Kralja Aleksandra 43, Tašmajdan" },
+    { name: "Red Queen", address: "Beograd na vodi" },
+    { name: "Buda Bar", address: "Beograd na vodi" },
+    { name: "Lavina", address: "Djordja Stanojevica 9v, Belvil" },
+    { name: "Shangri La Sushi", address: "Galerija, Beograd na vodi" },
+    { name: "Supreme Steak House", address: "Galerija, Beograd na vodi" },
+    { name: "Savanova", address: "Savsko šetalište bb, Beograd na vodi" },
+    { name: "Vegangelov", address: "Gospodara Jovanova 42a" },
+    { name: "Radost Fina Kuhinjica", address: "Pariska 3" },
+    { name: "Stara Kapetanija", address: "Zemunski Kej 8, Zemun" },
+    { name: "Bahus Inn", address: "Bul. Nikole Tesle bb, Zemun" },
+    { name: "Malo Korzo - Panonija", address: "Zrenjaninski put 158a, Borča" },
+    { name: "Trio Gastro Pub", address: "Ćirila i Metodija 23a, Stara Pazova" },
+  ];
+
+  const beogradHotels = [
+    { name: "HILTON", address: "Kralja Milana 35" },
+    { name: "SQUARE NINE", address: "Studentski trg 9" },
+    { name: "SAINT TEN HOTEL", address: "Svetog Save 10" },
+  ];
+
+  const noviSadWine = [
+    { name: "UNIVEREXPORT - UNIVER ORGANA", address: "Nikole Pasiće 25", phone: "021/525-132" },
+    { name: "UNIVEREXPORT - PROMENADA", address: "Bulevar oslobođenja 119, suteren", phone: "021/215-6371" },
+    { name: "NANA - VINO, RAKIJA SHOP BAR", address: "Dunavska 17", phone: "069/2761425" },
+    { name: "KORPA DELI MARKET", address: "Veselina Maslašea 2", phone: "021/2102523 mob: 064/647-6370" },
+    { name: "ZDRAVOLOGIJA", address: "Bul. Kralja Petra 7", phone: "021/6320504 mob: 064/643-4599" },
+    { name: "KRIVINA", address: "Sremska 9", phone: "061/2323866" },
+    { name: "TEPLICA - EKOLOŠKA PRODAVNICA", address: "Petra Drapsina 18, suteren", phone: "062/935-7911" },
+    { name: "SLATINA", address: "Veselina Maslašea 32", phone: "063/724-2784" },
+    { name: "VINO I VANILI WINE SHOP BAR", address: "Žitni trg 20", phone: "065/543-2200" },
+  ];
+
+  const noviSadRestaurants = [
+    { name: "Tako je suđeno", address: "Ribnjak - Gornji Put 15" },
+    { name: "Garden I", address: "Vase Stajića 27" },
+    { name: "PIVNICA TATA BRADA", address: "Mite Ruzica 4" },
+    { name: "TD ROCK CAFEE", address: "Zmaj Jovina, pasaz Lupusa" },
+    { name: "I Beer Concept Bar", address: "Danila Kiša 12" },
+    { name: "Caffe Sedmica i Picerija Sedmica", address: "Bul. Kralja Petra 7", phone: "064/1082585" },
+    { name: "Restoran i Hotel Veliki", address: "Nikole Pašića 24" },
+    { name: "BEERAJ", address: "Trg Republike 18/L5", phone: "063/761-5877" },
+    { name: "Udruženje Klub Ljubitelja Pasti", address: "Maksima Gorkog 17" },
+  ];
+
+  const vojvodina = [
+    { name: "DVE KULE RESORT", address: "Bacinci" },
+    { name: "ETNO RESTORAN TRECA RAMPA", address: "Čurug" },
+    { name: "Premier Aqua Hotel", address: "Martina Klisaca 16, Vrdnik" },
+    { name: "Etno kompleks Vrdnicka Kula", address: "Potez pod kulom bb, Vrdnik" },
+    { name: "Hotel Fruske Terme", address: "Potez pod kulom bb, Vrdnik" },
+    { name: "Hotel Elite Palic", address: "Park Heroja 15, Palic" },
+    { name: "Salas Idila", address: "Obrovacki put, Backa Palanka" },
+    { name: "Stara Kuca", address: "Ive Lole Ribara 84, Backa Palanka" },
+  ];
+
   return (
-    <div id="shop" className="text-center" style={{ paddingTop: 150 }}>
-      <div className="container">
+    <div id="shop" style={{ paddingTop: 150 }}>
+      <div className="shop-container">
         <div className="section-title">
           <h2>PORUČITE ONLINE</h2>
         </div>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-md-2" style={{ marginLeft: 50 }}>
-              <Link to="https://www.enotekapremier.rs/sr/catalogsearch/result/?q=mcc&cat=">
-                <div class="wsk-cp-productShop">
-                  <div class="wsk-cp-img">
-                    <img
-                      src="img\shop\enotekaLogo.jpg"
-                      alt="Product"
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="wsk-cp-text">
-                    <div class="category"></div>
-                    <div class="title-product">
-                      <h3>Enoteka</h3>
-                    </div>
-                    <div class="description-prod">
-                      <p>Vina će biti isporučena u roku od 48h.</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+        <div className="shop-online-grid">
+          <Link to="https://www.enotekapremier.rs/sr/catalogsearch/result/?q=mcc&cat=" target="_blank" rel="noopener noreferrer">
+            <div className="wsk-cp-productShop">
+              <div className="wsk-cp-img">
+                <img src="img/shop/enotekaLogo.jpg" alt="Enoteka" className="img-responsive" />
+              </div>
+              <div className="wsk-cp-text">
+                <div className="title-product"><h3>Enoteka</h3></div>
+                <div className="description-prodShop"><p>Vina će biti isporučena u roku od 48h.</p></div>
+              </div>
             </div>
+          </Link>
 
-            <div class="col-md-2" style={{ marginLeft: 22 }}>
-              <Link to="https://www.prodavnica.vino.rs/catalogsearch/result/?q=MCC">
-                <div class="wsk-cp-productShop">
-                  <div class="wsk-cp-img">
-                    <img
-                      src="img\shop\vinoLogo.png"
-                      alt="Product"
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="wsk-cp-text">
-                    <div class="category"></div>
-                    <div class="title-product">
-                      <h3>Vino.rs</h3>
-                    </div>
-                    <div class="description-prod">
-                      <p>Vina će biti isporučena u roku od 48h.</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+          <Link to="https://www.prodavnica.vino.rs/catalogsearch/result/?q=MCC" target="_blank" rel="noopener noreferrer">
+            <div className="wsk-cp-productShop">
+              <div className="wsk-cp-img">
+                <img src="img/shop/vinoLogo.png" alt="Vino.rs" className="img-responsive" />
+              </div>
+              <div className="wsk-cp-text">
+                <div className="title-product"><h3>Vino.rs</h3></div>
+                <div className="description-prodShop"><p>Vina će biti isporučena u roku od 48h.</p></div>
+              </div>
             </div>
+          </Link>
 
-            <div className="col-md-2" style={{ marginLeft: 22 }}>
-              <a href="https://mccvino.com/" target="_blank" rel="noopener noreferrer">
-                <div className="wsk-cp-productShop">
-                  <div className="wsk-cp-img">
-                    <img
-                      src="img/logo2.png"
-                      alt="Product"
-                      className="img-responsive"
-                    />
-                  </div>
-                  <div className="wsk-cp-text">
-                    <div className="category"></div>
-                    <div className="title-product">
-                      <h3>MCC Vino</h3>
-                    </div>
-                    <div className="description-prod">
-                      <p>Poručivanje direktno sa našeg sajta.</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+          <a href="https://mccvino.com/" target="_blank" rel="noopener noreferrer">
+            <div className="wsk-cp-productShop">
+              <div className="wsk-cp-img">
+                <img src="img/logo.png" alt="MCC Vino" className="img-responsive" />
+              </div>
+              <div className="wsk-cp-text">
+                <div className="title-product"><h3>MCC Vino</h3></div>
+                <div className="description-prodShop"><p>Poručivanje direktno sa našeg sajta.</p></div>
+              </div>
             </div>
+          </a>
 
-            <div class="col-md-2" style={{ marginLeft: 22 }}>
-              <Link to="https://vinoteka021.rs/?s=MCC&jet_ajax_search_settings=%7B%22results_order_by%22%3A%22relevance%22%2C%22results_order%22%3A%22asc%22%2C%22sentence%22%3A%22yes%22%2C%22search_in_taxonomy%22%3A%22yes%22%2C%22search_in_taxonomy_source%22%3A%5B%22product_cat%22%2C%22pa_proizvodac%22%2C%22pa_region-rejon-vinogorje%22%2C%22pa_sorta%22%2C%22pa_vrsta%22%5D%2C%22search_source%22%3A%22any%22%7D">
-                <div class="wsk-cp-productShop">
-                  <div class="wsk-cp-img">
-                    <img
-                      src="img\shop\Vinarija021Logo.PNG"
-                      alt="Product"
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="wsk-cp-text">
-                    <div class="category"></div>
-                    <div class="title-product">
-                      <h3>Vinoteka 021</h3>
-                    </div>
-                    <div class="description-prod">
-                      <p>Vina će biti isporučena u roku od 48h.</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+          <Link to="https://vinoteka021.rs/?s=MCC&jet_ajax_search_settings=%7B%22results_order_by%22%3A%22relevance%22%2C%22results_order%22%3A%22asc%22%2C%22sentence%22%3A%22yes%22%2C%22search_in_taxonomy%22%3A%22yes%22%2C%22search_in_taxonomy_source%22%3A%5B%22product_cat%22%2C%22pa_proizvodac%22%2C%22pa_region-rejon-vinogorje%22%2C%22pa_sorta%22%2C%22pa_vrsta%22%5D%2C%22search_source%22%3A%22any%22%7D" target="_blank" rel="noopener noreferrer">
+            <div className="wsk-cp-productShop">
+              <div className="wsk-cp-img">
+                <img src="img/shop/Vinarija021Logo.PNG" alt="Vinoteka 021" className="img-responsive" />
+              </div>
+              <div className="wsk-cp-text">
+                <div className="title-product"><h3>Vinoteka 021</h3></div>
+                <div className="description-prodShop"><p>Vina će biti isporučena u roku od 48h.</p></div>
+              </div>
             </div>
+          </Link>
 
-            <div class="col-md-2" style={{ marginLeft: 22}}>
-              <Link to="https://prirodnovino.rs/sr/mcc-merlot-malbec/proizvod/27">
-                <div class="wsk-cp-productShop">
-                  <div class="wsk-cp-img">
-                    <img
-                      src="img\velika vina\merlot.png"
-                      alt="Product"
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="wsk-cp-text">
-                    <div class="category"></div>
-                    <div class="title-product">
-                      <h3>Prirodno vino</h3>
-                    </div>
-                    <div class="description-prod">
-                      <p>
-                        McC Merlot Malbec
-                        <br />
-                        Vino će biti isporučena u roku od 48h.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+          <Link to="https://prirodnovino.rs/sr/mcc-merlot-malbec/proizvod/27" target="_blank" rel="noopener noreferrer">
+            <div className="wsk-cp-productShop">
+              <div className="wsk-cp-img">
+                <img src="img/velika vina/merlot.png" alt="Prirodno vino" className="img-responsive" />
+              </div>
+              <div className="wsk-cp-text">
+                <div className="title-product"><h3>Prirodno vino</h3></div>
+                <div className="description-prodShop"><p>McC Merlot Malbec - Vino će biti isporučena u roku od 48h.</p></div>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
 
-        <div className="section-title" style={{ marginTop: 50 }}>
+        <div className="section-title">
           <h2>Prodajna mesta</h2>
         </div>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6" style={{ marginLeft: 50, textAlign: "left" }}>
-              <h2>Beograd</h2>
-
-              <div class="title-product">
-                <h3>Enoteka Fino Vino</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Pop Lukina 6, Stari Grad Tel: 011/ 403-0962
-                  <br />
-                  Rade dostavu!
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Ours Vinoteka & Rakija Shop</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Ilije Stojadinovića 63, Čukarica, Tel: 062/244111
-                  <br />
-                  https://ours.rs/
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Srpska Kuća Vina</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Antifašističke borbe 15, Novi Beograd, Tel: 069 2137475
-                  <br />
-                  www.enotria.rs
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>“Enoteka Premier”</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Vojvođanska 63, lokal 13, Novi Beograd
-                  <br />
-                  Bul.Zorana Đinđića 125đ, Tel: +381 63 86 38 217
-                  <br />
-                  Rade dostavu!
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Vinoteka Ukusa</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Nikole Tesle 2, Zemun, Tel: +381 63 317 306
-                  <br />
-                  Rade dostavu!
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Stara Kapetanija shop</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Kej Oslobođenja 8, Zemun Tel: 011/ 316-1965
-                  <br />
-                  Rade dostavu!
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>“Vinoteka Vino I Vinogradarstvo”-Vina Mosaica</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Zmaj od Noćaja 9, Dorćol
-                  <br />
-                  Vino će biti isporučena u roku od 48h.
-                </p>
-              </div>
-              <div class="title-product">
-                <h3>Vinomond</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Lagumska 16, Zemun, Tel: 011/277-3023
-                  <br />
-                  Rade dostavu!
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Drink Story-Vinoarija</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Jedaneste krajiške divizije 72, Rakovica, Tel: 069/1991961
-                  <br />
-                </p>
-              </div>
-
-              <h2 style={{ marginTop: 30 }}>Restorani</h2>
-
-              <div class="title-product">
-                <h3>Madera</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Bul.Kralja Aleksandra 43, Tašmajdan
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Red Queen</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Beograd na vodi
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Buda Bar</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Beograd na vodi
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Lavina</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Djordja Stanojevica 9v, Belvil
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Shangri La Sushi</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Galerija, Beograd na vodi
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Supreme Steak House</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Galerija, Beograd na vodi
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Savanova</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Savsko šetalište bb, Beograd na vodi
-                  <br />
-                </p>
-              </div>
-              <div class="title-product">
-                <h3>Vegangelov</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Gospodara Jovanova 42a,
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Radost Fina Kuhinjica</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Pariska 3
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Stara Kapetanija</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Zemunski Kej 8, Zemun
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Bahus Inn</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Bul. Nikole Tesle bb, Zemun
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Malo Korzo-Panonija</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Zrenjaninski put 158a, Borča
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>Trio Gastro Pub</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Ćirila i Metodija 23a,Stara Pazova
-                  <br />
-                </p>
-              </div>
-
-              <h2 style={{ marginTop: 30 }}>Hoteli u Beogradu</h2>
-
-
-<div class="title-product">
-  <h3>HILTON</h3>
-</div>
-<div class="description-prodShop">
-<p>
-    Kralja Milana, 35
-    <br />
-  </p>
-</div>
-
-
-<div class="title-product">
-  <h3>SQUARE NINE</h3>
-</div>
-<div class="description-prodShop">
-  <p>
-    Studentski trg, 9
-    <br />
-  </p>
-</div>
-
-<div class="title-product">
-  <h3>SAINT TEN HOTEL</h3>
-</div>
-<div class="description-prodShop">
-  <p>
-    Svetog Save, 10
-    <br />
-  </p>
-</div>
-            </div>
-
-             
-
-            <div class="col-md-5" style={{ marginRight:10, textAlign: "right"}}>
-
-              <h2>NOVi SAD</h2>
-
-              <div class="title-product">
-                <h3>UNIVEREXPORT-UNIVER ORGANA</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Nikole Pasica 25 <br></br> Tel: 021/525-132
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>UNIVEREXPORT-PROMENADA</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Bulevar oslobodjenja 119, suteren <br></br> Tel: 021/215-6371
-                  <br />
-                </p>
-              </div>
-
-
-
-              <div class="title-product">
-                <h3>NANA-VINO,RAKIJA SHOP BAR</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>Dunavska 17<br></br> Tel: 069/2761425
-                  <br />
-                </p>
-              </div>
-
-
-              <div class="title-product">
-                <h3>KORPA DELI MARKET</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                 vesellina maslase 2<br></br> Tel: 021/2102523 mob:064/647-6370
-                  <br />
-                </p>
-              </div>
-
-
-              <div class="title-product">
-                <h3>ZDRAVOLOGIJA</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Bul Kralja Petra | 7<br></br> Tel: 021/6320504 mob:064/643-4599
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>KRIVINA</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Sremska 9<br></br> Mob:061/2323866
-                  <br />
-                </p>
-              </div>
-
-
-              <div class="title-product">
-                <h3>TEPLICA-EKOLOSKA PRODAVNICA</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Petra Drapsina 18, suteren <br></br> Tel: 062/935/7911
-                  <br />
-                </p>
-              </div>
-
-
-              <div class="title-product">
-                <h3>SLATINA</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                 Veselina Maslase 32<br></br> Mob:063/724-2784
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>VINO I VANILI WINE SHOP BAR</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                 Zitni trg 20<br></br> mob:065/543-2200
-                  <br />
-                </p>
-              </div>
-
-              <h2 style={{ marginTop: 30 }}>Restorani</h2>
-
-              
-
-<div class="title-product">
-  <h3>Tako je suđeno</h3>
-</div>
-<div class="description-prodShop">
-  <p>
-    Ribnjak-Gornji Put 15
-    <br />
-  </p>
-</div>
-
-<div class="title-product">
-  <h3>Garden I</h3>
-</div>
-<div class="description-prodShop">
-  <p>
-    Vase Stajića 27
-    <br />
-  </p>
-</div>
-
-<div class="title-product">
-  <h3>PIVNICA TATA BRADA</h3>
-</div>
-<div class="description-prodShop">
-  <p>
-    Mite Ruzica, 4
-    <br />
-  </p>
-</div>
-
-<div class="title-product">
-  <h3>TD ROCK CAFEE</h3>
-</div>
-<div class="description-prodShop">
-  <p>
-    Zmaj Jovina, pasaz Lupusa
-    <br />
-  </p>
-</div>
-
-<div class="title-product">
-  <h3>I Beer Concept Bar</h3>
-</div>
-<div class="description-prodShop">
-  <p>
-    Danila Kiša 12
-    <br />
-  </p>
-</div>
-
-<div class="title-product">
-  <h3>Caffe Sedmica i Picerija Sedmica</h3>
-</div>
-<div class="description-prodShop">
-  <p>
-    Bul Kralja Petra 7
-    <br />
-    Kraljevica Marka 23, br:064/1082585
-    <br />
-  </p>
-</div>
-
-<div class="title-product">
-  <h3>Restoran I Hotel "Veliki</h3>
-</div>
-<div class="description-prodShop">
-  <p>
-    Nikole Pašića 24
-    <br />
-  </p>
-</div>
-
-<div class="title-product">
-  <h3>BEERAJ</h3>
-</div>
-<div class="description-prodShop">
-  <p>
-    Trg Republike 18/L5
-    <br />
-    tel: 063/761-5877
-    <br />
-  </p>
-</div>
-
-<div class="title-product">
-  <h3>Udruženje Klub Ljubitelja Pasti</h3>
-</div>
-<div class="description-prodShop">
-  <p>
-    Maksima Gorkog 17
-    <br />
-  </p>
-</div>
-
-<h2 style={{ marginTop: 30 }}>VOJVODINA</h2>
-
-
-
-
-              <div class="title-product">
-                <h3>DVE KULE RESORT</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Bacinci
-                  <br />
-                </p>
-              </div>
-
-              <div class="title-product">
-                <h3>ETNO RESTORAN TRECA RAMPA</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                 Curug
-                  <br />
-                </p>
-              </div>
-
-
-              <div class="title-product">
-                <h3>Premier Aqua Hotel</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Martina Klisaca 16, Vrdnik
-                  <br />
-                </p>
-              </div>
-
-
-              <div class="title-product">
-                <h3>Etno kompleks Vrdnicka Kula</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                  Potez pod kulom bb, Vrdnik
-                  <br />
-                </p>
-              </div>
-
-
-              <div class="title-product">
-                <h3>Hotel Fruske Terme</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                Potez pod kulom bb, Vrdnik
-                 
-                  <br />
-                </p>
-              </div>
-
-
-              <div class="title-product">
-                <h3>Hotel Elite Palic</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                 Park Heroja 15, Palic
-                  <br />
-                </p>
-              </div>
-
-              <h2 style={{ marginTop: 30 }}>Backa Palanka</h2>
-
-
-              <div class="title-product">
-                <h3>Salas Idila</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                Obrovacki put
-                  <br />
-                </p>
-              </div>
-              <div class="title-product">
-                <h3>Stara Kuca</h3>
-              </div>
-              <div class="description-prodShop">
-                <p>
-                 Ive Lole Ribara 84
-                 
-                  <br />
-                </p>
-              </div>
-
-             
-            </div>
+        <div className="shop-locations-wrapper">
+          <div className="shop-location-section">
+            <h2>Beograd</h2>
+            <h3 className="subcategory-title">Vinoteke</h3>
+            {beogradWine.map((location, index) => (
+              <div key={index} className="location-card">
+                <h4>{location.name}</h4>
+                <p>{location.address}</p>
+                {location.address2 && <p>{location.address2}</p>}
+                {location.phone && <p>Tel: {location.phone}</p>}
+                {location.website && <p>{location.website}</p>}
+                {location.info && <p>{location.info}</p>}
+              </div>
+            ))}
+            <h3 className="subcategory-title">Restorani</h3>
+            {beogradRestaurants.map((location, index) => (
+              <div key={index} className="location-card">
+                <h4>{location.name}</h4>
+                <p>{location.address}</p>
+                {location.phone && <p>Tel: {location.phone}</p>}
+              </div>
+            ))}
+            <h3 className="subcategory-title">Hoteli</h3>
+            {beogradHotels.map((location, index) => (
+              <div key={index} className="location-card">
+                <h4>{location.name}</h4>
+                <p>{location.address}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="shop-location-section">
+            <h2>Novi Sad</h2>
+            <h3 className="subcategory-title">Vinoteke</h3>
+            {noviSadWine.map((location, index) => (
+              <div key={index} className="location-card">
+                <h4>{location.name}</h4>
+                <p>{location.address}</p>
+                {location.phone && <p>Tel: {location.phone}</p>}
+              </div>
+            ))}
+            <h3 className="subcategory-title">Restorani</h3>
+            {noviSadRestaurants.map((location, index) => (
+              <div key={index} className="location-card">
+                <h4>{location.name}</h4>
+                <p>{location.address}</p>
+                {location.phone && <p>Tel: {location.phone}</p>}
+              </div>
+            ))}
+            <h2>Vojvodina</h2>
+            {vojvodina.map((location, index) => (
+              <div key={index} className="location-card">
+                <h4>{location.name}</h4>
+                <p>{location.address}</p>
+                {location.phone && <p>Tel: {location.phone}</p>}
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -709,3 +211,4 @@ export const Shop = (props) => {
 };
 
 export default Shop;
+             
