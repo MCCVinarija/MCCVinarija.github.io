@@ -5,7 +5,8 @@
 }
 
 body{
-  font-family: 'fsalbert', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   background:#f5f5f5;
   overflow-x: hidden;
 }
@@ -476,7 +477,57 @@ a.buy-btn{
   }
 }
 
+@media (max-width: 768px) {
+  .col-md-3 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  
+  .wsk-cp-product {
+    padding: 15px 10px !important;
+    display: block !important;
+  }
+  
+  .wsk-cp-product .wsk-cp-img {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    padding-bottom: 0 !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    width: 100% !important;
+  }
+  
+  .wsk-cp-product .wsk-cp-img img {
+    max-height: 300px !important;
+  }
+  
+  .wsk-cp-text {
+    padding-top: 15px !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .wsk-cp-text .title-product,
+  .wsk-cp-text .description-prod,
+  .wsk-cp-text .category {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center !important;
+  }
+}
+
 @media (max-width: 480px) {
+  .col-md-3 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  
   .shop-grid {
     grid-template-columns: 1fr !important;
     gap: 12px !important;
@@ -493,5 +544,43 @@ a.buy-btn{
   
   .wsk-cp-img img {
     max-height: 100px !important;
+  }
+  
+  .wsk-cp-product {
+    padding: 15px 10px !important;
+    display: block !important;
+  }
+  
+  .wsk-cp-product .wsk-cp-img {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    padding-bottom: 0 !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    width: 100% !important;
+  }
+  
+  .wsk-cp-product .wsk-cp-img img {
+    max-height: 300px !important;
+  }
+  
+  .wsk-cp-text {
+    padding-top: 15px !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .wsk-cp-text .title-product,
+  .wsk-cp-text .description-prod,
+  .wsk-cp-text .category {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center !important;
   }
 }

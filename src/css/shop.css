@@ -1,0 +1,248 @@
+.shop-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.shop-online-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.shop-locations-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-top: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop-location-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.shop-location-section:first-child {
+  text-align: left;
+}
+
+.shop-location-section:first-child .location-card {
+  text-align: left;
+}
+
+.shop-location-section:nth-child(2),
+.shop-location-section-full {
+  text-align: right;
+}
+
+.shop-location-section:nth-child(2) h2,
+.shop-location-section-full h2 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.shop-location-section:nth-child(2) .location-card,
+.shop-location-section-full .location-card {
+  text-align: right;
+}
+
+.shop-location-section h2,
+.shop-location-section-full h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 25px 0;
+  border-bottom: 0.5px solid #9b0038;
+  padding-bottom: 8px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.shop-location-section h2:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+.subcategory-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #9b0038;
+  margin: 15px 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.location-card {
+  background: #f8f8f8;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-card:last-child {
+  border-bottom: none;
+}
+
+.location-card:hover {
+  background: #f0f0f0;
+  border-bottom-color: #9b0038;
+  box-shadow: none;
+  transform: none;
+}
+
+.location-card h3,
+.location-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 4px 0;
+  transition: color 0.3s ease;
+  line-height: 1.3;
+  word-break: break-word;
+  text-align: inherit;
+  width: 100%;
+}
+
+.location-card:hover h3,
+.location-card:hover h4 {
+  color: #9b0038;
+}
+
+.location-card p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  display: block;
+  word-break: break-word;
+  text-align: inherit;
+  width: 100%;
+}
+
+.location-card a {
+  color: #9b0038;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 12px;
+}
+
+.location-card a:hover {
+  color: #73022b;
+  text-decoration: underline;
+}
+
+.location-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #9b0038;
+  margin-bottom: 3px;
+  letter-spacing: 0.5px;
+  display: none;
+}
+
+/* Tablet landscape */
+@media (max-width: 900px) {
+  .shop-online-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .shop-locations-wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .shop-location-section h2,
+  .shop-location-section-full h2 {
+    font-size: 24px;
+  }
+
+  .shop-location-section:nth-child(2) h2,
+  .shop-location-section-full h2 {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .shop-location-section:nth-child(2) .location-card,
+  .shop-location-section-full .location-card {
+    text-align: left;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .shop-container {
+    padding: 30px 15px;
+  }
+
+  .shop-online-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .shop-location-section h2,
+  .shop-location-section-full h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .location-card {
+    padding: 10px 0;
+  }
+
+  .location-card h3,
+  .location-card h4 {
+    font-size: 14px;
+  }
+
+  .location-card p {
+    font-size: 12px;
+  }
+
+  .shop-locations-wrapper {
+    gap: 30px;
+  }
+
+  .subcategory-title {
+    font-size: 12px;
+    margin: 12px 0 8px 0;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .shop-online-grid {
+    grid-template-columns: 1fr;
+  }
+}
