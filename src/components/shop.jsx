@@ -63,7 +63,7 @@ export const Shop = (props) => {
                 <div className="wsk-cp-productShop">
                   <div className="wsk-cp-img">
                     <img
-                      src="img/shop/ourslogo.png"
+                      src="img/logo2.png"
                       alt="Product"
                       className="img-responsive"
                     />
