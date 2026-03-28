@@ -58,27 +58,27 @@ export const Shop = (props) => {
               </Link>
             </div>
 
-            <div class="col-md-2" style={{ marginLeft: 22 }}>
-              <Link to="https://ours.rs/search.php?search=mcc">
-                <div class="wsk-cp-productShop">
-                  <div class="wsk-cp-img">
+            <div className="col-md-2" style={{ marginLeft: 22 }}>
+              <a href="https://mccvino.com/" target="_blank" rel="noopener noreferrer">
+                <div className="wsk-cp-productShop">
+                  <div className="wsk-cp-img">
                     <img
-                      src="img\shop\ourslogo.png"
+                      src="img/shop/ourslogo.png"
                       alt="Product"
-                      class="img-responsive"
+                      className="img-responsive"
                     />
                   </div>
-                  <div class="wsk-cp-text">
-                    <div class="category"></div>
-                    <div class="title-product">
-                      <h3>OURS</h3>
+                  <div className="wsk-cp-text">
+                    <div className="category"></div>
+                    <div className="title-product">
+                      <h3>MCC Vino</h3>
                     </div>
-                    <div class="description-prod">
-                      <p>Vina će biti isporučena u roku od 48h.</p>
+                    <div className="description-prod">
+                      <p>Poručivanje direktno sa našeg sajta.</p>
                     </div>
                   </div>
                 </div>
-              </Link>
+              </a>
             </div>
 
             <div class="col-md-2" style={{ marginLeft: 22 }}>
