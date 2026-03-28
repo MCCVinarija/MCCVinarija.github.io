@@ -725,4 +725,48 @@ label {
   #about img {
     margin: 50px 0;
   }
+  
+  /* Mobile Navigation Fix */
+  .navbar-toggle {
+    padding: 6px 8px !important;
+    border: 1px solid #555 !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 20px !important;
+    height: 2px !important;
+    background-color: #fff !important;
+    border-radius: 1px;
+  }
+  
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+  
+  /* Mobile Menu Text Visibility */
+  #menu.navbar-default .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  #menu.navbar-default .navbar-nav > li > a {
+    color: #fff !important;
+    opacity: 1 !important;
+    padding: 12px 15px !important;
+    font-size: 12px;
+  }
+  
+  #menu.navbar-default .navbar-nav > li > a:after {
+    display: none;
+  }
+  
+  #menu.navbar-default .navbar-nav > li > a:hover,
+  #menu.navbar-default .navbar-nav > li > a:focus,
+  #menu.navbar-default .navbar-nav > .active > a {
+    background-color: rgba(155, 0, 56, 0.4) !important;
+    color: #fff !important;
+  }
 }
