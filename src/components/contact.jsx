@@ -134,14 +134,14 @@ export const Contact = (props) => {
                     <span>
                       <i className="fa fa-location-arrow"></i> MCC Vinarija
                     </span>
-                    <p>Milin Do 21, 22230 Erdevik</p>
+                    <p>Svetog Save 150a, 22230 Erdevik</p>
                   </div>
                   <div className="contact-item">
                     <span>
                       <i className="fa fa-phone"></i> Telefon
                     </span>
                     <p>
-                      +381 61 565 6465 Branka
+                      +381 63698112 Branka
                       <br />
                       +381 22 752 486
                     </p>
@@ -152,7 +152,7 @@ export const Contact = (props) => {
                     </span>
                     <p>
                       <a href="mailto:MCCkancelarija@gmail.com" style={{ color: "#9b0038" }}>
-                        MCCkancelarija@gmail.com
+                        Mcc@mccullochwines.com
                       </a>
                     </p>
                   </div>
