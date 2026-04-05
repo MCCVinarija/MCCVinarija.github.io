@@ -84,7 +84,7 @@ export const Shop = (props) => {
     <div id="shop" style={{ paddingTop: 150 }}>
       <div className="shop-container">
         <div className="section-title">
-          <h2>PORUČITE ONLINE</h2>
+          <h2>Poručite online</h2>
         </div>
 
         <div className="shop-online-grid">
@@ -143,7 +143,7 @@ export const Shop = (props) => {
               </div>
               <div className="wsk-cp-text">
                 <div className="title-product"><h3>Prirodno vino</h3></div>
-                <div className="description-prodShop"><p>McC Merlot Malbec - Vino će biti isporučena u roku od 48h.</p></div>
+                <div className="description-prodShop"><p>McC Merlot Malbec - Vino će biti isporučeno u roku od 48h.</p></div>
               </div>
             </div>
           </Link>

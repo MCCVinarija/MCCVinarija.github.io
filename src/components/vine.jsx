@@ -38,8 +38,8 @@ export const Vine = (props) => {
               Pravilnim izborom udela svake sorte u kupaži, ovo vino odlikuje
               punoća voćnih aroma sa udelom začina i cveća. Procesom odležavanja
               u vinu su se razvile note vanile, duvana, slatkog drveta i
-              mineralnost.Uz vino od hrane lepo se slažu jela sa roštilja
-              ,biftek, ćuretina, odresci, lazanje, razna variva
+              mineralnosti. Uz vino od hrane lepo se slažu jela sa roštilja,
+              biftek, ćuretina, odresci, lazanja, razna variva.
             </p>
 
             <a
@@ -70,10 +70,10 @@ export const Vine = (props) => {
             <h4>Traminac</h4>
             <p class="pRight">
               Belo vino sortnog karaktera, izbalansirano, sa slabo izraženim
-              kiselinama,žuto zelene boje.Izražene arome tropskog voća,breskve i
+              kiselinama, žuto-zelene boje. Izražene arome tropskog voća, breskve i
               začina. Uz vino od hrane lepo se slaže: dagnje, jegulje,
-              pica,omlet, pohovana ćuretina, meki sirevi izraženije
-              arome,(egzotična kuhinja)
+              pica, omlet, pohovana ćuretina, meki sirevi izraženije
+              arome (egzotična kuhinja).
             </p>
             <br />
 
@@ -106,8 +106,8 @@ export const Vine = (props) => {
               jabuke, breskve, ruže i u pozadini ljubičice. Balansirano na ukusu
               sa svežim, izraženim kiselinama, sa petrolejskim aromama. Uz ovo
               vino od hrane lepo se slaže: šunka, kavijar, pašteta od tunjevine,
-              dimnjeni losos, pijani šaran,smuđ u pavlaci, piletina na žaru, sve
-              vrste pečenja,polutvrdi sirevi
+              dimljeni losos, pijani šaran, smuđ u pavlaci, piletina na žaru, sve
+              vrste pečenja, polutvrdi sirevi.
             </p>
             <br />
 
@@ -143,8 +143,8 @@ export const Vine = (props) => {
               začinskih aroma. Procesom odležavanja u vinu su se razvile i arome
               slatkog drveta i vanile. Odležava 12 meseci u hrastovom buretu i
               još minimum 10 meseci u boci. Uz vino od hrane lepo se slažu
-              goveđa salata, pohovana paprika, kolenica sa renom ,jela sa
-              roštilja, biftek, polutvrdi sirevi, lazanja
+              goveđa salata, pohovana paprika, kolenica sa renom, jela sa
+              roštilja, biftek, polutvrdi sirevi, lazanja.
             </p>
             <br />
 
@@ -178,13 +178,13 @@ export const Vine = (props) => {
             <h2>Kaberne Frans-Kaberne Sovinjon</h2>
             <h4>Cabernet Franc- Cabernet Sauvignon</h4>
             <p>
-              Kupaža dve sorte grožđa sa dominantijim uticajem Kaberne Sovinjona
+              Kupaža dve sorte grožđa sa dominantnijim uticajem Kaberne Sovinjona
               oko 60% uz 40% Kaberne Frana. Odležava 12 meseci u hrastovom
               buretu i minimum 10 meseci u boci. Kupaža dva vina sa izraženim
               voćnim stilom (crno bobičasto voće) sa notama cveća i paprike.
-              Procesom odležavanja u vinu su se razvile note vanile ,duvana i
-              slatkog drveta.Uz vino se od hrane lepo slažu jela sa roštilja,
-              biftek, svinjski kare, ćuretina na podvarku, jela ispod sača
+              Procesom odležavanja u vinu su se razvile note vanile, duvana i
+              slatkog drveta. Uz vino se od hrane lepo slažu jela sa roštilja,
+              biftek, svinjski kare, ćuretina na podvarku, jela ispod sača.
             </p>
             <br />
 
@@ -218,7 +218,7 @@ export const Vine = (props) => {
               Vino zeleno-žute boje, voćnog karaktera na mirisu, strukturalno
               puno i sveže sa voćnim notama i laganom herbalnom završnicom na
               ukusu. Uz ovo vino od hrane lepo se slaže: jela i salate na bazi
-              belog mesa i bele ribe
+              belog mesa i bele ribe.
             </p>
             <br />
 
@@ -254,10 +254,10 @@ export const Vine = (props) => {
               čaja. Procesom odležavanja razvile su se i note mineralnosti kao i
               vanile i slatkog drveta. Odležava 12 meseci u hrastovom buretu i
               još minimum 10 meseci u boci. Uz ovo vino lepo se slažu jela kao
-              što su: losos (na žaru) i druge ribe, biftek, piletina(pogotovo
+              što su: losos (na žaru) i druge ribe, biftek, piletina (pogotovo
               kuvana u crvenom vinu), pržena i dinstana jagnjetina, sva jela u
               kojima pečurke karakterišu glavni element ukusa, fazan,
-              patka,...Najbolje su jednostavne i bogate namirnice. sirevi
+              patka... Najbolje su jednostavne i bogate namirnice, sirevi.
             </p>
             <br />
 
@@ -287,10 +287,10 @@ export const Vine = (props) => {
             <h2>Roze Tajna</h2>
             <h4>Cabernet Sauvignon </h4>
             <p class="pRight">
-              Sveže, lagano vino balasniranog tela. Na mirisu cvetne
-              note, crveno voće, sa primesama začinsko herbalnih nota. Na ukusu
+              Sveže, lagano vino balansiranog tela. Na mirisu cvetne
+              note, crveno voće, sa primesama začinsko-herbalnih nota. Na ukusu
               lagana struktura sa dužom završnicom. Uz vino se slaže lakša
-              hrana: mladi sirevi, paste, pice,salate
+              hrana: mladi sirevi, paste, pice, salate.
             </p>
             <br />
 

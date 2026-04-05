@@ -43,7 +43,7 @@ export const Contact = (props) => {
             <div className="section-title">
               <h2>Kontaktirajte nas</h2>
               <p>
-                Molimo vas popunite obrazac i posaljite nam email, odgovorićemo vam što je pre moguće.
+                Molimo vas da popunite obrazac i pošaljite nam email. Odgovorićemo vam što je pre moguće.
               </p>
             </div>
           </div>
@@ -113,7 +113,7 @@ export const Contact = (props) => {
                   </div>
                   <div className="contact-item">
                     <span>
-                      <i className="fa fa-phone"></i> Telefon komercijala
+                      <i className="fa fa-phone"></i> Telefon komercijalni
                     </span>
                     <p>{props.data ? props.data.phone : "loading"}</p>
                   </div>

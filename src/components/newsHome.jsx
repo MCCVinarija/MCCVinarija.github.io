@@ -12,7 +12,7 @@ export const NewsHome = (props) => {
               <h2 className="news-card-title">Vinarija</h2>
               <p className="news-card-text">
                 Naša vinarija je simbol posvećenosti kvalitetu i tradiciji. Ovde
-                se spoj tradicije i modernog pristupa stapa u nezaboravno iskustvo
+                se spajaju tradicija i moderan pristup u nezaboravno iskustvo
                 za sve ljubitelje dobrog vina. Dobrodošli u našu vinariju, gde
                 svaka čaša postaje priča, a svaki trenutak nezaboravan doživljaj.
               </p>
@@ -41,7 +41,7 @@ export const NewsHome = (props) => {
                 već i priču o našem posvećenom radu i strasti. Dobrodošli u naš
                 kutak vinarske umetnosti, gde svaki trenutak postaje nezaboravno
                 iskustvo puno uživanja i prijateljstva.
-                Rezervisite degustacija organskog i biodinamičkog vina sa prevozom luksuznim vozilom na <a href="https://liderlimo.rs/usluge/vinski-turizam/">linku</a>
+                Rezervišite degustaciju organskog i biodinamičkog vina sa prevozom luksuznim vozilom na <a href="https://liderlimo.rs/usluge/vinski-turizam/">linku</a>
               </p>
             </div>
           </div>

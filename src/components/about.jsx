@@ -16,9 +16,9 @@ export const AboutCmp = (props) => {
             <div className="about-card-content">
               <h2 className="about-card-title">O nama</h2>
               <p className="about-card-text">
-                McC McCulloch Vina su inovativni spoj partnerstva izmedju dvoje
-                supružnika, engleza Don McCulloch-a i Seke Nikolić, srpskog
-                porekla. Don, svojim francuskim i škotskim nasledjem i svojim
+                McC McCulloch Vina su inovativni spoj partnerstva između dvoje
+                supružnika, Engleza Don McCulloch-a i Sеке Nikolić, srpskog
+                porekla. Don, svojim francuskim i škotskim nasleđem i svojim
                 širokim znanjem stečenim radom sa uzgajivačima vina širom sveta,
                 osmislio je ovu jedinstvenu proizvodnju vina.
               </p>
@@ -37,11 +37,11 @@ export const AboutCmp = (props) => {
             <div className="about-card-content">
               <h2 className="about-card-title">O vinariji</h2>
               <p className="about-card-text">
-                Vinarija McC ima površinu 221,17m2 . Godišnje proizvede prosečno
+                Vinarija McC ima površinu 221,17 m². Godišnje proizvede prosečno
                 15.000 boca. Crvena vina se čuvaju 12 meseci u srpskom hrastovom
-                buretu a u bocama leže još minimum 10 meseci. Bela vina takođe
+                buretu, a u bocama leže još minimum 10 meseci. Bela vina takođe
                 leže minimum 10 meseci u bocama pre puštanja na tržište.
-                2020.godine izgradili smo I skladište uz vinariju u kojem čuvamo
+                2020. godine izgradili smo i skladište uz vinariju u kojem čuvamo
                 zalihe vina.
               </p>
             </div>
@@ -57,9 +57,9 @@ export const AboutCmp = (props) => {
             <div className="about-card-content">
               <h2 className="about-card-title">O kompaniji</h2>
               <p className="about-card-text">
-                McC McCulloch Vina su inovativni spoj partnerstva izmedju dvoje
-                supružnika, engleza Don McCulloch-a i Seke Nikolić, srpskog
-                porekla. Don, svojim francuskim i škotskim nasledjem i svojim
+                McC McCulloch Vina su inovativni spoj partnerstva između dvoje
+                supružnika, Engleza Don McCulloch-a i Sеке Nikolić, srpskog
+                porekla. Don, svojim francuskim i škotskim nasleđem i svojim
                 širokim znanjem stečenim radom sa uzgajivačima vina širom sveta,
                 osmislio je ovu jedinstvenu proizvodnju vina.
               </p>
@@ -76,13 +76,13 @@ export const AboutCmp = (props) => {
             <div className="about-card-content">
               <h2 className="about-card-title">Organski i biodinamički</h2>
               <p className="about-card-text">
-                Od 2011.godine koristimo organski i biodinamički pristup
+                Od 2011. godine koristimo organski i biodinamički pristup
                 tretiranja zemljišta i vinograda, ali tek nakon izgrađene
-                vinarije podneli smo zahtev i dobili ORGANSKI I BIODINAMICKI
+                vinarije podneli smo zahtev i dobili ORGANSKI I BIODINAMIČKI
                 SERTIFIKAT REPUBLIKE SRBIJE za organsku proizvodnju i
-                preradu,kao i za izvoz, u novembru 2020.godine od strane
-                akreditovanog sertifikacionog tela "EKOCERT BALKAN"doo iz
-                Zemuna,ovlašćenog od strane Ministarstva poljoprivrede,šumarstva
+                preradu, kao i za izvoz, u novembru 2020. godine od strane
+                akreditovanog sertifikacionog tela "EKOCERT BALKAN" d.o.o. iz
+                Zemuna, ovlašćenog od strane Ministarstva poljoprivrede, šumarstva
                 i vodoprivrede.
               </p>
             </div>
@@ -109,8 +109,8 @@ export const AboutCmp = (props) => {
                 Degustacija traje maksimalno 2 sata. Da bismo osigurali vaše
                 neometano uživanje, molimo vas da posetu najavite dan ranije, a
                 za vikend posete preporučujemo da to učinite dva dana unapred.
-                Za vise informacija i rezervaciju pozovite nas na telefon:
-                +381 63 653 202 ili na <a href="https://liderlimo.rs/usluge/vinski-turizam/">linku</a>
+                Za više informacija i rezervaciju pozovite nas na telefon:
+                +381 63 653 202 ili na <a href="https://liderlimo.rs/usluge/vinski-turizam/">linku</a>.
               </p>
             </div>
           </div>
@@ -125,10 +125,10 @@ export const AboutCmp = (props) => {
             <div className="about-card-content">
               <h2 className="about-card-title">Prva berba</h2>
               <p className="about-card-text">
-                Naš prvi proizvod "KUPAŽA 2011" Napravljeno mešanjem dvostrukog
+                Naš prvi proizvod "KUPAŽA 2011" napravljen mešanjem dvostrukog
                 zajedničkog vrenja sorti Merlot i Malbec, kao i sorti Cabernet
-                Franc i Cabernet Sauvignon. Odežalo 12 meseci u barik buradima
-                od srpskog hrasta i potom flaširano da odstoji još 14 meseci.
+                Franc i Cabernet Sauvignon. Odležao 12 meseci u barik buradima
+                od srpskog hrasta i potom flaširan da odstoji još 14 meseci.
               </p>
             </div>
           </div>

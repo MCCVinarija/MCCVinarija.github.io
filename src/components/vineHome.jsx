@@ -25,214 +25,114 @@ const responsive = {
 export const VineHome = (props) => {
   return (
     
-    <div className='centar'> 
+    <div className='vine-home-carousel'> 
     <Carousel responsive={responsive} 
     infinite={true}
+    autoPlay={true}
+    autoPlaySpeed={5000}
+    keyBoardControl={true}
+    customTransition="all .5"
+    transitionDuration={500}
+    containerClass="carousel-container"
+    removeArrowOnDeviceType={["tablet", "mobile"]}
+    dotListClass="custom-dot-list-style"
+    itemClass="carousel-item-padding-40-px"
     >
-  <div class="shell">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-3" >
-                    <div class="wsk-cp-product">
-                    <div class="wsk-cp-img">
-                        <Link to="/vines#caberne">
-                            <img src="img/velika vina/cabernet.png" alt="Product" class="img-responsive" />
-                        </Link>
-                    </div>
-                    <div class="wsk-cp-text">
-                        <div class="category">
-                        </div>
-                        <div class="title-product">
-                        <h3>Cabernet Franc-Cabernet Sauvignon</h3>
-                        </div>
-                        <div class="description-prod">
-                        <p>Suvo crveno vino, Kupaža dva vina sa izraženim voćnim stilom.</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>           
-            </div>
+      <Link to="/vines#caberne" className="wine-card-link">
+        <div className="wine-card">
+          <div className="wine-card-image">
+            <img src="img/velika vina/cabernet.png" alt="Cabernet Franc-Cabernet Sauvignon" />
+          </div>
+          <div className="wine-card-content">
+            <h3>Cabernet Franc-Cabernet Sauvignon</h3>
+            <p>Suvo crveno vino, kupaža dva vina sa izraženim voćnim stilom.</p>
+          </div>
         </div>
+      </Link>
 
-        <div class="shell">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-3">
-                    <div class="wsk-cp-product">
-                    <div class="wsk-cp-img">
-                    <Link to="/vines#coupage">
-                        <img src="/img/velika vina/coupage.png" alt="Product" class="img-responsive" />
-                    </Link>
-                    </div>
-                    <div class="wsk-cp-text">
-                        <div class="category">
-                        </div>
-                        <div class="title-product">
-                        <h3>Coupage</h3>
-                        </div>
-                        <div class="description-prod">
-                        <p>Suvo crveno vino sa notama vanile, duvana, slatkog drveta i mineralnost.</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>           
-            </div>
+      <Link to="/vines#coupage" className="wine-card-link">
+        <div className="wine-card">
+          <div className="wine-card-image">
+            <img src="/img/velika vina/coupage.png" alt="Coupage" />
+          </div>
+          <div className="wine-card-content">
+            <h3>Coupage</h3>
+            <p>Suvo crveno vino sa notama vanile, duvana, slatkog drveta i mineralnosti.</p>
+          </div>
         </div>
-        <div class="shell">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-3">
-                    <div class="wsk-cp-product">
-                    <div class="wsk-cp-img">
-                    <Link to="/vines#pinot">
-                        <img src="/img/velika vina/pinot.png" alt="Product" class="img-responsive" />
-                    </Link>
-                    </div>
-                    <div class="wsk-cp-text">
-                        <div class="category">
-                        </div>
-                        <div class="title-product">
-                        <h3>Pinot Noir</h3>
-                        </div>
-                        <div class="description-prod">
-                        <p>Suvo crveno vino sa notama crvenog voća, cimeta, peperminta i zelenog čaja.</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>           
-            </div>
-        </div>
-        <div class="shell">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-3">
-                    <div class="wsk-cp-product">
-                    <div class="wsk-cp-img">
-                    <Link to="/vines#rizling">
-                        <img src="/img/velika vina/rajski.png" alt="Product" class="img-responsive" />
-                    </Link>
-                    </div>
-                    <div class="wsk-cp-text">
-                        <div class="category">
-                        </div>
-                        <div class="title-product">
-                        <h3>Rajnski Riesling</h3>
-                        </div>
-                        <div class="description-prod">
-                        <p>Suvo belo vino sa aromama na jabuku, breskvu, ružu, u pozadini note ljubičice.</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>           
-            </div>
-        </div>
-        <div class="shell">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-3">
-                    <div class="wsk-cp-product">
-                    <div class="wsk-cp-img">
-                    <Link to="/vines#blanc">
-                        <img src="/img/velika vina/sauvignon.png" alt="Product" class="img-responsive" />
-                    </Link>
-                    </div>
-                    <div class="wsk-cp-text">
-                        <div class="category">
-                        </div>
-                        <div class="title-product">
-                        <h3>Sauvignon Blanc</h3>
-                        </div>
-                        <div class="description-prod">
-                        <p>Suvo belo vino, sveže sa voćnim notama i laganom herbalnom završnicom na ukusu.</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>           
-            </div>
-        </div>
+      </Link>
 
-        <div class="shell">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-3">
-                    <div class="wsk-cp-product">
-                    <div class="wsk-cp-img">
-                    <Link to="/vines#rose">
-                        <img src="/img/velika vina/tajna.png" alt="Product" class="img-responsive" />
-                    </Link>
-                    </div>
-                    <div class="wsk-cp-text">
-                        <div class="category">
-                        </div>
-                        <div class="title-product">
-                        <h3>Rose Tajna</h3>
-                        </div>
-                        <div class="description-prod">
-                        <p>Suvo roze vino, na ukusu lagana struktura sa dužom završnicom.</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>           
-            </div>
+      <Link to="/vines#pinot" className="wine-card-link">
+        <div className="wine-card">
+          <div className="wine-card-image">
+            <img src="/img/velika vina/pinot.png" alt="Pinot Noir" />
+          </div>
+          <div className="wine-card-content">
+            <h3>Pinot Noir</h3>
+            <p>Suvo crveno vino sa notama crvenog voća, cimeta, peperminta i zelenog čaja.</p>
+          </div>
         </div>
+      </Link>
 
-        <div class="shell">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-3">
-                    <div class="wsk-cp-product">
-                    <div class="wsk-cp-img">
-                    <Link to="/vines#traminac">
-                        <img src="/img/velika vina/traminac.png" alt="Product" class="img-responsive" />
-                    </Link>
-                    </div>
-                    <div class="wsk-cp-text">
-                        <div class="category">
-                        </div>
-                        <div class="title-product">
-                        <h3>Traminac</h3>
-                        </div>
-                        <div class="description-prod">
-                        <p>Suvo belo vino sa izraženom aromom na tropsko voće (breskvu i na začine).</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>           
-            </div>
+      <Link to="/vines#rizling" className="wine-card-link">
+        <div className="wine-card">
+          <div className="wine-card-image">
+            <img src="/img/velika vina/rajski.png" alt="Rajnski Riesling" />
+          </div>
+          <div className="wine-card-content">
+            <h3>Rajnski Riesling</h3>
+            <p>Suvo belo vino sa aromama jabuke, breskve, ruže i ljubičice u pozadini.</p>
+          </div>
         </div>
-       
-        <div class="shell">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-3">
-                    <div class="wsk-cp-product">
-                    <div class="wsk-cp-img">
-                    <Link to="/vines#malbec">
-                        <img src="/img/velika vina/merlot.png" alt="Product" class="img-responsive" />
-                    </Link>
-                    </div>
-                    <div class="wsk-cp-text">
-                        <div class="category">
-                        </div>
-                        <div class="title-product">
-                        <h3>Merlot Malbec</h3>
-                        </div>
-                        <div class="description-prod">
-                        <p>Suvo crveno vino sa izraženim voćnim stilom, notama cvetnih i začinskih aroma. </p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>           
-            </div>
+      </Link>
+
+      <Link to="/vines#blanc" className="wine-card-link">
+        <div className="wine-card">
+          <div className="wine-card-image">
+            <img src="/img/velika vina/sauvignon.png" alt="Sauvignon Blanc" />
+          </div>
+          <div className="wine-card-content">
+            <h3>Sauvignon Blanc</h3>
+            <p>Suvo belo vino, sveže sa voćnim notama i laganom herbalnom završnicom.</p>
+          </div>
         </div>
+      </Link>
+
+      <Link to="/vines#rose" className="wine-card-link">
+        <div className="wine-card">
+          <div className="wine-card-image">
+            <img src="/img/velika vina/tajna.png" alt="Rose Tajna" />
+          </div>
+          <div className="wine-card-content">
+            <h3>Rose Tajna</h3>
+            <p>Suvo roze vino sa laganom strukturom i dugom završnicom.</p>
+          </div>
+        </div>
+      </Link>
+
+      <Link to="/vines#traminac" className="wine-card-link">
+        <div className="wine-card">
+          <div className="wine-card-image">
+            <img src="/img/velika vina/traminac.png" alt="Traminac" />
+          </div>
+          <div className="wine-card-content">
+            <h3>Traminac</h3>
+            <p>Suvo belo vino sa izraženom aromom tropskog voća (breskve i začina).</p>
+          </div>
+        </div>
+      </Link>
+
+      <Link to="/vines#malbec" className="wine-card-link">
+        <div className="wine-card">
+          <div className="wine-card-image">
+            <img src="/img/velika vina/merlot.png" alt="Merlot Malbec" />
+          </div>
+          <div className="wine-card-content">
+            <h3>Merlot Malbec</h3>
+            <p>Suvo crveno vino sa izraženim voćnim stilom i notama cvetnih i začinskih aroma.</p>
+          </div>
+        </div>
+      </Link>
 
         </Carousel>
     </div>
