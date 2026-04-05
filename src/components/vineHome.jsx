@@ -28,7 +28,7 @@ export const VineHome = (props) => {
     <div className='vine-home-carousel'> 
     <Carousel responsive={responsive} 
     infinite={true}
-    autoPlay={true}
+    autoPlay={false}
     autoPlaySpeed={5000}
     keyBoardControl={true}
     customTransition="all .5"
