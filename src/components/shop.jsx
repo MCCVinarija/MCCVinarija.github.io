@@ -1,7 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import "../css/vineHome.css";
 import "../css/shop.css";
-import { Link } from "react-router-dom";
 
 export const Shop = (props) => {
   const beogradWine = [
@@ -88,69 +87,17 @@ export const Shop = (props) => {
         </div>
 
         <div className="shop-online-grid">
-          <Link to="https://www.enotekapremier.rs/sr/catalogsearch/result/?q=mcc&cat=" target="_blank" rel="noopener noreferrer">
-            <div className="wsk-cp-productShop">
-              <div className="wsk-cp-img">
-                <img src="img/shop/enotekaLogo.jpg" alt="Enoteka" className="img-responsive" />
-              </div>
-              <div className="wsk-cp-text">
-                <div className="title-product"><h3>Enoteka</h3></div>
-                <div className="description-prodShop"><p>Vina će biti isporučena u roku od 48h.</p></div>
-              </div>
-            </div>
-          </Link>
-
-          <Link to="https://www.prodavnica.vino.rs/catalogsearch/result/?q=MCC" target="_blank" rel="noopener noreferrer">
-            <div className="wsk-cp-productShop">
-              <div className="wsk-cp-img">
-                <img src="img/shop/vinoLogo.png" alt="Vino.rs" className="img-responsive" />
-              </div>
-              <div className="wsk-cp-text">
-                <div className="title-product"><h3>Vino.rs</h3></div>
-                <div className="description-prodShop"><p>Vina će biti isporučena u roku od 48h.</p></div>
-              </div>
-            </div>
-          </Link>
-
-          <a href="https://mccvino.com/" target="_blank" rel="noopener noreferrer">
-            <div className="wsk-cp-productShop">
-              <div className="wsk-cp-img">
+          <a href="https://mccvino.com/" target="_blank" rel="noopener noreferrer" className="wine-card-link">
+            <div className="wine-card">
+              <div className="wine-card-image">
                 <img src="img/logo.png" alt="MCC Vino" className="img-responsive" />
               </div>
-              <div className="wsk-cp-text">
-                <div className="title-product"><h3>MCC Vino</h3></div>
-                <div className="description-prodShop"><p>Poručivanje direktno sa našeg sajta.</p></div>
+              <div className="wine-card-content">
+                <h3>MCC Vino</h3>
+                <p>Poručivanje direktno sa našeg sajta. Kliknite da posetite MCC web prodavnicu.</p>
               </div>
             </div>
           </a>
-
-          <Link to="https://vinoteka021.rs/?s=MCC&jet_ajax_search_settings=%7B%22results_order_by%22%3A%22relevance%22%2C%22results_order%22%3A%22asc%22%2C%22sentence%22%3A%22yes%22%2C%22search_in_taxonomy%22%3A%22yes%22%2C%22search_in_taxonomy_source%22%3A%5B%22product_cat%22%2C%22pa_proizvodac%22%2C%22pa_region-rejon-vinogorje%22%2C%22pa_sorta%22%2C%22pa_vrsta%22%5D%2C%22search_source%22%3A%22any%22%7D" target="_blank" rel="noopener noreferrer">
-            <div className="wsk-cp-productShop">
-              <div className="wsk-cp-img">
-                <img src="img/shop/Vinarija021Logo.PNG" alt="Vinoteka 021" className="img-responsive" />
-              </div>
-              <div className="wsk-cp-text">
-                <div className="title-product"><h3>Vinoteka 021</h3></div>
-                <div className="description-prodShop"><p>Vina će biti isporučena u roku od 48h.</p></div>
-              </div>
-            </div>
-          </Link>
-
-          <Link to="https://prirodnovino.rs/sr/mcc-merlot-malbec/proizvod/27" target="_blank" rel="noopener noreferrer">
-            <div className="wsk-cp-productShop">
-              <div className="wsk-cp-img">
-                <img src="img/velika vina/merlot.png" alt="Prirodno vino" className="img-responsive" />
-              </div>
-              <div className="wsk-cp-text">
-                <div className="title-product"><h3>Prirodno vino</h3></div>
-                <div className="description-prodShop"><p>McC Merlot Malbec - Vino će biti isporučeno u roku od 48h.</p></div>
-              </div>
-            </div>
-          </Link>
-        </div>
-
-        <div className="section-title">
-          <h2>Prodajna mesta</h2>
         </div>
 
         <div className="shop-locations-wrapper">
