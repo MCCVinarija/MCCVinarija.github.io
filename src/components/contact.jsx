@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import { LanguageContext } from "../LanguageContext";
 
 const initialState = {
   name: "",
@@ -8,7 +9,41 @@ const initialState = {
   message: "",
 };
 export const Contact = (props) => {
+  const { language = 'sr' } = useContext(LanguageContext);
   const [{ name, email, message }, setState] = useState(initialState);
+
+  const contactText = {
+    sr: {
+      title: 'Kontaktirajte nas',
+      description:
+        'Molimo vas da popunite obrazac i pošaljite nam email. Odgovorićemo vam što je pre moguće.',
+      namePlaceholder: 'Ime',
+      emailPlaceholder: 'Email',
+      messagePlaceholder: 'Poruka',
+      submitButton: 'Pošalji',
+      information: 'Informacije',
+      address: 'Adresa',
+      commercialPhone: 'Telefon komercijalni',
+      phone: 'Telefon',
+      branch: 'Ogranak',
+      emailLabel: 'Email',
+    },
+    en: {
+      title: 'Contact us',
+      description:
+        'Please fill in the form and send us an email. We will reply as soon as possible.',
+      namePlaceholder: 'Name',
+      emailPlaceholder: 'Email',
+      messagePlaceholder: 'Message',
+      submitButton: 'Send',
+      information: 'Information',
+      address: 'Address',
+      commercialPhone: 'Commercial phone',
+      phone: 'Phone',
+      branch: 'Branch',
+      emailLabel: 'Email',
+    },
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -41,10 +76,8 @@ export const Contact = (props) => {
         <div className="container" style={{ maxWidth: "1200px" }}>
           <div style={{ marginBottom: "50px" }}>
             <div className="section-title">
-              <h2>Kontaktirajte nas</h2>
-              <p>
-                Molimo vas da popunite obrazac i pošaljite nam email. Odgovorićemo vam što je pre moguće.
-              </p>
+              <h2>{contactText[language].title}</h2>
+              <p>{contactText[language].description}</p>
             </div>
           </div>
           <div className="row">
@@ -58,7 +91,7 @@ export const Contact = (props) => {
                         id="name"
                         name="name"
                         className="form-control"
-                        placeholder="Ime"
+                        placeholder={contactText[language].namePlaceholder}
                         required
                         onChange={handleChange}
                         value={name}
@@ -73,7 +106,7 @@ export const Contact = (props) => {
                         id="email"
                         name="email"
                         className="form-control"
-                        placeholder="Email"
+                        placeholder={contactText[language].emailPlaceholder}
                         required
                         onChange={handleChange}
                         value={email}
@@ -88,7 +121,7 @@ export const Contact = (props) => {
                     id="message"
                     className="form-control"
                     rows="5"
-                    placeholder="Poruka"
+                    placeholder={contactText[language].messagePlaceholder}
                     required
                     onChange={handleChange}
                     value={message}
@@ -97,29 +130,29 @@ export const Contact = (props) => {
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Pošalji
+                  {contactText[language].submitButton}
                 </button>
               </form>
             </div>
             <div className="col-md-4" style={{ paddingLeft: "20px" }}>
               <div className="row">
                 <div className="col-md-6">
-                  <h3>Informacije</h3>
+                  <h3>{contactText[language].information}</h3>
                   <div className="contact-item">
                     <span>
-                      <i className="fa fa-map-marker"></i> Adresa
+                      <i className="fa fa-map-marker"></i> {contactText[language].address}
                     </span>
                     <p>{props.data ? props.data.address : "loading"}</p>
                   </div>
                   <div className="contact-item">
                     <span>
-                      <i className="fa fa-phone"></i> Telefon komercijalni
+                      <i className="fa fa-phone"></i> {contactText[language].commercialPhone}
                     </span>
                     <p>{props.data ? props.data.phone : "loading"}</p>
                   </div>
                   <div className="contact-item">
                     <span>
-                      <i className="fa fa-envelope-o"></i> Email
+                      <i className="fa fa-envelope-o"></i> {contactText[language].emailLabel}
                     </span>
                     <p>
                       <a href={`mailto:${props.data?.email}`} style={{ color: "#9b0038" }}>
@@ -129,7 +162,7 @@ export const Contact = (props) => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <h3>Ogranak</h3>
+                  <h3>{contactText[language].branch}</h3>
                   <div className="contact-item">
                     <span>
                       <i className="fa fa-location-arrow"></i> MCC Vinarija
@@ -138,7 +171,7 @@ export const Contact = (props) => {
                   </div>
                   <div className="contact-item">
                     <span>
-                      <i className="fa fa-phone"></i> Telefon
+                      <i className="fa fa-phone"></i> {contactText[language].phone}
                     </span>
                     <p>
                       +381 63698112 Branka
@@ -148,7 +181,7 @@ export const Contact = (props) => {
                   </div>
                   <div className="contact-item">
                     <span>
-                      <i className="fa fa-envelope-o"></i> Email
+                      <i className="fa fa-envelope-o"></i> {contactText[language].emailLabel}
                     </span>
                     <p>
                       <a href="mailto:MCCkancelarija@gmail.com" style={{ color: "#9b0038" }}>

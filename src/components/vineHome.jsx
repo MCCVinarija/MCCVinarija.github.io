@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../css/vineHome.css'
 import Carousel from "react-multi-carousel";
 import { Link } from "react-router-dom";
 import "react-multi-carousel/lib/styles.css";
+import { LanguageContext } from '../LanguageContext';
 
 const responsive = {
   desktop: {
@@ -22,7 +23,55 @@ const responsive = {
   }
 };
 
-export const VineHome = (props) => {
+export const VineHome = () => {
+  const { language = 'sr' } = useContext(LanguageContext) || {};
+
+  const vineText = {
+    sr: {
+      cabernet: 'Suvo crveno vino, kupaža dva vina sa izraženim voćnim stilom.',
+      coupage: 'Suvo crveno vino sa notama vanile, duvana, slatkog drveta i mineralnosti.',
+      pinot: 'Suvo crveno vino sa notama crvenog voća, cimeta, peperminta i zelenog čaja.',
+      riesling: 'Suvo belo vino sa aromama jabuke, breskve, ruže i ljubičice u pozadini.',
+      sauvignon: 'Suvo belo vino, sveže sa voćnim notama i laganom herbalnom završnicom.',
+      rose: 'Suvo roze vino sa laganom strukturom i dugom završnicom.',
+      traminac: 'Suvo belo vino sa izraženom aromom tropskog voća (breskve i začina).',
+      malbec: 'Suvo crveno vino sa izraženim voćnim stilom i notama cvetnih i začinskih aroma.',
+    },
+    en: {
+      cabernet: 'Dry red wine, a blend of two grapes with a pronounced fruity style.',
+      coupage: 'Dry red wine with notes of vanilla, tobacco, sweet wood and minerality.',
+      pinot: 'Dry red wine with notes of red fruit, cinnamon, peppermint and green tea.',
+      riesling: 'Dry white wine with aromas of apple, peach, rose and violet in the background.',
+      sauvignon: 'Dry white wine, fresh with fruity notes and a light herbal finish.',
+      rose: 'Dry rosé wine with a light structure and long finish.',
+      traminac: 'Dry white wine with pronounced aromas of tropical fruit (peach and spice).',
+      malbec: 'Dry red wine with a pronounced fruity style and notes of floral and spicy aromas.',
+    },
+  };
+
+  const vineTitles = {
+    sr: {
+      cabernet: 'Cabernet Franc-Cabernet Sauvignon',
+      coupage: 'Coupage',
+      pinot: 'Pinot Noir',
+      riesling: 'Rajnski Riesling',
+      sauvignon: 'Sauvignon Blanc',
+      rose: 'Rose Tajna',
+      traminac: 'Traminac',
+      malbec: 'Merlot Malbec',
+    },
+    en: {
+      cabernet: 'Cabernet Franc-Cabernet Sauvignon',
+      coupage: 'Coupage',
+      pinot: 'Pinot Noir',
+      riesling: 'Riesling',
+      sauvignon: 'Sauvignon Blanc',
+      rose: 'Rose Tajna',
+      traminac: 'Traminac',
+      malbec: 'Merlot Malbec',
+    },
+  };
+
   return (
     
     <div className='vine-home-carousel'> 
@@ -44,8 +93,8 @@ export const VineHome = (props) => {
             <img src="img/velika vina/cabernet.png" alt="Cabernet Franc-Cabernet Sauvignon" />
           </div>
           <div className="wine-card-content">
-            <h3>Cabernet Franc-Cabernet Sauvignon</h3>
-            <p>Suvo crveno vino, kupaža dva vina sa izraženim voćnim stilom.</p>
+            <h3>{vineTitles[language].cabernet}</h3>
+            <p>{vineText[language].cabernet}</p>
           </div>
         </div>
       </Link>
@@ -56,8 +105,8 @@ export const VineHome = (props) => {
             <img src="/img/velika vina/coupage.png" alt="Coupage" />
           </div>
           <div className="wine-card-content">
-            <h3>Coupage</h3>
-            <p>Suvo crveno vino sa notama vanile, duvana, slatkog drveta i mineralnosti.</p>
+            <h3>{vineTitles[language].coupage}</h3>
+            <p>{vineText[language].coupage}</p>
           </div>
         </div>
       </Link>
@@ -68,8 +117,8 @@ export const VineHome = (props) => {
             <img src="/img/velika vina/pinot.png" alt="Pinot Noir" />
           </div>
           <div className="wine-card-content">
-            <h3>Pinot Noir</h3>
-            <p>Suvo crveno vino sa notama crvenog voća, cimeta, peperminta i zelenog čaja.</p>
+            <h3>{vineTitles[language].pinot}</h3>
+            <p>{vineText[language].pinot}</p>
           </div>
         </div>
       </Link>
@@ -80,8 +129,8 @@ export const VineHome = (props) => {
             <img src="/img/velika vina/rajski.png" alt="Rajnski Riesling" />
           </div>
           <div className="wine-card-content">
-            <h3>Rajnski Riesling</h3>
-            <p>Suvo belo vino sa aromama jabuke, breskve, ruže i ljubičice u pozadini.</p>
+            <h3>{vineTitles[language].riesling}</h3>
+            <p>{vineText[language].riesling}</p>
           </div>
         </div>
       </Link>
@@ -92,8 +141,8 @@ export const VineHome = (props) => {
             <img src="/img/velika vina/sauvignon.png" alt="Sauvignon Blanc" />
           </div>
           <div className="wine-card-content">
-            <h3>Sauvignon Blanc</h3>
-            <p>Suvo belo vino, sveže sa voćnim notama i laganom herbalnom završnicom.</p>
+            <h3>{vineTitles[language].sauvignon}</h3>
+            <p>{vineText[language].sauvignon}</p>
           </div>
         </div>
       </Link>
@@ -104,8 +153,8 @@ export const VineHome = (props) => {
             <img src="/img/velika vina/tajna.png" alt="Rose Tajna" />
           </div>
           <div className="wine-card-content">
-            <h3>Rose Tajna</h3>
-            <p>Suvo roze vino sa laganom strukturom i dugom završnicom.</p>
+            <h3>{vineTitles[language].rose}</h3>
+            <p>{vineText[language].rose}</p>
           </div>
         </div>
       </Link>
@@ -116,8 +165,8 @@ export const VineHome = (props) => {
             <img src="/img/velika vina/traminac.png" alt="Traminac" />
           </div>
           <div className="wine-card-content">
-            <h3>Traminac</h3>
-            <p>Suvo belo vino sa izraženom aromom tropskog voća (breskve i začina).</p>
+            <h3>{vineTitles[language].traminac}</h3>
+            <p>{vineText[language].traminac}</p>
           </div>
         </div>
       </Link>
@@ -128,8 +177,8 @@ export const VineHome = (props) => {
             <img src="/img/velika vina/merlot.png" alt="Merlot Malbec" />
           </div>
           <div className="wine-card-content">
-            <h3>Merlot Malbec</h3>
-            <p>Suvo crveno vino sa izraženim voćnim stilom i notama cvetnih i začinskih aroma.</p>
+            <h3>{vineTitles[language].malbec}</h3>
+            <p>{vineText[language].malbec}</p>
           </div>
         </div>
       </Link>

@@ -10,6 +10,7 @@ import About from './pages/About';
 import NewsPage from './pages/News';
 import SingleNewsPage from './pages/singleNews';
 import { Layout } from './components/Layout';
+import { LanguageProvider } from './LanguageContext';
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -50,7 +51,9 @@ const router = createBrowserRouter([
 
 ReactDOM.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <LanguageProvider>
+      <RouterProvider router={router} />
+    </LanguageProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -16,16 +16,17 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
+
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
 
   return (
-    <div >
+    <div>
       <Navigation />
-      <Header/>
-      <VineHome></VineHome>
-      <NewsHome/>
+      <Header />
+      <VineHome />
+      <NewsHome />
       <Contact data={landingPageData.Contact} />
     </div>
   );

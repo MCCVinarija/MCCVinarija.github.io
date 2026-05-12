@@ -1,20 +1,47 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "../css/newsHome.css";
+import { LanguageContext } from "../LanguageContext";
 
-export const NewsHome = (props) => {
+export const NewsHome = () => {
+  const { language = 'sr' } = useContext(LanguageContext) || {};
+
+  const newsText = {
+    sr: {
+      vinarijaTitle: 'Vinarija',
+      vinarijaText:
+        'Naša vinarija je simbol posvećenosti kvalitetu i tradiciji. Ovde se spajaju tradicija i moderan pristup u nezaboravno iskustvo za sve ljubitelje dobrog vina. Dobrodošli u našu vinariju, gde svaka čaša postaje priča, a svaki trenutak nezaboravan doživljaj.',
+      degustacijaTitle: 'Degustacija i posete',
+      degustacijaText:
+        'U srcu naše vinarije, svaka čaša vina nosi dah posvećenosti, ljubavi i predanosti prema vinogradima koje smo pažljivo uzgajali. Kroz svaki gutljaj, gosti otkrivaju ne samo vrhunski ukus vina, već i priču o našem posvećenom radu i strasti. Dobrodošli u naš kutak vinarske umetnosti, gde svaki trenutak postaje nezaboravno iskustvo puno uživanja i prijateljstva. Rezervišite degustaciju organskog i biodinamičkog vina sa prevozom luksuznim vozilom na ',
+      organskiTitle: 'Organski i biodinamicki sertifikat',
+      organskiText:
+        'U svetu organske proizvodnje vina, svaka loza postaje priča, svaki grozd nosi sa sobom notu brižne pažnje prema prirodi. U svakoj čaši se ocrtava harmonija između zemlje, sunca i veštine vinara, stvarajući čarobnu simfoniju ukusa koja oduševljava sva čula.',
+      linkText: 'linku',
+    },
+    en: {
+      vinarijaTitle: 'Winery',
+      vinarijaText:
+        'Our winery is a symbol of dedication to quality and tradition. Here, tradition and a modern approach merge into an unforgettable experience for all lovers of fine wine. Welcome to our winery, where every glass becomes a story and every moment an unforgettable experience.',
+      degustacijaTitle: 'Tasting and visits',
+      degustacijaText:
+        'At the heart of our winery, every glass of wine carries a breath of dedication, love, and commitment to the vineyards we carefully cultivate. With each sip, guests discover not only the exquisite taste of wine but also the story of our devoted work and passion. Welcome to our corner of winemaking art, where every moment becomes an unforgettable experience full of enjoyment and friendship. Book a tasting of organic and biodynamic wine with luxury transport at ',
+      organskiTitle: 'Organic and biodynamic certification',
+      organskiText:
+        'In the world of organic wine production, every vine becomes a story, every grape carries a note of thoughtful care for nature. In every glass, the harmony between the earth, the sun, and the winemaker’s skill is drawn, creating a magical symphony of flavor that delights all the senses.',
+      linkText: 'this link',
+    },
+  };
+
   return (
     <div className="news-home-container">
       <div className="news-grid">
         <Link to="/about#Vinarija" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div className="news-card">
             <div className="news-card-content">
-              <h2 className="news-card-title">Vinarija</h2>
+              <h2 className="news-card-title">{newsText[language].vinarijaTitle}</h2>
               <p className="news-card-text">
-                Naša vinarija je simbol posvećenosti kvalitetu i tradiciji. Ovde
-                se spajaju tradicija i moderan pristup u nezaboravno iskustvo
-                za sve ljubitelje dobrog vina. Dobrodošli u našu vinariju, gde
-                svaka čaša postaje priča, a svaki trenutak nezaboravan doživljaj.
+                {newsText[language].vinarijaText}
               </p>
             </div>
             <img
@@ -33,15 +60,10 @@ export const NewsHome = (props) => {
               alt="Degustacija i posete"
             />
             <div className="news-card-content">
-              <h2 className="news-card-title">Degustacija i posete</h2>
+              <h2 className="news-card-title">{newsText[language].degustacijaTitle}</h2>
               <p className="news-card-text">
-                U srcu naše vinarije, svaka čaša vina nosi dah posvećenosti,
-                ljubavi i predanosti prema vinogradima koje smo pažljivo uzgajali.
-                Kroz svaki gutljaj, gosti otkrivaju ne samo vrhunski ukus vina,
-                već i priču o našem posvećenom radu i strasti. Dobrodošli u naš
-                kutak vinarske umetnosti, gde svaki trenutak postaje nezaboravno
-                iskustvo puno uživanja i prijateljstva.
-                Rezervišite degustaciju organskog i biodinamičkog vina sa prevozom luksuznim vozilom na <a href="https://liderlimo.rs/usluge/vinski-turizam/">linku</a>
+                {newsText[language].degustacijaText}
+                <a href="https://liderlimo.rs/usluge/vinski-turizam/">{newsText[language].linkText}</a>
               </p>
             </div>
           </div>
@@ -50,12 +72,9 @@ export const NewsHome = (props) => {
         <Link to="/about#Organski" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div className="news-card">
             <div className="news-card-content">
-              <h2 className="news-card-title">Organski i biodinamicki sertifikat</h2>
+              <h2 className="news-card-title">{newsText[language].organskiTitle}</h2>
               <p className="news-card-text">
-                U svetu organske proizvodnje vina, svaka loza postaje priča, svaki
-                grozd nosi sa sobom notu brižne pažnje prema prirodi. U svakoj
-                čaši se ocrtava harmonija između zemlje, sunca i veštine vinara,
-                stvarajući čarobnu simfoniju ukusa koja oduševljava sva čula.
+                {newsText[language].organskiText}
               </p>
             </div>
             <img

@@ -1,8 +1,37 @@
-﻿import React from "react";
+﻿import React, { useContext } from "react";
 import "../css/vineHome.css";
 import "../css/shop.css";
+import { LanguageContext } from "../LanguageContext";
 
 export const Shop = (props) => {
+  const { language = 'sr' } = useContext(LanguageContext) || {};
+  const shopText = {
+    sr: {
+      onlineTitle: 'Poručite online',
+      onlineDesc: 'Poručivanje direktno sa našeg sajta. Kliknite da posetite MCC web prodavnicu.',
+      beograd: 'Beograd',
+      noviSad: 'Novi Sad',
+      vojvodina: 'Vojvodina',
+      vinoteke: 'Vinoteke',
+      restorani: 'Restorani',
+      hoteli: 'Hoteli',
+      phoneLabel: 'Tel:',
+      linkText: 'Kliknite da posetite MCC web prodavnicu.',
+    },
+    en: {
+      onlineTitle: 'Order online',
+      onlineDesc: 'Order directly from our website. Click to visit the MCC web shop.',
+      beograd: 'Belgrade',
+      noviSad: 'Novi Sad',
+      vojvodina: 'Vojvodina',
+      vinoteke: 'Wine shops',
+      restorani: 'Restaurants',
+      hoteli: 'Hotels',
+      phoneLabel: 'Phone:',
+      linkText: 'Click to visit the MCC web shop.',
+    },
+  };
+
   const beogradWine = [
    // { name: "Enoteka Fino Vino", address: "Pop Lukina 6, Stari Grad", phone: "011/403-0962", info: "Rade dostavu!" },
     { name: "Ours Vinoteka & Rakija Shop", address: "Ilije Stojadinovića 63, Čukarica", phone: "062/244111", website: "https://ours.rs/" },
@@ -83,7 +112,7 @@ export const Shop = (props) => {
     <div id="shop" style={{ paddingTop: 150 }}>
       <div className="shop-container">
         <div className="section-title">
-          <h2>Poručite online</h2>
+          <h2>{shopText[language].onlineTitle}</h2>
         </div>
 
         <div className="shop-online-grid">
@@ -94,7 +123,7 @@ export const Shop = (props) => {
               </div>
               <div className="wine-card-content">
                 <h3>MCC Vino</h3>
-                <p>Poručivanje direktno sa našeg sajta. Kliknite da posetite MCC web prodavnicu.</p>
+                <p>{shopText[language].onlineDesc}</p>
               </div>
             </div>
           </a>
@@ -102,27 +131,27 @@ export const Shop = (props) => {
 
         <div className="shop-locations-wrapper">
           <div className="shop-location-section">
-            <h2>Beograd</h2>
-            <h3 className="subcategory-title">Vinoteke</h3>
+            <h2>{shopText[language].beograd}</h2>
+            <h3 className="subcategory-title">{shopText[language].vinoteke}</h3>
             {beogradWine.map((location, index) => (
               <div key={index} className="location-card">
                 <h4>{location.name}</h4>
                 <p>{location.address}</p>
                 {location.address2 && <p>{location.address2}</p>}
-                {location.phone && <p>Tel: {location.phone}</p>}
+                {location.phone && <p>{shopText[language].phoneLabel} {location.phone}</p>}
                 {location.website && <p>{location.website}</p>}
                 {location.info && <p>{location.info}</p>}
               </div>
             ))}
-            <h3 className="subcategory-title">Restorani</h3>
+            <h3 className="subcategory-title">{shopText[language].restorani}</h3>
             {beogradRestaurants.map((location, index) => (
               <div key={index} className="location-card">
                 <h4>{location.name}</h4>
                 <p>{location.address}</p>
-                {location.phone && <p>Tel: {location.phone}</p>}
+                {location.phone && <p>{shopText[language].phoneLabel} {location.phone}</p>}
               </div>
             ))}
-            <h3 className="subcategory-title">Hoteli</h3>
+            <h3 className="subcategory-title">{shopText[language].hoteli}</h3>
             {beogradHotels.map((location, index) => (
               <div key={index} className="location-card">
                 <h4>{location.name}</h4>
@@ -132,8 +161,8 @@ export const Shop = (props) => {
           </div>
 
           <div className="shop-location-section">
-            <h2>Novi Sad</h2>
-            <h3 className="subcategory-title">Vinoteke</h3>
+            <h2>{shopText[language].noviSad}</h2>
+            <h3 className="subcategory-title">{shopText[language].vinoteke}</h3>
             {noviSadWine.map((location, index) => (
               <div key={index} className="location-card">
                 <h4>{location.name}</h4>
@@ -141,15 +170,15 @@ export const Shop = (props) => {
                 {location.phone && <p>Tel: {location.phone}</p>}
               </div>
             ))}
-            <h3 className="subcategory-title">Restorani</h3>
+            <h3 className="subcategory-title">{shopText[language].restorani}</h3>
             {noviSadRestaurants.map((location, index) => (
               <div key={index} className="location-card">
                 <h4>{location.name}</h4>
                 <p>{location.address}</p>
-                {location.phone && <p>Tel: {location.phone}</p>}
+                {location.phone && <p>{shopText[language].phoneLabel} {location.phone}</p>}
               </div>
             ))}
-            <h2>Vojvodina</h2>
+            <h2>{shopText[language].vojvodina}</h2>
             {vojvodina.map((location, index) => (
               <div key={index} className="location-card">
                 <h4>{location.name}</h4>
