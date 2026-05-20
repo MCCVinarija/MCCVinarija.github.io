@@ -33,14 +33,16 @@ export const Shop = (props) => {
   };
 
   const beogradWine = [
-   // { name: "Enoteka Fino Vino", address: "Pop Lukina 6, Stari Grad", phone: "011/403-0962", info: "Rade dostavu!" },
+   // { name: "Enoteka Fino Vino", address: "Pop Lukina 6, Stari Grad", phone: "011/403-0962"" },
     { name: "Ours Vinoteka & Rakija Shop", address: "Ilije Stojadinovića 63, Čukarica", phone: "062/244111", website: "https://ours.rs/" },
+    { name: "Truffle Shop", address: "Tadije Sondermajera 12, Novi Beograd"},
+    { name: "Truffle Shop 2", address: " Pere Velemirovica 21",},
     { name: "Srpska Kuća Vina", address: "Antifašističke borbe 15, Novi Beograd", phone: "069/2137475", website: "www.enotria.rs" },
-    { name: "Enoteka Premier", address: "Vojvođanska 63, lokal 13, Novi Beograd", phone: "+381 63 86 38 217", info: "Rade dostavu!", address2: "Bul. Zorana Đinđića 125đ" },
-   // { name: "Vinoteka Ukusa", address: "Nikole Tesle 2, Zemun", phone: "+381 63 317 306", info: "Rade dostavu!" },
-    { name: "Stara Kapetanija shop", address: "Kej Oslobođenja 8, Zemun", phone: "011/316-1965", info: "Rade dostavu!" },
+    { name: "Enoteka Premier", address: "Vojvođanska 63, lokal 13, Novi Beograd", phone: "+381 63 86 38 217",  address2: "Bul. Zorana Đinđića 125đ" },
+   // { name: "Vinoteka Ukusa", address: "Nikole Tesle 2, Zemun", phone: "+381 63 317 306", },
+    { name: "Stara Kapetanija shop", address: "Kej Oslobođenja 8, Zemun", phone: "011/316-1965",  },
     { name: "Vinoteka Vino I Vinogradarstvo - Vina Mosaica", address: "Zmaj od Noćaja 9, Dorćol", info: "Vino će biti isporučena u roku od 48h." },
-   // { name: "Vinomond", address: "Lagumska 16, Zemun", phone: "011/277-3023", info: "Rade dostavu!" },
+   // { name: "Vinomond", address: "Lagumska 16, Zemun", phone: "011/277-3023",  },
    // { name: "Drink Story - Vinoarija", address: "Jedaneste krajiške divizije 72, Rakovica", phone: "069/1991961" },
   ];
 

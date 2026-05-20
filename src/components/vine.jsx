@@ -6,11 +6,6 @@ import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { LanguageContext } from "../LanguageContext";
 
-const handleDownload = (pdfPath) => {
-  // Triggering download
-  window.open(pdfPath, "_blank");
-};
-
 export const Vine = (props) => {
   const { language = 'sr' } = useContext(LanguageContext) || {};
 
@@ -32,35 +27,39 @@ export const Vine = (props) => {
       coupageTitle: 'Kupaža/Coupage',
       coupageSubtitle: 'Merlot, Malbec, Cabernet Franc, Cabernet Sauvignon',
       coupageDesc:
-        'Pravilnim izborom udela svake sorte u kupaži, ovo vino odlikuje punoću voćnih aroma sa udelom začina i cveća. Procesom odležavanja u vinu su se razvile note vanile, duvana, slatkog drveta i mineralnosti. Uz vino od hrane lepo se slažu jela sa roštilja, biftek, ćuretina, odresci, lazanja, razna variva.',
+        'Pravilnim izborom udela svake sorte u kupaži, ovo vino odlikuje punoću voćnih aroma sa udelom začina i cveća. Procesom minimalnim odležavanjem od 18 meseci u vinu su se razvile note vanile, duvana, slatkog drveta i mineralnosti. ',
+      sekaTitle: 'Bela Fantazija Seka',
+      sekaSubtitle: 'Rajnski Riesling, Sauvignon Blanc, Traminac',
+      sekaDesc:
+        'Mešavina 3 sorte grožđa u kojima dominiraju Rajnski rizling 70%, Sovinjon blan 20% i Traminac 10%. Na nosu je cvetan sa notama suvog voća. Ukus je pun, harmoničan i postojan.',
       traminacTitle: 'Traminac',
       traminacSubtitle: 'Traminac',
       traminacDesc:
-        'Belo vino sortnog karaktera, izbalansirano, sa slabo izraženim kiselinama, žuto-zelene boje. Izražene arome tropskog voća, breskve i začina. Uz vino od hrane lepo se slaže: dagnje, jegulje, pica, omlet, pohovana ćuretina, meki sirevi izraženije arome (egzotična kuhinja).',
+        'Belo vino sortnog karaktera, izbalansirano, sa slabo izraženim kiselinama, žuto-zelene boje. Izražene arome tropskog voća, breskve i začina.',
       rieslingTitle: 'Rajnski Riesling',
       rieslingSubtitle: 'Rajnski Riesling',
       rieslingDesc:
-        'Vino je izraženo sortnog karaktera, zeleno-žute boje, sa aromama jabuke, breskve, ruže i u pozadini ljubičice. Balansirano na ukusu sa svežim, izraženim kiselinama, sa petrolejskim aromama. Uz ovo vino od hrane lepo se slaže: šunka, kavijar, pašteta od tunjevine, dimljeni losos, pijani šaran, smuđ u pavlaci, piletina na žaru, sve vrste pečenja, polutvrdi sirevi.',
+        'Vino je izraženo sortnog karaktera, zeleno-žute boje, sa aromama jabuke, breskve, ruže i u pozadini ljubičice. Balansirano na ukusu sa svežim, izraženim kiselinama, sa petrolejskim aromama.',
       malbecTitle: 'Merlot/Malbec',
       malbecSubtitle: 'Merlot i Malbec',
       malbecDesc:
-        'Kupaža dve sorte grožđa sa dominantnim uticajem Merloa. Udeo Merloa 70%, Malbeka 30%. Izraženi voćni stil sa notama cvetnih i začinskih aroma. Procesom odležavanja u vinu su se razvile i arome slatkog drveta i vanile. Odležava 12 meseci u hrastovom buretu i još minimum 10 meseci u boci. Uz vino od hrane lepo se slažu goveđa salata, pohovana paprika, kolenica sa renom, jela sa roštilja, biftek, polutvrdi sirevi, lazanja.',
-      cabernetTitle: 'Kaberne Frans-Kaberne Sovinjon',
-      cabernetSubtitle: 'Cabernet Franc- Cabernet Sauvignon',
+        'Kupaža dve sorte grožđa sa dominantnim uticajem Merloa. Udeo Merloa 70%, Malbeka 30%. Izraženi voćni stil sa notama cvetnih i začinskih aroma. Procesom odležavanja  u vinu su se razvile i arome slatkog drveta i vanile. Odležava 18 meseci u hrastovom buretu i još minimum 10 meseci u boci. ',
+      cabernetTitle: 'Kaberne Fran-Kaberne Sovinjon',
+      cabernetSubtitle: 'Cabernet Fran- Cabernet Sauvignon',
       cabernetDesc:
-        'Kupaža dve sorte grožđa sa dominantnijim uticajem Kaberne Sovinjona oko 60% uz 40% Kaberne Frana. Odležava 12 meseci u hrastovom buretu i minimum 10 meseci u boci. Kupaža dva vina sa izraženim voćnim stilom (crno bobičasto voće) sa notama cveća i paprike. Procesom odležavanja u vinu su se razvile note vanile, duvana i slatkog drveta. Uz vino se od hrane lepo slažu jela sa roštilja, biftek, svinjski kare, ćuretina na podvarku, jela ispod sača.',
+        'Kupaža dve sorte grožđa sa dominantnijim uticajem Kaberne Sovinjona oko 60% uz 40% Kaberne Frana. Odležava 18 meseci u hrastovom buretu i minimum 10 meseci u boci. Kupaža dva vina sa izraženim voćnim stilom (crno bobičasto voće) sa notama cveća i paprike. Procesom odležavanja u vinu su se razvile note vanile, duvana i slatkog drveta.',
       blancTitle: 'Sovinjon Blank',
       blancSubtitle: 'Sauvignon Blanc',
       blancDesc:
-        'Vino zeleno-žute boje, voćnog karaktera na mirisu, strukturalno puno i sveže sa voćnim notama i laganom herbalnom završnicom na ukusu. Uz ovo vino od hrane lepo se slaže: jela i salate na bazi belog mesa i bele ribe.',
+        'Vino zeleno-žute boje, voćnog karaktera na mirisu, strukturalno puno i sveže sa voćnim notama i laganom herbalnom završnicom na ukusu.',
       pinotTitle: 'Pinot Noir',
       pinotSubtitle: 'Pinot Noir',
       pinotDesc:
-        'Vino izraženih sortnih karakteristika, izbalansirano, voćno sa notama crvenog voća koje prate arome: cimeta, peperminta i zelenog čaja. Procesom odležavanja razvile su se i note mineralnosti kao i vanile i slatkog drveta. Odležava 12 meseci u hrastovom buretu i još minimum 10 meseci u boci. Uz ovo vino lepo se slažu jela kao što su: losos (na žaru) i druge ribe, biftek, piletina (pogotovo kuvana u crvenom vinu), pržena i dinstana jagnjetina, sva jela u kojima pečurke karakterišu glavni element ukusa, fazan, patka... Najbolje su jednostavne i bogate namirnice, sirevi.',
+        'Vino izraženih sortnih karakteristika, izbalansirano, voćno sa notama crvenog voća koje prate arome: cimeta, peperminta i zelenog čaja. Procesom odležavanja razvile su se i note mineralnosti kao i vanile i slatkog drveta. Odležava 18 meseci u hrastovom buretu i još minimum 10 meseci u boci.',
       roseTitle: 'Roze Tajna',
       roseSubtitle: 'Cabernet Sauvignon',
       roseDesc:
-        'Sveže, lagano vino balansiranog tela. Na mirisu cvetne note, crveno voće, sa primesama začinsko-herbalnih nota. Na ukusu lagana struktura sa dužom završnicom. Uz vino se slaže lakša hrana: mladi sirevi, paste, pice, salate.',
+        'Sveže, lagano vino balansiranog tela. Na mirisu cvetne note, crveno voće, sa primesama začinsko-herbalnih nota. Na ukusu lagana struktura sa dužom završnicom.',
       moreText: 'Više o vinu',
       orderText: 'Poruči',
     },
@@ -85,6 +84,10 @@ export const Vine = (props) => {
       cabernetSubtitle: 'Cabernet Franc and Cabernet Sauvignon',
       cabernetDesc:
         'A blend dominated by Cabernet Sauvignon at about 60% with 40% Cabernet Franc. Aged 12 months in oak barrels and at least 10 months in bottle. The blend has a pronounced fruity style with black berry fruit, floral and pepper notes. Aging also develops vanilla, tobacco and sweet wood. It pairs well with grilled dishes, steak, pork loin, turkey stew, and dishes cooked under a lid.',
+      sekaTitle: 'White Fantasy Seka',
+      sekaSubtitle: 'Riesling, Sauvignon Blanc, Traminer',
+      sekaDesc:
+        'A blend of three grape varieties led by 70% Rhine Riesling, 20% Sauvignon Blanc, and 10% Traminer. On the nose it is floral with notes of dried fruit. The palate is full, harmonious, and persistent.',
       blancTitle: 'Sauvignon Blanc',
       blancSubtitle: 'Sauvignon Blanc',
       blancDesc:
@@ -115,8 +118,9 @@ export const Vine = (props) => {
             <p>{wineText[language].coupageDesc}</p>
 
             <a
-              href="#"
-              onClick={() => handleDownload("../pdfs/coupage.pdf")}
+              href="/pdfs/coupage.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h4 style={{ marginBottom: 10, fontStyle: "regular" }}>
                 {" "}
@@ -137,6 +141,7 @@ export const Vine = (props) => {
           <div class="photoRight">
             <img src="/img/vina/TRAMINAC.png" alt="TRAMINAC" />
           </div>
+
           <div class="descriptionRight">
             <h2>{wineText[language].traminacTitle}</h2>
             <h4>{wineText[language].traminacSubtitle}</h4>
@@ -146,8 +151,9 @@ export const Vine = (props) => {
             <br />
 
             <a
-              href="#"
-              onClick={() => handleDownload("../pdfs/traminac.pdf")}
+              href="/pdfs/traminac.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h4 style={{ marginBottom: 10, fontStyle: "regular" }}>
               {wineText[language].moreText} <FontAwesomeIcon icon={faWineBottle} />
@@ -173,8 +179,9 @@ export const Vine = (props) => {
             <br />
 
             <a
-              href="#"
-              onClick={() => handleDownload("../pdfs/rajnski.pdf")}
+              href="/pdfs/rajnski.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h4 style={{ marginBottom: 10, fontStyle: "regular" }}>
                 {" "}
@@ -204,8 +211,9 @@ export const Vine = (props) => {
             <br />
 
             <a
-              href="#"
-              onClick={() => handleDownload("../pdfs/Merlot.pdf")}
+              href="/pdfs/Merlot.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h4 style={{ marginBottom: 10, fontStyle: "regular" }}>
                 {" "}
@@ -236,8 +244,9 @@ export const Vine = (props) => {
             <br />
 
             <a
-              href="#"
-              onClick={() => handleDownload("../pdfs/Cabernet.pdf")}
+              href="/pdfs/Cabernet.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h4 style={{ marginBottom: 10, fontStyle: "regular" }}>
                 {" "}
@@ -256,7 +265,7 @@ export const Vine = (props) => {
 
         <div class="card" id="blanc">
           <div class="photoRight">
-            <img src="/img/vina/SAUVIGNON BLANC.png" alt="MALBEC" />
+            <img src="/img/vina/SAUVIGNON BLANC.png" alt="SAUVIGNON BLANC" />
           </div>
           <div class="descriptionRight">
             <h2>{wineText[language].blancTitle}</h2>
@@ -267,8 +276,9 @@ export const Vine = (props) => {
             <br />
 
             <a
-              href="#"
-              onClick={() => handleDownload("../pdfs/sauvignon.pdf")}
+              href="/pdfs/sauvignon.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h4 style={{ marginBottom: 10, fontStyle: "regular" }}>
                 {" "}
@@ -285,21 +295,22 @@ export const Vine = (props) => {
             </Link>
           </div>
         </div>
-        <div class="card" id="pinot">
+        <div class="card" id="rose">
           <div class="photo">
-            <img src="/img/vina/PINOT NOAR.png" alt="RIZLING" />
+            <img src="/img/vina/ROSE TAJNA.png" alt="ROSE TAJNA" />
           </div>
           <div class="description">
-            <h2>{wineText[language].pinotTitle}</h2>
-            <h4>{wineText[language].pinotSubtitle}</h4>
+            <h2>{wineText[language].roseTitle}</h2>
+            <h4>{wineText[language].roseSubtitle}</h4>
             <p>
-              {wineText[language].pinotDesc}
+              {wineText[language].roseDesc}
             </p>
             <br />
 
             <a
-              href="#"
-              onClick={() => handleDownload("../pdfs/pino.pdf")}
+              href="/pdfs/rose.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h4 style={{ marginBottom: 10, fontStyle: "regular" }}>
                 {" "}
@@ -315,21 +326,54 @@ export const Vine = (props) => {
             </Link>
           </div>
         </div>
-        <div class="card" id="rose">
-          <div class="photoRight">
-            <img src="/img/vina/ROSE TAJNA.png" alt="MALBEC" />
+        <div class="card" id="pinot">
+          <div class="photo">
+            <img src="/img/vina/PINOT NOAR.png" alt="PINOT NOIR" />
           </div>
-          <div class="descriptionRight">
-            <h2>{wineText[language].roseTitle}</h2>
-            <h4>{wineText[language].roseSubtitle}</h4>
-            <p class="pRight">
-              {wineText[language].roseDesc}
+          <div class="description">
+            <h2>{wineText[language].pinotTitle}</h2>
+            <h4>{wineText[language].pinotSubtitle}</h4>
+            <p>
+              {wineText[language].pinotDesc}
             </p>
             <br />
 
             <a
-              href="#"
-              onClick={() => handleDownload("../pdfs/rose.pdf")}
+              href="/pdfs/Pino.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h4 style={{ marginBottom: 10, fontStyle: "regular" }}>
+                {" "}
+                <FontAwesomeIcon icon={faWineBottle} /> {wineText[language].moreText}
+              </h4>
+            </a>
+
+            <Link to="/shop">
+              <h4>
+                {" "}
+                <FontAwesomeIcon icon={faShoppingBasket} /> {wineText[language].orderText}
+              </h4>
+            </Link>
+          </div>
+        </div>
+      
+        <div class="card" id="seka">
+          <div class="photoRight">
+            <img src="/img/vina/SEKA.png" alt="SEKA" />
+          </div>
+          <div class="descriptionRight">
+            <h2>{wineText[language].sekaTitle}</h2>
+            <h4>{wineText[language].sekaSubtitle}</h4>
+            <p class="pRight">
+              {wineText[language].sekaDesc}
+            </p>
+            <br />
+
+            <a
+              href="/pdfs/seka.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h4 style={{ marginBottom: 10, fontStyle: "regular" }}>
                 {" "}
@@ -349,6 +393,7 @@ export const Vine = (props) => {
         </div>
       </div>
     </div>
+    
   );
 };
 

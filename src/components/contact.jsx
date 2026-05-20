@@ -1,6 +1,5 @@
-import { useContext, useState } from "react";
+import React, { useContext, useState, useRef } from "react";
 import emailjs from "emailjs-com";
-import React from "react";
 import { LanguageContext } from "../LanguageContext";
 
 const initialState = {
@@ -8,68 +7,79 @@ const initialState = {
   email: "",
   message: "",
 };
+
 export const Contact = (props) => {
-  const { language = 'sr' } = useContext(LanguageContext);
-  const [{ name, email, message }, setState] = useState(initialState);
+  const { language = "sr" } = useContext(LanguageContext);
+  const [formData, setFormData] = useState(initialState);
+  const [status, setStatus] = useState(null);
+  const formRef = useRef(null);
 
   const contactText = {
     sr: {
-      title: 'Kontaktirajte nas',
+      title: "Kontaktirajte nas",
       description:
-        'Molimo vas da popunite obrazac i pošaljite nam email. Odgovorićemo vam što je pre moguće.',
-      namePlaceholder: 'Ime',
-      emailPlaceholder: 'Email',
-      messagePlaceholder: 'Poruka',
-      submitButton: 'Pošalji',
-      information: 'Informacije',
-      address: 'Adresa',
-      commercialPhone: 'Telefon komercijalni',
-      phone: 'Telefon',
-      branch: 'Ogranak',
-      emailLabel: 'Email',
+        "Molimo vas da popunite obrazac i pošaljite nam email. Odgovorićemo vam što je pre moguće.",
+      namePlaceholder: "Ime",
+      emailPlaceholder: "Email",
+      messagePlaceholder: "Poruka",
+      submitButton: "Pošalji",
+      information: "Informacije",
+      address: "Adresa",
+      commercialPhone: "Telefon komercijalni",
+      phone: "Telefon",
+      branch: "Ogranak",
+      emailLabel: "Email",
+      successMessage: "Poruka je uspešno poslata.",
+      errorMessage: "Slanje nije uspelo. Molimo pokušajte ponovo.",
     },
     en: {
-      title: 'Contact us',
+      title: "Contact us",
       description:
-        'Please fill in the form and send us an email. We will reply as soon as possible.',
-      namePlaceholder: 'Name',
-      emailPlaceholder: 'Email',
-      messagePlaceholder: 'Message',
-      submitButton: 'Send',
-      information: 'Information',
-      address: 'Address',
-      commercialPhone: 'Commercial phone',
-      phone: 'Phone',
-      branch: 'Branch',
-      emailLabel: 'Email',
+        "Please fill in the form and send us an email. We will reply as soon as possible.",
+      namePlaceholder: "Name",
+      emailPlaceholder: "Email",
+      messagePlaceholder: "Message",
+      submitButton: "Send",
+      information: "Information",
+      address: "Address",
+      commercialPhone: "Commercial phone",
+      phone: "Phone",
+      branch: "Branch",
+      emailLabel: "Email",
+      successMessage: "Message sent successfully.",
+      errorMessage: "Sending failed. Please try again later.",
     },
   };
 
+  const { name, email, message } = formData;
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
-  const clearState = () => setState({ ...initialState });
-  
-  
-  const handleSubmit = (e) => {
+
+  const clearState = () => setFormData(initialState);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
-    emailjs
-      .sendForm("service_88a3fbo", "template_4egcg0s", e.target, "sL2oOB0ZqAT2NlvtH")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
+    setStatus(null);
+
+    try {
+      const result = await emailjs.sendForm(
+        "service_88a3fbo",
+        "template_4egcg0s",
+        formRef.current,
+        "sL2oOB0ZqAT2NlvtH"
       );
+      console.log(result.text);
+      setStatus({ type: "success", message: contactText[language].successMessage });
+      clearState();
+    } catch (error) {
+      console.error(error.text || error);
+      setStatus({ type: "error", message: contactText[language].errorMessage });
+    }
   };
+
   return (
     <div>
       <div id="contact">
@@ -82,7 +92,7 @@ export const Contact = (props) => {
           </div>
           <div className="row">
             <div className="col-md-8">
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form ref={formRef} name="sentMessage" noValidate onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group" style={{ marginBottom: "20px" }}>
@@ -125,10 +135,14 @@ export const Contact = (props) => {
                     required
                     onChange={handleChange}
                     value={message}
-                  ></textarea>
+                  />
                   <p className="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
+                {status && (
+                  <div className={`form-status form-status-${status.type}`}>
+                    {status.message}
+                  </div>
+                )}
                 <button type="submit" className="btn btn-custom btn-lg">
                   {contactText[language].submitButton}
                 </button>

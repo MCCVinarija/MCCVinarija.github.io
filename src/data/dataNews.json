@@ -1,5 +1,94 @@
 [
+  {
+      "id": "26",
+      "naziv": " Vinarija MCC - Vino i vinogradarstvo",
+      "naziv_en": "",
+      "video": "https://www.youtube.com/watch?v=PnOb1aStMV8&t=8s",
+      "slike": ["/img/Galerija/0a.jpg"]
+    },
+  {
+      "id": "25",
+      "naziv": " Lady of Wine - MCC vina: Organska i biodinamička",
+      "naziv_en": "",
+      "slike": ["/img/Galerija/0c.jpg"],
+      "video": "https://www.youtube.com/watch?v=AAK2_vrTLmw"
+    },
+  {
+      "id": "24",
+      "naziv": "Biznis iz drugačijeg ugla | MCC organska vina i lepote Smederevske tvrđave ",
+      "naziv_en": "",
+      "maliOpis": "U novoj epizodi emisije Biznis iz drugačijeg ugla upoznajte inspirativne priče koje spajaju tradiciju, turizam i preduzetništvo. ",
+      "maliOpis_en": "",
+      "opis1": "Gost emisije je MCC vinarija sa Fruške gore, poznata po proizvodnji organskih i biodinamičkih vina nastalih u skladu sa prirodom i održivim principima proizvodnje. Kroz priču o vinima, vinogradima i jedinstvenom pristupu vinarstvu, otkrivamo kako nastaju vina vrhunskog kvaliteta sa autentičnim karakterom Fruške gore.",
+      "opis1_en": "",
+      "opis2":"U emisiji vas vodimo i kroz jednu od najznačajnijih istorijskih i turističkih destinacija Srbije – Smederevsku tvrđavu, simbol bogate kulturne baštine i nezaobilaznu atrakciju na Dunavu. ",
+      "opis2_en":"",
+      "opis3":"",
+       "video": "https://www.youtube.com/watch?v=chfOkL4SHFE&t=1030s",
+      "slike": ["/img/Galerija/24.jpg"]
+      
+    },
+  {
+      "id": "23",
+      "naziv": "Wine Vision by Open Balkan: Vinsko oranje balkanskog teroara ",
+      "naziv_en": "Love, Nature and Wine: The Organic Story of McC Vineyards from Fruška Gora",
+      "maliOpis": " Oduševljenje čitavim događajem potvrdila je i MW Karolin Gilbi (Caroline Gilby), jedan od vodećih svetskih stručnjaka za vino, predsednica žirija sve popularnijeg beogradskog nadmetanja ali i grupacije sudija određenih za vina Balkana na najvažnijem svetskom vinskom takmičenju Decanter u Londonu.",
+      "maliOpis_en": "On the slopes of Fruška Gora in Erdevik, Don McCulloch and Seka Nikolić craft wines using organic and biodynamic principles, relying on nature and traditional production methods. Their philosophy prioritizes quality over quantity, without chemicals or artificial additives.",
+      "opis1": "Naša Mcc Organska vinarija je osvojila 5 medalja.",
+      "opis1_en": "McC Winery was born from a love of wine, nature and a quieter life; the vineyards were planted only after years of restoring the soil from chemical residues. They draw inspiration from Fruška Gora's long winemaking history—vines have been grown there since Roman times. Today their wines reflect authentic terroir, sustainable practices, and the personal story of an international couple who found their home in Srem.",
+      "opis2":"Zlato : Kaberne Sovinjon-Kaberne Fran 2018, Traminac 2021",
+      "opis2_en":"Read more at: <a href=\"https://www.diplomacyandcommerce.rs/mcc-mcculloch-wines-all-natural-nectar-of-the-gods-from-fruska-gora/\" target=\"_blank\" rel=\"noopener noreferrer\">Diplomacy & Commerce — McC McCulloch Wines</a>",
+      "opis3":"Srebro:Rajnski Riesling 2018, Coupage 2018, Merlo Malbek 2018",
+      "slike": ["/img/Vesti/ww23.jpg","/img/Vesti/w203.jpg"],
+      "video": ["https://www.youtube.com/watch?v=DLZbpOs5tnM"]
 
+    },
+  {
+      "id": "22",
+      "naziv": "Tri medalje za MCC Organsku vinariju na Open Balkan Wine Trophy 2024 ",
+      "naziv_en": "Three Medals for MCC Organic Winery at Open Balkan Wine Trophy 2024",
+      "maliOpis": "Na ovogodišnjem međunarodnom vinskom takmičenju Open Balkan Wine Trophy 2024, MCC Organska vinarija ostvarila je veliki uspeh osvojivši čak tri medalje. Stručni žiri sastavljen od 25 vinskih sudija, među kojima je bilo i šest nosilaca prestižne titule Master of Wine (MW), birao je najbolja vina u 12 kategorija.",
+      "maliOpis_en": "At this year's international Open Balkan Wine Trophy 2024 competition, MCC Organic Winery achieved a major success by winning three medals. The expert jury of 25 wine judges, including six Masters of Wine, selected the best wines in 12 categories.",
+      "opis1": "MCC Organska vinarija osvojila je:",
+      "opis1_en": "MCC Organic Winery won:",
+      "opis2":"Zlatnu medalju za vino Kaberne Sovinjon – Kaberne Fran 2018",
+      "opis2_en":"Gold medal for Cabernet Sauvignon – Cabernet Franc 2018",
+      "opis3":"Bronzanu medalju za Merlo – Malbek 2020",
+      "opis3_en":"Bronze medal for Merlot – Malbec 2020",
+      "opis4":" Bronzanu medalju za Traminac 2021",
+      "opis4_en":"Bronze medal for Traminer 2021",
+      "opis5":" Ovo priznanje predstavlja još jednu potvrdu kvaliteta organskih vina sa Fruške gore i posvećenosti MCC vinarije prirodnoj i održivoj proizvodnji vina.",
+      "opis5_en":"This recognition is another confirmation of the quality of organic wines from Fruška Gora and MCC Winery's commitment to natural, sustainable wine production.",
+      "opis6":"",
+      "opis6_en":"",
+      "video": "https://www.youtube.com/watch?v=DLZbpOs5tnM",
+      "video_en": "https://www.youtube.com/watch?v=DLZbpOs5tnM",
+      "slike": ["/img/Vesti/w2014.jpg"]
+    },  
+  {
+      "id": "21",
+      "naziv": "Ljubav, priroda i vino: Organska priča McC vinarije sa Fruške gore ",
+      "naziv_en": "Love, Nature and Wine: The Organic Story of McC Vineyards from Fruška Gora",
+      "maliOpis": " Na obroncima Fruške gore, u Erdeviku, Don McCulloch i Seka Nikolić stvaraju vina po organskim i biodinamičkim principima, oslanjajući se na prirodu i tradicionalne metode proizvodnje. Njihova filozofija zasniva se na ideji da kvalitet mora biti važniji od količine, bez upotrebe hemikalija i veštačkih dodataka.",
+      "maliOpis_en": "On the slopes of Fruška Gora in Erdevik, Don McCulloch and Seka Nikolić craft wines using organic and biodynamic principles, relying on nature and traditional production methods. Their philosophy prioritizes quality over quantity, without chemicals or artificial additives.",
+      "opis1": "McC vinarija nastala je iz spoja ljubavi prema vinu, prirodi i mirnijem životu, a vinogradi su posađeni tek nakon višegodišnjeg „čišćenja“ zemljišta od hemije. Inspiraciju pronalaze u bogatoj vinskoj istoriji Fruške gore, gde se vinova loza uzgajala još u rimsko doba. Njихova вина danas predstavljaju spoj autentičnog terroira, održive proizvodnje i lične priče jednog međunarodnog para koji je svoj mir pronašao u Sremu.",
+      "opis1_en": "McC Winery was born from a love of wine, nature and a quieter life; the vineyards were planted only after years of restoring the soil from chemical residues. They draw inspiration from Fruška Gora's long winemaking history—vines have been grown there since Roman times. Today their wines reflect authentic terroir, sustainable practices, and the personal story of an international couple who found their home in Srem.",
+      "opis2":"Vise na: https://www.diplomacyandcommerce.rs/mcc-mcculloch-wines-all-natural-nectar-of-the-gods-from-fruska-gora/",
+      "opis2_en":"Read more at: <a href=\"https://www.diplomacyandcommerce.rs/mcc-mcculloch-wines-all-natural-nectar-of-the-gods-from-fruska-gora/\" target=\"_blank\" rel=\"noopener noreferrer\">Diplomacy & Commerce — McC McCulloch Wines</a>",
+      "slike": ["/img/Vesti/seka1.jpg","/img/Vesti/seka2.jpg"]
+    },
+  {
+    "id": "20",
+    "naziv": "DECANTER WORLD WINE AWARDS",
+    "naziv_en": "DECANTER WORLD WINE AWARDS",
+    "maliOpis": "U maju 2014. godine u Londonu, održano je najkompetentnije i najautoritativnije vinsko svetsko takmičenje, u sastavu  najuticajnijih svetskih imena i profesionalaca koji su nagrađivali najkvalitetnija vina na svetu.",
+    "maliOpis_en":"  ",
+    "opis1": "Učestvovalo je preko 300 najuspešnijih vinara koji su predstavljali svoja vina boreći se za internacionalne i regionalne nagrade. Don Mekalok ( Vinarija McC McCulloch Wines), je osvojio bronzanu medalju za vino Coupage '11.",
+    "opis1_en": "",
+    "opis2":"U maju 2015. godine na istom ovom takmičenju u Londonu Don Mekalok odlikovan je za vino Merlot-Malbec '12 što takođe predstavlja veliki uspeh za ovu malu vinariju iz Srbije.2016.godine Mcc Vinarija osvaja bronzu za Traminac 2013.",
+    "opis2_en":"",
+    "slike": ["/img/Vesti/smor1.jpg","/img/Vesti/smor2.jpg","/img/Vesti/smor3.jpg","/img/Vesti/smor4.jpg"]
+  },
   {
     "id": "1",
     "naziv": "Najbolja vina Srbije 2022: Novi vinski poredak",
@@ -32,7 +121,7 @@
   },
   
   {
-    "id": "2",
+    "id": "19",
     "naziv": "Osvojili 5 medalja na Wine Vision by Open Balkan",
     "naziv_en": "We Won 5 Medals at Wine Vision by Open Balkan",
     "maliOpis": "McC Vinarija osvojila je 5 medalja. U kategoriji belo vino: srebro za Rajnski Riesling 2017 i Rajnski Riesling 2020, bronza za Traminac 2019. U kategoriji crveno vino: srebra za Merlot Malbec 2017 i Coupage 2018.",
@@ -68,7 +157,7 @@
   },
 
   {
-    "id": "50",
+    "id": "17",
     "naziv": "Wine Vision by Open Balkan: Vinsko oranž balkanskog teroara",
     "naziv_en": "Wine Vision by Open Balkan: Orange Wine of Balkan Terroir",
     "maliOpis": "Završeno je drugo izdanje Wine Vision by Open Balkan, neki će reći četvrte ili pete po veličini vinske manifestacije u Evropi. Iako reportaže obično pišem od početka, za ovu je sasvim logično krenuti sa kraja. Uz nadu da ovo drugo izdanje nije bilo i poslednje jer su preveliki sistemi skloni samourušavanju. ",

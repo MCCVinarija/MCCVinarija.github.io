@@ -35,6 +35,7 @@ export const VineHome = () => {
       sauvignon: 'Suvo belo vino, sveže sa voćnim notama i laganom herbalnom završnicom.',
       rose: 'Suvo roze vino sa laganom strukturom i dugom završnicom.',
       traminac: 'Suvo belo vino sa izraženom aromom tropskog voća (breskve i začina).',
+      seka: 'Mešavina 3 sorte grožđa sa notama suvog voća, cvetan, pun i harmoničan.',
       malbec: 'Suvo crveno vino sa izraženim voćnim stilom i notama cvetnih i začinskih aroma.',
     },
     en: {
@@ -45,6 +46,7 @@ export const VineHome = () => {
       sauvignon: 'Dry white wine, fresh with fruity notes and a light herbal finish.',
       rose: 'Dry rosé wine with a light structure and long finish.',
       traminac: 'Dry white wine with pronounced aromas of tropical fruit (peach and spice).',
+      seka: 'A blend of three grape varieties with dried fruit notes, floral, full and harmonious.',
       malbec: 'Dry red wine with a pronounced fruity style and notes of floral and spicy aromas.',
     },
   };
@@ -58,6 +60,7 @@ export const VineHome = () => {
       sauvignon: 'Sauvignon Blanc',
       rose: 'Rose Tajna',
       traminac: 'Traminac',
+      seka: 'Bela Fantazija Seka',
       malbec: 'Merlot Malbec',
     },
     en: {
@@ -68,6 +71,7 @@ export const VineHome = () => {
       sauvignon: 'Sauvignon Blanc',
       rose: 'Rose Tajna',
       traminac: 'Traminac',
+      seka: 'White Fantasy Seka',
       malbec: 'Merlot Malbec',
     },
   };
@@ -167,6 +171,18 @@ export const VineHome = () => {
           <div className="wine-card-content">
             <h3>{vineTitles[language].traminac}</h3>
             <p>{vineText[language].traminac}</p>
+          </div>
+        </div>
+      </Link>
+
+      <Link to="/vines#seka" className="wine-card-link">
+        <div className="wine-card">
+          <div className="wine-card-image">
+            <img src="/img/vina/seka.png" alt="Bela Fantazija Seka" />
+          </div>
+          <div className="wine-card-content">
+            <h3>{vineTitles[language].seka}</h3>
+            <p>{vineText[language].seka}</p>
           </div>
         </div>
       </Link>

@@ -46,6 +46,43 @@ const SingleNews = () => {
     getTranslatedField(newsItem, 'opis13')
   ].filter(Boolean);
 
+  const makeHtml = (text) => {
+    if (!text) return '';
+    // If HTML anchor already present, return as-is
+    if (/<a\s+href=/i.test(text)) return text;
+    const urlRegex = /(https?:\/\/[^\s"']+)/g;
+    return text.replace(urlRegex, (url) => {
+      try {
+        const host = new URL(url).hostname;
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer">${host}</a>`;
+      } catch (e) {
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+      }
+    });
+  };
+
+  const getYouTubeEmbedUrl = (url) => {
+    if (!url) return null;
+    try {
+      const parsedUrl = new URL(url);
+      const hostname = parsedUrl.hostname.toLowerCase();
+      let videoId = null;
+
+      if (hostname.includes('youtu.be')) {
+        videoId = parsedUrl.pathname.slice(1);
+      } else if (hostname.includes('youtube.com')) {
+        videoId = parsedUrl.searchParams.get('v') || parsedUrl.pathname.split('/').pop();
+      }
+
+      return videoId ? `https://www.youtube.com/embed/${videoId}` : null;
+    } catch (e) {
+      return null;
+    }
+  };
+
+  const videoUrl = getTranslatedField(newsItem, 'video');
+  const embedVideoUrl = getYouTubeEmbedUrl(videoUrl);
+
   return (
     <div className="single-news-container">
       <Link to="/news" className="single-news-back-link">
@@ -60,10 +97,26 @@ const SingleNews = () => {
 
       <div className="single-news-content">
         {descriptions.map((description, index) => (
-          <p key={index} className="single-news-text">
-            {description}.
-          </p>
+          <p
+            key={index}
+            className="single-news-text"
+            dangerouslySetInnerHTML={{ __html: makeHtml(description) }}
+          />
         ))}
+
+        {embedVideoUrl && (
+          <div className="single-news-video">
+            <div className="single-news-video-wrapper">
+              <iframe
+                title={`News video ${newsItem.id}`}
+                src={embedVideoUrl}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        )}
 
         {newsItem.slike && newsItem.slike.length > 0 && (
           <div className="single-news-gallery">

@@ -30,11 +30,13 @@
   flex-direction: column;
   overflow: hidden;
   min-height: 400px;
+  cursor: default;
 }
 
 .card:hover {
   border-color: #9b0038;
   box-shadow: 0 3px 10px rgba(155, 0, 56, 0.15);
+  cursor: default;
 }
 
 .photo,

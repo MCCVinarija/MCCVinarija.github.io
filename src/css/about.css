@@ -17,6 +17,9 @@
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: 460px;
   transition: all 0.4s ease;
 }
 
@@ -24,6 +27,13 @@
   background: rgba(255, 255, 255, 1);
   border-color: #9b0038;
   box-shadow: 0 3px 10px rgba(155, 0, 56, 0.15);
+}
+
+/* Persistent highlight class applied by JS to avoid flicker */
+.about-card.highlight {
+  background: rgba(255, 255, 255, 1) !important;
+  border-color: #9b0038 !important;
+  box-shadow: 0 8px 28px rgba(155, 0, 56, 0.12) !important;
 }
 
 /* Odd cards: photo left, text right */
@@ -38,29 +48,55 @@
 
 .about-card-image,
 .about-card-video {
-  width: 50%;
-  object-fit: contain;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 0 0 48%;
+  max-width: 560px;
+  min-width: 300px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   padding: 20px;
   background: transparent;
   transition: transform 0.4s ease, filter 0.4s ease;
-  flex-shrink: 0;
+  box-sizing: border-box;
+  display: block;
+  align-self: center;
 }
 
-.about-card:hover .about-card-image,
-.about-card:hover .about-card-video {
-  transform: scale(1.02);
-  filter: brightness(0.95);
+.about-card-video {
+  background: transparent;
+}
+
+.about-card-image,
+.about-card-video {
+  object-fit: cover;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.about-card-video video {
+  max-width: 100%;
+  display: block;
 }
 
 .about-card-content {
-  width: 50%;
+  flex: 1 1 52%;
+  width: auto;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.about-card-video video {
+  max-width: 100%;
+  display: block;
+}
+
+.about-card:hover .about-card-image,
+.about-card:hover .about-card-video {
+  /* no scaling on hover - image must remain same size */
+  transform: none;
+  filter: none;
 }
 
 .about-card-title {
@@ -88,6 +124,78 @@
   color: #333;
   margin: 0;
   text-align: justify;
+}
+
+/* Minimal clamp for collapsed text to keep layout simple */
+.about-card-text.collapsed {
+  max-height: 10.2em; /* approx 6 lines */
+  overflow: hidden;
+  transition: max-height 0.28s ease;
+}
+
+.about-card-text.expanded {
+  max-height: 2000px;
+}
+
+.read-more-inline {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: none;
+  color: #9b0038;
+  cursor: pointer;
+  padding: 6px 0;
+  margin-top: 8px;
+  display: inline-block;
+  font-weight: 600;
+  transition: none;
+  animation: none;
+}
+
+.read-more-inline:hover,
+.read-more-inline:focus,
+.read-more-inline:focus-visible {
+  color: #73022b;
+  text-decoration: none; /* no underline */
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.about-card-downloads {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.about-card-downloads a {
+  color: #9b0038;
+  text-decoration: none;
+}
+
+.about-card-downloads a:hover {
+  text-decoration: underline;
+}
+
+.about-card-certificates {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-card-certificates-image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  display: block;
+  object-fit: cover;
 }
 
 .about-card-text a {

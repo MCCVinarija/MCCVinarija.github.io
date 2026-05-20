@@ -6,12 +6,12 @@ export const Gallery = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    "/img/Galerija/0.jpg",
+   // "/img/Galerija/0.jpg",
     "/img/Galerija/0a.jpg",
-    "/img/Galerija/0b.jpg",
+   // "/img/Galerija/0b.jpg",
     "/img/Galerija/0c.jpg",
-    "/img/Galerija/0d.jpg",
-    "/img/Galerija/12.jpg",
+   // "/img/Galerija/0d.jpg",
+    //"/img/Galerija/12.jpg",
     "/img/Galerija/13.jpg",
     "/img/Galerija/14.jpg",
     "/img/Galerija/15.jpg",
@@ -45,8 +45,8 @@ export const Gallery = (props) => {
     "/img/Galerija/19.jpg",
     "/img/Galerija/20.jpg",
     "/img/Galerija/21.jpg",
-    "/img/Galerija/22.jpg",
-    "/img/Galerija/23.jpg",
+   // "/img/Galerija/22.jpg",
+   // "/img/Galerija/23.jpg",
     "/img/Galerija/24.jpg",
     "/img/Galerija/25.jpg",
     "/img/Galerija/26.jpg",
@@ -59,7 +59,7 @@ export const Gallery = (props) => {
     "/img/Galerija/0p.jpg",
     "/img/Galerija/0r.jpg",
     "/img/Galerija/0s.jpg",
-    "/img/Galerija/38.jpg",
+   // "/img/Galerija/38.jpg",
     "/img/Galerija/39.jpg",
   ];
 
