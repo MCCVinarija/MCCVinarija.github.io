@@ -135,7 +135,7 @@ Alongside the production area, the winery features a barrique tasting room and a
           >
             <img
               className="about-card-image"
-              src="img/Vesti/Seka1.jpg"
+              src="/img/Vesti/Seka1.jpg"
               alt={aboutText[language].aboutTitle}
             />
             <div className="about-card-content">
