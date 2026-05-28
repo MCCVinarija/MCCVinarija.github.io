@@ -1,93 +1,114 @@
 [
   {
-      "id": "26",
-      "naziv": " Vinarija MCC - Vino i vinogradarstvo",
-      "naziv_en": "",
-      "video": "https://www.youtube.com/watch?v=PnOb1aStMV8&t=8s",
-      "slike": ["/img/Galerija/0a.jpg"]
-    },
+    "id": "26",
+    "naziv": "Vinarija MCC – Vino i vinogradarstvo",
+    "naziv_en": "MCC Winery – Wine and Viticulture",
+    "video": "https://www.youtube.com/watch?v=PnOb1aStMV8&t=8s",
+    "slike": [
+      "/img/Galerija/0a.jpg"
+    ]
+  },
   {
-      "id": "25",
-      "naziv": " Lady of Wine - MCC vina: Organska i biodinamička",
-      "naziv_en": "",
-      "slike": ["/img/Galerija/0c.jpg"],
-      "video": "https://www.youtube.com/watch?v=AAK2_vrTLmw"
-    },
+    "id": "25",
+    "naziv": "Lady of Wine – MCC vina: Organska i biodinamička proizvodnja",
+    "naziv_en": "Lady of Wine – MCC Wines: Organic and Biodynamic Production",
+    "slike": [
+      "/img/Galerija/0c.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=AAK2_vrTLmw"
+  },
   {
-      "id": "24",
-      "naziv": "Biznis iz drugačijeg ugla | MCC organska vina i lepote Smederevske tvrđave ",
-      "naziv_en": "",
-      "maliOpis": "U novoj epizodi emisije Biznis iz drugačijeg ugla upoznajte inspirativne priče koje spajaju tradiciju, turizam i preduzetništvo. ",
-      "maliOpis_en": "",
-      "opis1": "Gost emisije je MCC vinarija sa Fruške gore, poznata po proizvodnji organskih i biodinamičkih vina nastalih u skladu sa prirodom i održivim principima proizvodnje. Kroz priču o vinima, vinogradima i jedinstvenom pristupu vinarstvu, otkrivamo kako nastaju vina vrhunskog kvaliteta sa autentičnim karakterom Fruške gore.",
-      "opis1_en": "",
-      "opis2":"U emisiji vas vodimo i kroz jednu od najznačajnijih istorijskih i turističkih destinacija Srbije – Smederevsku tvrđavu, simbol bogate kulturne baštine i nezaobilaznu atrakciju na Dunavu. ",
-      "opis2_en":"",
-      "opis3":"",
-       "video": "https://www.youtube.com/watch?v=chfOkL4SHFE&t=1030s",
-      "slike": ["/img/Galerija/24.jpg"]
-      
-    },
+    "id": "24",
+    "naziv": "Biznis iz drugačijeg ugla | MCC organska vina i lepote Smederevske tvrđave",
+    "naziv_en": "Business from a Different Perspective | MCC Organic Wines and the Beauty of Smederevo Fortress",
+    "maliOpis": "U novoj epizodi emisije „Biznis iz drugačijeg ugla“ upoznajte inspirativne priče koje povezuju tradiciju, turizam i preduzetništvo.",
+    "maliOpis_en": "In a new episode of “Business from a Different Perspective,” discover inspiring stories that connect tradition, tourism, and entrepreneurship.",
+    "opis1": "Gost emisije je MCC vinarija sa Fruške gore, poznata po proizvodnji organskih i biodinamičkih vina nastalih u skladu sa prirodom i održivim principima proizvodnje. Kroz priču o vinima, vinogradima i jedinstvenom pristupu vinarstvu, otkrivamo kako nastaju vina vrhunskog kvaliteta sa autentičnim karakterom Fruške gore.",
+    "opis1_en": "The episode features MCC Winery from Fruška Gora, known for producing organic and biodynamic wines crafted in harmony with nature and sustainable production principles. Through the story of its wines, vineyards, and unique winemaking philosophy, viewers discover how premium wines with the authentic character of Fruška Gora are created.",
+    "opis2": "U emisiji vas vodimo i kroz jednu od najznačajnijih istorijskih i turističkih destinacija Srbije – Smederevsku tvrđavu, simbol bogate kulturne baštine i nezaobilaznu atrakciju na Dunavu.",
+    "opis2_en": "The episode also takes viewers through one of Serbia’s most important historical and tourist destinations — the Smederevo Fortress, a symbol of the country’s rich cultural heritage and one of the Danube’s most remarkable landmarks.",
+    "opis3": "",
+    "opis3_en": "",
+    "video": "https://www.youtube.com/watch?v=chfOkL4SHFE&t=1030s",
+    "slike": [
+      "/img/Galerija/24.jpg"
+    ]
+  },
   {
-      "id": "23",
-      "naziv": "Wine Vision by Open Balkan: Vinsko oranje balkanskog teroara ",
-      "naziv_en": "Love, Nature and Wine: The Organic Story of McC Vineyards from Fruška Gora",
-      "maliOpis": " Oduševljenje čitavim događajem potvrdila je i MW Karolin Gilbi (Caroline Gilby), jedan od vodećih svetskih stručnjaka za vino, predsednica žirija sve popularnijeg beogradskog nadmetanja ali i grupacije sudija određenih za vina Balkana na najvažnijem svetskom vinskom takmičenju Decanter u Londonu.",
-      "maliOpis_en": "On the slopes of Fruška Gora in Erdevik, Don McCulloch and Seka Nikolić craft wines using organic and biodynamic principles, relying on nature and traditional production methods. Their philosophy prioritizes quality over quantity, without chemicals or artificial additives.",
-      "opis1": "Naša Mcc Organska vinarija je osvojila 5 medalja.",
-      "opis1_en": "McC Winery was born from a love of wine, nature and a quieter life; the vineyards were planted only after years of restoring the soil from chemical residues. They draw inspiration from Fruška Gora's long winemaking history—vines have been grown there since Roman times. Today their wines reflect authentic terroir, sustainable practices, and the personal story of an international couple who found their home in Srem.",
-      "opis2":"Zlato : Kaberne Sovinjon-Kaberne Fran 2018, Traminac 2021",
-      "opis2_en":"Read more at: <a href=\"https://www.diplomacyandcommerce.rs/mcc-mcculloch-wines-all-natural-nectar-of-the-gods-from-fruska-gora/\" target=\"_blank\" rel=\"noopener noreferrer\">Diplomacy & Commerce — McC McCulloch Wines</a>",
-      "opis3":"Srebro:Rajnski Riesling 2018, Coupage 2018, Merlo Malbek 2018",
-      "slike": ["/img/Vesti/ww23.jpg","/img/Vesti/w203.jpg"],
-      "video": ["https://www.youtube.com/watch?v=DLZbpOs5tnM"]
-
-    },
+    "id": "23",
+    "naziv": "Wine Vision by Open Balkan: Vinsko oranje balkanskog teroara",
+    "naziv_en": "Wine Vision by Open Balkan: Exploring the Balkan Terroir",
+    "maliOpis": "Oduševljenje čitavim događajem potvrdila je i MW Caroline Gilby, jedna od vodećih svetskih stručnjaka za vino, predsednica žirija beogradskog vinskog takmičenja i sudija za vina Balkana na prestižnom Decanter takmičenju u Londonu.",
+    "maliOpis_en": "The event was praised by MW Caroline Gilby, one of the world’s leading wine experts, chair of the Belgrade wine competition jury, and Decanter judge for Balkan wines in London.",
+    "opis1": "Naša MCC organska vinarija osvojila je ukupno pet medalja.",
+    "opis1_en": "Our MCC Organic Winery won a total of five medals.",
+    "opis2": "Zlatne medalje: Cabernet Sauvignon – Cabernet Franc 2018 i Traminac 2021.",
+    "opis2_en": "Gold medals: Cabernet Sauvignon – Cabernet Franc 2018 and Traminer 2021.",
+    "opis3": "Srebrne medalje: Rajnski Rizling 2018, Coupage 2018 i Merlot – Malbec 2018.",
+    "opis3_en": "Silver medals: Rhine Riesling 2018, Coupage 2018, and Merlot – Malbec 2018.",
+    "slike": [
+      "/img/Vesti/ww23.jpg",
+      "/img/Vesti/w203.jpg"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=DLZbpOs5tnM"
+    ]
+  },
   {
-      "id": "22",
-      "naziv": "Tri medalje za MCC Organsku vinariju na Open Balkan Wine Trophy 2024 ",
-      "naziv_en": "Three Medals for MCC Organic Winery at Open Balkan Wine Trophy 2024",
-      "maliOpis": "Na ovogodišnjem međunarodnom vinskom takmičenju Open Balkan Wine Trophy 2024, MCC Organska vinarija ostvarila je veliki uspeh osvojivši čak tri medalje. Stručni žiri sastavljen od 25 vinskih sudija, među kojima je bilo i šest nosilaca prestižne titule Master of Wine (MW), birao je najbolja vina u 12 kategorija.",
-      "maliOpis_en": "At this year's international Open Balkan Wine Trophy 2024 competition, MCC Organic Winery achieved a major success by winning three medals. The expert jury of 25 wine judges, including six Masters of Wine, selected the best wines in 12 categories.",
-      "opis1": "MCC Organska vinarija osvojila je:",
-      "opis1_en": "MCC Organic Winery won:",
-      "opis2":"Zlatnu medalju za vino Kaberne Sovinjon – Kaberne Fran 2018",
-      "opis2_en":"Gold medal for Cabernet Sauvignon – Cabernet Franc 2018",
-      "opis3":"Bronzanu medalju za Merlo – Malbek 2020",
-      "opis3_en":"Bronze medal for Merlot – Malbec 2020",
-      "opis4":" Bronzanu medalju za Traminac 2021",
-      "opis4_en":"Bronze medal for Traminer 2021",
-      "opis5":" Ovo priznanje predstavlja još jednu potvrdu kvaliteta organskih vina sa Fruške gore i posvećenosti MCC vinarije prirodnoj i održivoj proizvodnji vina.",
-      "opis5_en":"This recognition is another confirmation of the quality of organic wines from Fruška Gora and MCC Winery's commitment to natural, sustainable wine production.",
-      "opis6":"",
-      "opis6_en":"",
-      "video": "https://www.youtube.com/watch?v=DLZbpOs5tnM",
-      "video_en": "https://www.youtube.com/watch?v=DLZbpOs5tnM",
-      "slike": ["/img/Vesti/w2014.jpg"]
-    },  
+    "id": "22",
+    "naziv": "Tri medalje za MCC Organsku vinariju na Open Balkan Wine Trophy 2024",
+    "naziv_en": "Three Medals for MCC Organic Winery at Open Balkan Wine Trophy 2024",
+    "maliOpis": "Na ovogodišnjem međunarodnom vinskom takmičenju Open Balkan Wine Trophy 2024, MCC Organska vinarija ostvarila je veliki uspeh osvojivši tri medalje. Stručni žiri od 25 vinskih sudija, među kojima je bilo šest nosilaca prestižne titule Master of Wine, birao je najbolja vina u 12 kategorija.",
+    "maliOpis_en": "At this year’s Open Balkan Wine Trophy 2024 international competition, MCC Organic Winery achieved remarkable success by winning three medals. The expert jury consisted of 25 wine judges, including six Masters of Wine.",
+    "opis1": "MCC Organska vinarija osvojila je:",
+    "opis1_en": "MCC Organic Winery received:",
+    "opis2": "Zlatnu medalju za vino Cabernet Sauvignon – Cabernet Franc 2018.",
+    "opis2_en": "Gold medal for Cabernet Sauvignon – Cabernet Franc 2018.",
+    "opis3": "Bronzanu medalju za Merlot – Malbec 2020.",
+    "opis3_en": "Bronze medal for Merlot – Malbec 2020.",
+    "opis4": "Bronzanu medalju za Traminac 2021.",
+    "opis4_en": "Bronze medal for Traminer 2021.",
+    "opis5": "Ovo priznanje predstavlja još jednu potvrdu kvaliteta organskih vina sa Fruške gore i posvećenosti MCC vinarije prirodnoj i održivoj proizvodnji vina.",
+    "opis5_en": "This recognition is another confirmation of the quality of organic wines from Fruška Gora and MCC Winery’s dedication to natural and sustainable winemaking.",
+    "opis6": "",
+    "opis6_en": "",
+    "video": "https://www.youtube.com/watch?v=DLZbpOs5tnM",
+    "video_en": "https://www.youtube.com/watch?v=DLZbpOs5tnM",
+    "slike": [
+      "/img/Vesti/w2014.jpg"
+    ]
+  },
   {
-      "id": "21",
-      "naziv": "Ljubav, priroda i vino: Organska priča McC vinarije sa Fruške gore ",
-      "naziv_en": "Love, Nature and Wine: The Organic Story of McC Vineyards from Fruška Gora",
-      "maliOpis": " Na obroncima Fruške gore, u Erdeviku, Don McCulloch i Seka Nikolić stvaraju vina po organskim i biodinamičkim principima, oslanjajući se na prirodu i tradicionalne metode proizvodnje. Njihova filozofija zasniva se na ideji da kvalitet mora biti važniji od količine, bez upotrebe hemikalija i veštačkih dodataka.",
-      "maliOpis_en": "On the slopes of Fruška Gora in Erdevik, Don McCulloch and Seka Nikolić craft wines using organic and biodynamic principles, relying on nature and traditional production methods. Their philosophy prioritizes quality over quantity, without chemicals or artificial additives.",
-      "opis1": "McC vinarija nastala je iz spoja ljubavi prema vinu, prirodi i mirnijem životu, a vinogradi su posađeni tek nakon višegodišnjeg „čišćenja“ zemljišta od hemije. Inspiraciju pronalaze u bogatoj vinskoj istoriji Fruške gore, gde se vinova loza uzgajala još u rimsko doba. Njихova вина danas predstavljaju spoj autentičnog terroira, održive proizvodnje i lične priče jednog međunarodnog para koji je svoj mir pronašao u Sremu.",
-      "opis1_en": "McC Winery was born from a love of wine, nature and a quieter life; the vineyards were planted only after years of restoring the soil from chemical residues. They draw inspiration from Fruška Gora's long winemaking history—vines have been grown there since Roman times. Today their wines reflect authentic terroir, sustainable practices, and the personal story of an international couple who found their home in Srem.",
-      "opis2":"Vise na: https://www.diplomacyandcommerce.rs/mcc-mcculloch-wines-all-natural-nectar-of-the-gods-from-fruska-gora/",
-      "opis2_en":"Read more at: <a href=\"https://www.diplomacyandcommerce.rs/mcc-mcculloch-wines-all-natural-nectar-of-the-gods-from-fruska-gora/\" target=\"_blank\" rel=\"noopener noreferrer\">Diplomacy & Commerce — McC McCulloch Wines</a>",
-      "slike": ["/img/Vesti/seka1.jpg","/img/Vesti/seka2.jpg"]
-    },
+    "id": "21",
+    "naziv": "Ljubav, priroda i vino: Organska priča McC vinarije sa Fruške gore",
+    "naziv_en": "Love, Nature and Wine: The Organic Story of McC Winery from Fruška Gora",
+    "maliOpis": "Na obroncima Fruške gore, u Erdeviku, Don McCulloch i Seka Nikolić stvaraju vina po organskim i biodinamičkim principima, oslanjajući se na prirodu i tradicionalne metode proizvodnje.",
+    "maliOpis_en": "On the slopes of Fruška Gora in Erdevik, Don McCulloch and Seka Nikolić craft wines using organic and biodynamic principles, guided by nature and traditional production methods.",
+    "opis1": "McC vinarija nastala je iz ljubavi prema vinu, prirodi i mirnijem načinu života. Vinogradi su posađeni tek nakon višegodišnjeg obnavljanja zemljišta i uklanjanja ostataka hemijskih tretmana. Inspiraciju pronalaze u bogatoj vinskoj istoriji Fruške gore, gde se vinova loza uzgajala još od rimskog doba.",
+    "opis1_en": "McC Winery was born from a love of wine, nature, and a quieter way of life. The vineyards were planted only after years of restoring the soil from chemical residues. Inspiration comes from the rich winemaking history of Fruška Gora, where vines have been cultivated since Roman times.",
+    "opis2": "Danas njihova vina predstavljaju spoj autentičnog terroira, održive proizvodnje i lične priče međunarodnog para koji je svoj dom pronašao u Sremu.",
+    "opis2_en": "Today, their wines reflect authentic terroir, sustainable production, and the personal story of an international couple who found their home in Srem.",
+    "slike": [
+      "/img/Vesti/seka1.jpg",
+      "/img/Vesti/seka2.jpg"
+    ]
+  },
   {
     "id": "20",
     "naziv": "DECANTER WORLD WINE AWARDS",
     "naziv_en": "DECANTER WORLD WINE AWARDS",
-    "maliOpis": "U maju 2014. godine u Londonu, održano je najkompetentnije i najautoritativnije vinsko svetsko takmičenje, u sastavu  najuticajnijih svetskih imena i profesionalaca koji su nagrađivali najkvalitetnija vina na svetu.",
-    "maliOpis_en":"  ",
-    "opis1": "Učestvovalo je preko 300 najuspešnijih vinara koji su predstavljali svoja vina boreći se za internacionalne i regionalne nagrade. Don Mekalok ( Vinarija McC McCulloch Wines), je osvojio bronzanu medalju za vino Coupage '11.",
-    "opis1_en": "",
-    "opis2":"U maju 2015. godine na istom ovom takmičenju u Londonu Don Mekalok odlikovan je za vino Merlot-Malbec '12 što takođe predstavlja veliki uspeh za ovu malu vinariju iz Srbije.2016.godine Mcc Vinarija osvaja bronzu za Traminac 2013.",
-    "opis2_en":"",
-    "slike": ["/img/Vesti/smor1.jpg","/img/Vesti/smor2.jpg","/img/Vesti/smor3.jpg","/img/Vesti/smor4.jpg"]
+    "maliOpis": "U maju 2014. godine u Londonu održano je jedno od najprestižnijih svetskih vinskih takmičenja — Decanter World Wine Awards — koje okuplja vodeće svetske stručnjake i profesionalce iz vinske industrije.",
+    "maliOpis_en": "In May 2014, London hosted one of the world’s most prestigious wine competitions — the Decanter World Wine Awards — bringing together leading wine experts and professionals from around the globe.",
+    "opis1": "Na takmičenju je učestvovalo više od 300 uspešnih vinara iz celog sveta. Don McCulloch i vinarija McC osvojili su bronzanu medalju za vino Coupage 2011.",
+    "opis1_en": "More than 300 successful winemakers from around the world participated in the competition. Don McCulloch and McC Winery received a bronze medal for Coupage 2011.",
+    "opis2": "Već naredne godine, 2015, na istom takmičenju u Londonu, osvojena je još jedna medalja za vino Merlot – Malbec 2012, dok je 2016. godine bronzanu medalju osvojio Traminac 2013.",
+    "opis2_en": "The following year, in 2015, another medal was awarded in London for Merlot – Malbec 2012, while in 2016 Traminer 2013 also received a bronze medal.",
+    "slike": [
+      "/img/Vesti/smor1.jpg",
+      "/img/Vesti/smor2.jpg",
+      "/img/Vesti/smor3.jpg",
+      "/img/Vesti/smor4.jpg"
+    ]
   },
   {
     "id": "1",
@@ -97,29 +118,29 @@
     "maliOpis_en": "Events on the Serbian wine scene in the last 12 months show that the turbulent changes that marked its rise in recent years have now given way to the consolidation of achieved results.",
     "opis1": "A lovely blog with great tasting notes about McCulloch Wine Merlot-Malbec 2012. Thank you Perica S. Radović, glad you enjoyed!",
     "opis1_en": "A lovely blog with great tasting notes about McCulloch Wine Merlot-Malbec 2012. Thank you Perica S. Radović, glad you enjoyed!",
-    "opis2":"To važi i za vinarije i vinare, ali i trgovce vinima, vinske manifestacije, vinske medije, pa i publiku koja je dostigla zavidnu zrelost. Metaforično rečeno, vinska revolucija je završena, a ovo što sada vidimo obrisi su novog vinskog poretka u Srbiji. Ono što je do juče bila novost, postalo je sada novi standard, a novi akteri izrasli su u mnogim segmentima u nove lidere.",
-    "opis2_en":"This applies to wineries and winemakers, but also wine merchants, wine events, wine media, and the audience which has reached enviable maturity. Metaphorically speaking, the wine revolution is over, and what we now see are the outlines of a new wine order in Serbia. What was a novelty yesterday has now become the new standard, and new players have emerged as new leaders in many segments.",
-    "opis":"NAJBOLJE CRVENO ORGANSKO ILI PRIRODNO VINO SRBIJE",
-    "opis_en":"BEST RED ORGANIC OR NATURAL WINE OF SERBIA",
-    "opis3":"1. Pinot Noir 2018 Sagmeister      r  9. Prokupac Barrique 2019 Kostić 10. Gravitacija 2021 Maurer",
-    "opis3_en":"1. Pinot Noir 2018 Sagmeister      r  9. Prokupac Barrique 2019 Kostić 10. Gravitacija 2021 Maurer",
-    "opis5":"2. Coupage 2020 McC" ,
-    "opis6":"3. Temperance Special Edition 2020 MV vinarija" ,
-    "opis7":"4. Constantivs 2018 Imperator" ,
-    "opis8":"5. Cabernet Sauvignon 2017 Rudinski" ,
-    "opis9":"6. Rebel 2020 Maurer" ,
-    "opis10":"7. Kadarka Kew 2019 Sagmeiste" ,
-    "opis11":"8. Prokupac 2021 Aleksandar Todorović" ,
-    "opis12":"9. Prokupac Barrique 2019 Kostić" ,
-    "opis13":"10. Gravitacija 2021 Maurer" ,
-    "opis14":"" ,
-    "opis15":"" ,
+    "opis2": "To važi i za vinarije i vinare, ali i trgovce vinima, vinske manifestacije, vinske medije, pa i publiku koja je dostigla zavidnu zrelost. Metaforično rečeno, vinska revolucija je završena, a ovo što sada vidimo obrisi su novog vinskog poretka u Srbiji. Ono što je do juče bila novost, postalo je sada novi standard, a novi akteri izrasli su u mnogim segmentima u nove lidere.",
+    "opis2_en": "This applies to wineries and winemakers, but also wine merchants, wine events, wine media, and the audience which has reached enviable maturity. Metaphorically speaking, the wine revolution is over, and what we now see are the outlines of a new wine order in Serbia. What was a novelty yesterday has now become the new standard, and new players have emerged as new leaders in many segments.",
+    "opis": "NAJBOLJE CRVENO ORGANSKO ILI PRIRODNO VINO SRBIJE",
+    "opis_en": "BEST RED ORGANIC OR NATURAL WINE OF SERBIA",
+    "opis3": "1. Pinot Noir 2018 Sagmeister      r  9. Prokupac Barrique 2019 Kostić 10. Gravitacija 2021 Maurer",
+    "opis3_en": "1. Pinot Noir 2018 Sagmeister      r  9. Prokupac Barrique 2019 Kostić 10. Gravitacija 2021 Maurer",
+    "opis5": "2. Coupage 2020 McC",
+    "opis6": "3. Temperance Special Edition 2020 MV vinarija",
+    "opis7": "4. Constantivs 2018 Imperator",
+    "opis8": "5. Cabernet Sauvignon 2017 Rudinski",
+    "opis9": "6. Rebel 2020 Maurer",
+    "opis10": "7. Kadarka Kew 2019 Sagmeiste",
+    "opis11": "8. Prokupac 2021 Aleksandar Todorović",
+    "opis12": "9. Prokupac Barrique 2019 Kostić",
+    "opis13": "10. Gravitacija 2021 Maurer",
+    "opis14": "",
+    "opis15": "",
     "datum4": "Decembar 18, 2022",
     "datum4_en": "December 18, 2022",
-    "slike": ["/img/Vesti/galerija6.jpg"
-  ]
+    "slike": [
+      "/img/Vesti/galerija6.jpg"
+    ]
   },
-  
   {
     "id": "19",
     "naziv": "Osvojili 5 medalja na Wine Vision by Open Balkan",
@@ -127,15 +148,18 @@
     "maliOpis": "McC Vinarija osvojila je 5 medalja. U kategoriji belo vino: srebro za Rajnski Riesling 2017 i Rajnski Riesling 2020, bronza za Traminac 2019. U kategoriji crveno vino: srebra za Merlot Malbec 2017 i Coupage 2018.",
     "maliOpis_en": "McC Winery won 5 medals. In the white wine category: silver for Rhine Riesling 2017 and Rhine Riesling 2020, bronze for Traminer 2019. In the red wine category: silvers for Merlot Malbec 2017 and Coupage 2018.",
     "opis1": "01-04.09. organizovan je prvi međunarodni sajam vina u Beogradu, baš u vreme dešavanja najvažnijih ekonomskih i društvenih inicijativa povezivanja zemalja Zapadnog Balkana - Otvoreni Balkan između zemalja Srbije, Severne Makedonije i Albanije. Na sajmu je predstavljeno 330 izlagača iz 22 zemlje, dok je predstavnika iz vinskog sveta bilo preko 40.",
-    "opis1_en":"From September 1 to 4, the first international wine fair was organized in Belgrade, right during the most important economic and social initiatives to connect the countries of the Western Balkans - Open Balkan between Serbia, North Macedonia and Albania. 330 exhibitors from 22 countries were presented at the fair, while there were over 40 representatives from the wine world.",
-    "opis2":"Tokom sajma je organizovano i ocenjivanje vina Open Balkan Wine Trophy, a žirijem je predsedavala Caroline Gilby MW, dugogodišnja predsednica panela za Balkan na Decanter WWA ocenjivanju u Londonu, autorka brojnih knjiga o vinu i ekspert za vina Srednje i Jugoistočne Evrope. Žiri je proglasio najbolje ocenjena vina u različitim kategorijama.",
-    "opis2_en":"During the fair, the Open Balkan Wine Trophy wine competition was also held, chaired by Caroline Gilby MW, long-time chair of the Balkan panel at the Decanter WWA tasting in London, author of many wine books and an expert in Central and Southeast European wines. The jury announced the highest-rated wines in various categories.",
-    "opis3":"McC Vinarija osvojila je 5 medalja. U kategoriji belo vino: srebro za Rajnski Riesling 2017 i Rajnski Riesling 2020, bronza za Traminac 2019. U kategoriji crveno vino: srebra za Merlot Malbec 2017 i Coupage 2018.",
-    "opis3_en":"McC Winery won 5 medals. In the white wine category: silver for Rhine Riesling 2017 and Rhine Riesling 2020, bronze for Traminer 2019. In the red wine category: silvers for Merlot Malbec 2017 and Coupage 2018.",
-    "opis4":"",
+    "opis1_en": "From September 1 to 4, the first international wine fair was organized in Belgrade, right during the most important economic and social initiatives to connect the countries of the Western Balkans - Open Balkan between Serbia, North Macedonia and Albania. 330 exhibitors from 22 countries were presented at the fair, while there were over 40 representatives from the wine world.",
+    "opis2": "Tokom sajma je organizovano i ocenjivanje vina Open Balkan Wine Trophy, a žirijem je predsedavala Caroline Gilby MW, dugogodišnja predsednica panela za Balkan na Decanter WWA ocenjivanju u Londonu, autorka brojnih knjiga o vinu i ekspert za vina Srednje i Jugoistočne Evrope. Žiri je proglasio najbolje ocenjena vina u različitim kategorijama.",
+    "opis2_en": "During the fair, the Open Balkan Wine Trophy wine competition was also held, chaired by Caroline Gilby MW, long-time chair of the Balkan panel at the Decanter WWA tasting in London, author of many wine books and an expert in Central and Southeast European wines. The jury announced the highest-rated wines in various categories.",
+    "opis3": "McC Vinarija osvojila je 5 medalja. U kategoriji belo vino: srebro za Rajnski Riesling 2017 i Rajnski Riesling 2020, bronza za Traminac 2019. U kategoriji crveno vino: srebra za Merlot Malbec 2017 i Coupage 2018.",
+    "opis3_en": "McC Winery won 5 medals. In the white wine category: silver for Rhine Riesling 2017 and Rhine Riesling 2020, bronze for Traminer 2019. In the red wine category: silvers for Merlot Malbec 2017 and Coupage 2018.",
+    "opis4": "",
     "datum4": "June 15, 2023",
     "datum4_en": "June 15, 2023",
-    "slike": ["/img/Galerija/galerija2.jpg", "/img/Vesti/Vest1bb.jpg" ]
+    "slike": [
+      "/img/Galerija/galerija2.jpg",
+      "/img/Vesti/Vest1bb.jpg"
+    ]
   },
   {
     "id": "18",
@@ -145,17 +169,20 @@
     "maliOpis_en": "The TOP 50 label was awarded by a professional jury to specially distinguished wines from Fruška Gora at the evaluation within the Fruška Gora Wine Show, held at Villa Stanković on September 9, 2023 in Čortanovci.",
     "opis1": "Pravo je uživanje u letnje popodne boraviti u ekskluzivnoj vili Pokrajinske Vlade Vojvodine, uz vrhunsku gastronomiju i sve bolja fruškogorska vina. Možda najbolja u Srbiji, kako je otvarajući manifestaciju Fruška gora Wine Show napomenuo Igor Mirović,  prvi čovek Vojvodine, a nakon što je profesor Vladimir Puškaš pročitao imena laureata i svih 50 nagrađenih etiketa.",
     "opis1_en": "It is a real pleasure to spend a summer afternoon in the exclusive villa of the Provincial Government of Vojvodina, with top gastronomy and ever better Fruška Gora wines. Perhaps the best in Serbia, as Igor Mirović, the head of Vojvodina, noted when opening the Fruška Gora Wine Show, after Professor Vladimir Puškaš read the names of the laureates and all 50 awarded labels.",
-    "opis2":"Proglašenje šampiona na velikoj bini legendarne Hale 1, gde su uglavnom stacionirane najveće ili najznačajnije vinarije Balkana, otvorio je Igor Luković, direktor ocenjivanja OB Wine Trophy čitajući poruku neke važne face iz globalnog vinskog sveta. Ta poruka govori o vinima Balkana kao jedne od retkih regija na svetu gde na relativno malom prostoru imate i ravnicu, planinu, more, reke.",
-    "opis2_en":"The announcement of the champion on the large stage of legendary Hall 1, where the largest or most significant wineries of the Balkans are mostly stationed, was opened by Igor Luković, director of evaluation of OB Wine Trophy, reading a message from an important figure in the global wine world. That message speaks of Balkan wines as one of the rare regions in the world where you have plains, mountains, sea, and rivers in a relatively small area.",
-    "opis3":"Toliki diverzitet teroara kakav gotovo ne možete naći na drugom mestu na Planeti, a gde vina ostavljaju degustatore bez daha što nisu potvrdila samo velika ocenjivanja poput Decantera, već i ovo u Beogradu na kome su peharnici ili somelijeri preko ruku preturili 3200 raznih etiketa puneći čaše masterima od vina i drugim vinskim sudijama.",
-    "opis3_en":"Such terroir diversity as you can hardly find elsewhere on the planet, where wines leave tasters breathless — this was confirmed not only by major evaluations like Decanter, but also by this one in Belgrade where cupbearers or sommeliers handled over 3,200 different labels, filling glasses for wine masters and other wine judges.",
-    "opis4":"McC: Coupage 2018, Cabernet Sauvignon/Cabernet Franc 2018, Coupage 2017",
-    "opis4_en":"McC: Coupage 2018, Cabernet Sauvignon/Cabernet Franc 2018, Coupage 2017",
+    "opis2": "Proglašenje šampiona na velikoj bini legendarne Hale 1, gde su uglavnom stacionirane najveće ili najznačajnije vinarije Balkana, otvorio je Igor Luković, direktor ocenjivanja OB Wine Trophy čitajući poruku neke važne face iz globalnog vinskog sveta. Ta poruka govori o vinima Balkana kao jedne od retkih regija na svetu gde na relativno malom prostoru imate i ravnicu, planinu, more, reke.",
+    "opis2_en": "The announcement of the champion on the large stage of legendary Hall 1, where the largest or most significant wineries of the Balkans are mostly stationed, was opened by Igor Luković, director of evaluation of OB Wine Trophy, reading a message from an important figure in the global wine world. That message speaks of Balkan wines as one of the rare regions in the world where you have plains, mountains, sea, and rivers in a relatively small area.",
+    "opis3": "Toliki diverzitet teroara kakav gotovo ne možete naći na drugom mestu na Planeti, a gde vina ostavljaju degustatore bez daha što nisu potvrdila samo velika ocenjivanja poput Decantera, već i ovo u Beogradu na kome su peharnici ili somelijeri preko ruku preturili 3200 raznih etiketa puneći čaše masterima od vina i drugim vinskim sudijama.",
+    "opis3_en": "Such terroir diversity as you can hardly find elsewhere on the planet, where wines leave tasters breathless — this was confirmed not only by major evaluations like Decanter, but also by this one in Belgrade where cupbearers or sommeliers handled over 3,200 different labels, filling glasses for wine masters and other wine judges.",
+    "opis4": "McC: Coupage 2018, Cabernet Sauvignon/Cabernet Franc 2018, Coupage 2017",
+    "opis4_en": "McC: Coupage 2018, Cabernet Sauvignon/Cabernet Franc 2018, Coupage 2017",
     "datum4": "Septembar 10, 2023",
     "datum4_en": "September 10, 2023",
-    "slike": ["/img/Vesti/galerija7.jpg", "/img/Vesti/galerija8.jpg" , "/img/Vesti/galerija9.jpg" ]
+    "slike": [
+      "/img/Vesti/galerija7.jpg",
+      "/img/Vesti/galerija8.jpg",
+      "/img/Vesti/galerija9.jpg"
+    ]
   },
-
   {
     "id": "17",
     "naziv": "Wine Vision by Open Balkan: Vinsko oranž balkanskog teroara",
@@ -164,23 +191,25 @@
     "maliOpis_en": "The second edition of Wine Vision by Open Balkan has ended, which some will call the fourth or fifth largest wine event in Europe. Although I usually write reports from the beginning, for this one it makes sense to start from the end. With the hope that this second edition was not the last, because too-large systems are prone to self-collapse.",
     "opis1": "Proglašenje šampiona na velikoj bini legendarne Hale 1, gde su uglavnom stacionirane najveće ili najznačajnije vinarije Balkana, otvorio je Igor Luković, direktor ocenjivanja OB Wine Trophy čitajući poruku neke važne face iz globalnog vinskog sveta. Ta poruka govori o vinima Balkana kao jedne od retkih regija na svetu gde na relativno malom prostoru imate i ravnicu, planinu, more, reke.",
     "opis1_en": "The announcement of the champion on the large stage of legendary Hall 1, where the largest or most significant wineries of the Balkans are mostly stationed, was opened by Igor Luković, director of evaluation of OB Wine Trophy, reading a message from an important figure in the global wine world. That message speaks of Balkan wines as one of the rare regions in the world where you have plains, mountains, sea, and rivers in a relatively small area.",
-    "opis2":"Toliki diverzitet teroara kakav gotovo ne možete naći na drugom mestu na Planeti, a gde vina ostavljaju degustatore bez daha što nisu potvrdila samo velika ocenjivanja poput Decantera, već i ovo u Beogradu na kome su peharnici ili somelijeri preko ruku preturili 3200 raznih etiketa puneći čaše masterima od vina i drugim vinskim sudijama.",
-    "opis2_en":"Such terroir diversity as you can hardly find elsewhere on the planet, where wines leave tasters breathless — this was confirmed not only by major evaluations like Decanter, but also by this one in Belgrade where cupbearers or sommeliers handled over 3,200 different labels, filling glasses for wine masters and other wine judges.",
-    "opis":"McC Organska Vinarija je osvojila 6 medalja!!",
-    "opis_en":"McC Organic Winery won 6 medals!!",
-    "opis4":"Zlato za: Cabernet Franc/Cabernet Sauvignon 2018 i Traminac 2021",
-    "opis4_en":"Gold for: Cabernet Franc/Cabernet Sauvignon 2018 and Traminer 2021",
-    "opis5":"Srebro za: Merlot-Malbec 2018, Coupage 2018 i Rajnski Riesling 2018",
-    "opis5_en":"Silver for: Merlot-Malbec 2018, Coupage 2018 and Rhine Riesling 2018",
-    "opis6":"Bronza: Pinot Noir 2018",
-    "opis6_en":"Bronze: Pinot Noir 2018",
-    "opis7":" ",
-    "opis8":" ",
+    "opis2": "Toliki diverzitet teroara kakav gotovo ne možete naći na drugom mestu na Planeti, a gde vina ostavljaju degustatore bez daha što nisu potvrdila samo velika ocenjivanja poput Decantera, već i ovo u Beogradu na kome su peharnici ili somelijeri preko ruku preturili 3200 raznih etiketa puneći čaše masterima od vina i drugim vinskim sudijama.",
+    "opis2_en": "Such terroir diversity as you can hardly find elsewhere on the planet, where wines leave tasters breathless — this was confirmed not only by major evaluations like Decanter, but also by this one in Belgrade where cupbearers or sommeliers handled over 3,200 different labels, filling glasses for wine masters and other wine judges.",
+    "opis": "McC Organska Vinarija je osvojila 6 medalja!!",
+    "opis_en": "McC Organic Winery won 6 medals!!",
+    "opis4": "Zlato za: Cabernet Franc/Cabernet Sauvignon 2018 i Traminac 2021",
+    "opis4_en": "Gold for: Cabernet Franc/Cabernet Sauvignon 2018 and Traminer 2021",
+    "opis5": "Srebro za: Merlot-Malbec 2018, Coupage 2018 i Rajnski Riesling 2018",
+    "opis5_en": "Silver for: Merlot-Malbec 2018, Coupage 2018 and Rhine Riesling 2018",
+    "opis6": "Bronza: Pinot Noir 2018",
+    "opis6_en": "Bronze: Pinot Noir 2018",
+    "opis7": " ",
+    "opis8": " ",
     "datum4": "Novembar, 2023",
     "datum4_en": "November 2023",
-    "slike": ["/img/Vesti/galerija10.jpg", "/img/Vesti/galerija1011jpg"]
+    "slike": [
+      "/img/Vesti/galerija10.jpg",
+      "/img/Vesti/galerija1011jpg"
+    ]
   },
- 
   {
     "id": "16",
     "naziv": "Osvojili smo 3 medalje!!",
@@ -189,18 +218,18 @@
     "maliOpis_en": "Our McC Winery won 3 medals, 2 silver and 1 bronze. Among white wines: silver for Rhine Riesling '18 and bronze for Traminer '19. Among red wines: silver for Merlot-Malbec '18.",
     "opis1": "RIVICA",
     "opis1_en": "RIVICA",
-    "opis2":"Zavičajno društvo Fruškogorje organizovalo je 21. jubilarni Dan vina u Rivici, kod Iriga - Rivica Wine&Food Festival.",
-    "opis2_en":"The Heritage Society Fruškogorje organized the 21st anniversary Wine Day in Rivica, near Irig — the Rivica Wine & Food Festival.",
-    "opis":"24.02. članovi komisije su ocenili uzorke. U pitanju su male vinarije sa niskotiražnom proizvodnjom vina, uglavnom fruškogorske.",
-    "opis_en":"On February 24, commission members evaluated the samples. These were small wineries with low-production wines, mostly from Fruška Gora.",
-    "opis3":"Naša McC Vinarija je osvojila 3 medalje, 2 srebrne i 1 bronzanu. Od belih vina: srebro za Rajnski Riesling '18 i bronza za Traminac '19. Od crvenih vina: srebro za Merlot-Malbec '18.",
-    "opis3_en":"Our McC Winery won 3 medals, 2 silver and 1 bronze. Among white wines: silver for Rhine Riesling '18 and bronze for Traminer '19. Among red wines: silver for Merlot-Malbec '18.",
+    "opis2": "Zavičajno društvo Fruškogorje organizovalo je 21. jubilarni Dan vina u Rivici, kod Iriga - Rivica Wine&Food Festival.",
+    "opis2_en": "The Heritage Society Fruškogorje organized the 21st anniversary Wine Day in Rivica, near Irig — the Rivica Wine & Food Festival.",
+    "opis": "24.02. članovi komisije su ocenili uzorke. U pitanju su male vinarije sa niskotiražnom proizvodnjom vina, uglavnom fruškogorske.",
+    "opis_en": "On February 24, commission members evaluated the samples. These were small wineries with low-production wines, mostly from Fruška Gora.",
+    "opis3": "Naša McC Vinarija je osvojila 3 medalje, 2 srebrne i 1 bronzanu. Od belih vina: srebro za Rajnski Riesling '18 i bronza za Traminac '19. Od crvenih vina: srebro za Merlot-Malbec '18.",
+    "opis3_en": "Our McC Winery won 3 medals, 2 silver and 1 bronze. Among white wines: silver for Rhine Riesling '18 and bronze for Traminer '19. Among red wines: silver for Merlot-Malbec '18.",
     "datum4": "April 6, 2022",
     "datum4_en": "April 6, 2022",
-    "slike": ["/img/Vesti/Vesti2.jpg"]
+    "slike": [
+      "/img/Vesti/Vesti2.jpg"
+    ]
   },
- 
-
   {
     "id": "3",
     "naziv": "Trofeji i velika zlata za srpska vina",
@@ -208,17 +237,22 @@
     "maliOpis": "Naša MCC Vinarija osvojila je na ovom takmičenju 4 medalje!! Zlato su osvojili: MCC Kupaža 2018 u kategoriji crvena mirna vina od internacionalnih nearomatičnih sorti i MCC Rajnski Rizling 2017 u kategoriji bela mirna vina od internacionalnih nearomatičnih sorti.",
     "maliOpis_en": "Our MCC Winery won 4 medals at this competition!! Gold was won by MCC Coupage 2018 in the still red wine category from international non-aromatic varieties and MCC Rhine Riesling 2017 in the still white wine category from international non-aromatic varieties.",
     "opis1": "Nakon više odlaganja zbog nepovoljne epidemiološke situacije, 17. i 18. maja održano je Veliko ocenjivanje vina Srbije, nadmetanje koje je premijeru imalo prošle godine na Dan Svetog Trifuna. Događaj koji je organizovao Savez vinara i vinogradara Srbije održan je u hotelu Radisson Collection, a na njemu su najeminentniji vinski stručnjaci u zemlji dali svoj sud o vinima iz cele države.",
-    "opis1_en":"After several postponements due to the unfavorable epidemiological situation, the Great Wine Evaluation of Serbia was held on May 17 and 18, a competition that premiered last year on Saint Tryphon's Day. The event, organized by the Association of Winemakers and Vintners of Serbia, was held at the Radisson Collection hotel, where the country's most eminent wine experts judged wines from across the country.",
-    "opis2":"Vina su ocenjivana u četiri panela sa po šest sudija, a na takmičenje je prispelo gotovo 500 uzoraka vina iz svih vinskih regija Srbije. Svečano proglašenje pobednika po kategorijama, kao i dodela nagrada, bili su održani 22.maja u hotelu Radisson Blue. Premijerka Ana Brnabić obišla je sve štandove vinara koji su osvojili neku od medalja, posebno se oduševila pričom o MCC Vinariji i ljubavi između Dona McCullocha i Seke Nikolić i njihovoj viziji da naprave biodinamičko i organsko vino, jedno od najboljeg u Srbiji.",
-    "opis2_en":"Wines were judged in four panels of six judges each, and almost 500 wine samples from all Serbian wine regions entered the competition. The ceremonial announcement of category winners and awards was held on May 22 at the Radisson Blu hotel. Prime Minister Ana Brnabić visited all the wineries' booths that won medals and was especially delighted by the story of MCC Winery and the love between Don McCulloch and Seka Nikolić and their vision of making biodynamic and organic wine, one of the best in Serbia.",
-    "opis":"Naša MCC Vinarija osvojila je na ovom takmičenju 4 medalje!! Zlato su osvojili: MCC Kupaža 2018 u kategoriji crvena mirna vina od internacionalnih nearomatičnih sorti i MCC Rajnski Rizling 2017 u kategoriji bela mirna vina od internacionalnih nearomatičnih sorti. Srebro su osvojili: MCC Traminac 2018 u kategoriji bela mirna vina od internacionalnih aromatičnih sorti i MCC Merlo-Malbek 2017 u kategoriji crvena mirna vina od internacionalnih nearomatičnih sorti.",
-    "opis_en":"Our MCC Winery won 4 medals at this competition!! Gold was won by MCC Coupage 2018 in the still red wine category from international non-aromatic varieties and MCC Rhine Riesling 2017 in the still white wine category from international non-aromatic varieties. Silver was won by MCC Traminer 2018 in the still white wine category from international aromatic varieties and MCC Merlot-Malbec 2017 in the still red wine category from international non-aromatic varieties.",
-    "opis3":"",
+    "opis1_en": "After several postponements due to the unfavorable epidemiological situation, the Great Wine Evaluation of Serbia was held on May 17 and 18, a competition that premiered last year on Saint Tryphon's Day. The event, organized by the Association of Winemakers and Vintners of Serbia, was held at the Radisson Collection hotel, where the country's most eminent wine experts judged wines from across the country.",
+    "opis2": "Vina su ocenjivana u četiri panela sa po šest sudija, a na takmičenje je prispelo gotovo 500 uzoraka vina iz svih vinskih regija Srbije. Svečano proglašenje pobednika po kategorijama, kao i dodela nagrada, bili su održani 22.maja u hotelu Radisson Blue. Premijerka Ana Brnabić obišla je sve štandove vinara koji su osvojili neku od medalja, posebno se oduševila pričom o MCC Vinariji i ljubavi između Dona McCullocha i Seke Nikolić i njihovoj viziji da naprave biodinamičko i organsko vino, jedno od najboljeg u Srbiji.",
+    "opis2_en": "Wines were judged in four panels of six judges each, and almost 500 wine samples from all Serbian wine regions entered the competition. The ceremonial announcement of category winners and awards was held on May 22 at the Radisson Blu hotel. Prime Minister Ana Brnabić visited all the wineries' booths that won medals and was especially delighted by the story of MCC Winery and the love between Don McCulloch and Seka Nikolić and their vision of making biodynamic and organic wine, one of the best in Serbia.",
+    "opis": "Naša MCC Vinarija osvojila je na ovom takmičenju 4 medalje!! Zlato su osvojili: MCC Kupaža 2018 u kategoriji crvena mirna vina od internacionalnih nearomatičnih sorti i MCC Rajnski Rizling 2017 u kategoriji bela mirna vina od internacionalnih nearomatičnih sorti. Srebro su osvojili: MCC Traminac 2018 u kategoriji bela mirna vina od internacionalnih aromatičnih sorti i MCC Merlot-Malbec 2017 u kategoriji crvena mirna vina od internacionalnih nearomatičnih sorti.",
+    "opis_en": "Our MCC Winery won 4 medals at this competition!! Gold was won by MCC Coupage 2018 in the still red wine category from international non-aromatic varieties and MCC Rhine Riesling 2017 in the still white wine category from international non-aromatic varieties. Silver was won by MCC Traminer 2018 in the still white wine category from international aromatic varieties and MCC Merlot-Malbec 2017 in the still red wine category from international non-aromatic varieties.",
+    "opis3": "",
     "datum4": "June 14, 2021",
     "datum4_en": "June 14, 2021",
-    "slike": ["/img/Vesti/Vest3.jpg","/img/Vesti/Vest3a.jpg","/img/Vesti/Vest3b.jpg","/img/Vesti/Vest3c.jpg","/img/Vesti/Vest3d.jpg"]
+    "slike": [
+      "/img/Vesti/Vest3.jpg",
+      "/img/Vesti/Vest3a.jpg",
+      "/img/Vesti/Vest3b.jpg",
+      "/img/Vesti/Vest3c.jpg",
+      "/img/Vesti/Vest3d.jpg"
+    ]
   },
-
   {
     "id": "4",
     "naziv": "Biodinamika u Srbiji",
@@ -226,17 +260,17 @@
     "maliOpis": "U članku ističe da je naš Traminac 2018 biodinamički adut Srbije, mlade vinarije MCC čiji je vlasnik Škotlanđanin Don McCulloch. Na njegovom vinogradu sprovedena su sva načela biodinamike, uključujući đubrenje iz kravljih rogova.",
     "maliOpis_en": "The article highlights that our Traminer 2018 is Serbia's biodynamic ace from the young MCC winery whose owner is Scotsman Don McCulloch. All biodynamic principles were applied in his vineyard, including fertilization using cow horns.",
     "opis1": "Viktor Čikeš, urednik magazina Vino.rs napisao je sjajan članak o biodinamici u Srbiji. U članku ističe da je naš Traminac 2018 biodinamički adut Srbije, mlade vinarije MCC čiji je vlasnik Škotlanđanin Don McCulloch.",
-    "opis1_en":"Viktor Čikeš, editor of Vino.rs magazine, wrote a great article about biodynamics in Serbia. The article highlights that our Traminer 2018 is Serbia's biodynamic ace from the young MCC winery whose owner is Scotsman Don McCulloch.",
-    "opis2":"Na njegovom vinogradu sprovedena su sva načela biodinamike, uključujući đubrenje iz kravljih rogova. Smatra da je ono što objedinjuje sve biodinamičke vinare je holistički pristup vinogradu kao složenom organizmu koji će biti zdrav samo ako je u potpunom skladu s prirodom.",
-    "opis2_en":"On his vineyard, all principles of biodynamics were implemented, including fertilization with cow horns. He believes that what unites all biodynamic winemakers is a holistic approach to the vineyard as a complex organism that will only be healthy if it is in complete harmony with nature.",
-    "opis":"",
-    "opis3":"",
+    "opis1_en": "Viktor Čikeš, editor of Vino.rs magazine, wrote a great article about biodynamics in Serbia. The article highlights that our Traminer 2018 is Serbia's biodynamic ace from the young MCC winery whose owner is Scotsman Don McCulloch.",
+    "opis2": "Na njegovom vinogradu sprovedena su sva načela biodinamike, uključujući đubrenje iz kravljih rogova. Smatra da je ono što objedinjuje sve biodinamičke vinare je holistički pristup vinogradu kao složenom organizmu koji će biti zdrav samo ako je u potpunom skladu s prirodom.",
+    "opis2_en": "On his vineyard, all principles of biodynamics were implemented, including fertilization with cow horns. He believes that what unites all biodynamic winemakers is a holistic approach to the vineyard as a complex organism that will only be healthy if it is in complete harmony with nature.",
+    "opis": "",
+    "opis3": "",
     "datum4": "May 3, 2021",
     "datum4_en": "May 3, 2021",
-    "slike": ["/img/Vesti/Vest4.jpg"]
+    "slike": [
+      "/img/Vesti/Vest4.jpg"
+    ]
   },
-
-
   {
     "id": "5",
     "naziv": "U Beogradu su proglašena najbolja vina iz Srbije!",
@@ -244,24 +278,24 @@
     "maliOpis": "Želimo da vas obavestimo da je Vinarija MCC osvojila 2 bronze na Manifestaciji",
     "maliOpis_en": "We want to inform you that MCC Winery won 2 bronze medals at the Saint Tryphon event.",
     "opis1": "Dragi naši prijatelji i saradnici,",
-    "opis1_en":"Dear friends and collaborators,",
-    "opis2":"U Beogradu su proglašena najbolja vina iz Srbije!",
-    "opis2_en":"The best wines from Serbia have been announced in Belgrade!",
-    "opis4":"Želimo da vas obavestimo da je Vinarija MCC osvojila 2 bronze na Manifestaciji",
-    "opis4_en":"We want to inform you that MCC Winery won 2 bronze medals at the Saint Tryphon event.",
-    "opis5":"Sveti Trifun na Savskom Vencu koji je održan u Beogradu 13.02. koje je organizovao Savez Vinara i Vinogradara Srbije gde su članovi žirija (isključivo naši stručnjaci!) degustirali su 295 vina iz cele zemlje. Nakon pozdravne reči predsednice Vlade Srbije Ane Brnabić, vina su se ocenjivala u osam kategorija: najbolje crveno i belo vino od autohtonih sorti vinove loze, crveno i belo vino od internacionalnih sorti, roze, penušavo, dezertno i vino proizvedeno po tradicionalnom metodu.",
-    "opis5_en":"Saint Tryphon on Savski Venac was held in Belgrade on February 13 and organized by the Association of Winemakers and Vintners of Serbia, where jury members (exclusively our experts!) tasted 295 wines from across the country. After opening remarks by Serbian Prime Minister Ana Brnabić, wines were evaluated in eight categories: best red and white wine from indigenous varieties, red and white wine from international varieties, rosé, sparkling, dessert, and wine made by the traditional method.",
-    "opis6":"Osvojili smo bronzu za vino MCC Traminac 2017 u kategoriji tradicionalne proizvodnje vina, gde je ostvareno 86 poena i za Coupage 2017 - vino od internacionalnih sorti bronza sa ostvarenih 88.8 poena (delimo drugo mesto sa još jednom vinarijom po ostvarenim poenima).",
-    "opis6_en":"We won bronze for MCC Traminer 2017 in the traditional wine production category, scoring 86 points, and for Coupage 2017 — an international variety red wine — bronze with 88.8 points (sharing second place with another winery by score).",
-    "opis7":"Sa ovim rezultatima i bodovima definitivno smo na samom vrhu i jedna od najboljih vinarija u Srbiji.",
-    "opis7_en":"With these results and points, we are definitely at the very top and one of the best wineries in Serbia.",
-    "opis3":"",
+    "opis1_en": "Dear friends and collaborators,",
+    "opis2": "U Beogradu su proglašena najbolja vina iz Srbije!",
+    "opis2_en": "The best wines from Serbia have been announced in Belgrade!",
+    "opis4": "Želimo da vas obavestimo da je Vinarija MCC osvojila 2 bronze na Manifestaciji",
+    "opis4_en": "We want to inform you that MCC Winery won 2 bronze medals at the Saint Tryphon event.",
+    "opis5": "Sveti Trifun na Savskom Vencu koji je održan u Beogradu 13.02. koje je organizovao Savez Vinara i Vinogradara Srbije gde su članovi žirija (isključivo naši stručnjaci!) degustirali su 295 vina iz cele zemlje. Nakon pozdravne reči predsednice Vlade Srbije Ane Brnabić, vina su se ocenjivala u osam kategorija: najbolje crveno i belo vino od autohtonih sorti vinove loze, crveno i belo vino od internacionalnih sorti, roze, penušavo, dezertno i vino proizvedeno po tradicionalnom metodu.",
+    "opis5_en": "Saint Tryphon on Savski Venac was held in Belgrade on February 13 and organized by the Association of Winemakers and Vintners of Serbia, where jury members (exclusively our experts!) tasted 295 wines from across the country. After opening remarks by Serbian Prime Minister Ana Brnabić, wines were evaluated in eight categories: best red and white wine from indigenous varieties, red and white wine from international varieties, rosé, sparkling, dessert, and wine made by the traditional method.",
+    "opis6": "Osvojili smo bronzu za vino MCC Traminac 2017 u kategoriji tradicionalne proizvodnje vina, gde je ostvareno 86 poena i za Coupage 2017 - vino od internacionalnih sorti bronza sa ostvarenih 88.8 poena (delimo drugo mesto sa još jednom vinarijom po ostvarenim poenima).",
+    "opis6_en": "We won bronze for MCC Traminer 2017 in the traditional wine production category, scoring 86 points, and for Coupage 2017 — an international variety red wine — bronze with 88.8 points (sharing second place with another winery by score).",
+    "opis7": "Sa ovim rezultatima i bodovima definitivno smo na samom vrhu i jedna od najboljih vinarija u Srbiji.",
+    "opis7_en": "With these results and points, we are definitely at the very top and one of the best wineries in Serbia.",
+    "opis3": "",
     "datum4": "December 4, 2020",
     "datum4_en": "December 4, 2020",
-    "slike": ["/img/Vesti/Vesti5.jpg"]
+    "slike": [
+      "/img/Vesti/Vesti5.jpg"
+    ]
   },
-
-
   {
     "id": "6",
     "naziv": "Škotlanđanin među srpskom vinskom elitom",
@@ -269,17 +303,17 @@
     "maliOpis": "Na nedavno održanom ocenjivanju srpskih vina u organizaciji Saveza vinara i vinogradara Srbije, vinarija MCC iz okoline Erdevika postigla je zapažen uspeh osvojivši treće mesto za Coupage 2017 MCC",
     "maliOpis_en": "At the recent evaluation of Serbian wines organized by the Association of Winemakers and Vintners of Serbia, MCC Winery near Erdevik achieved notable success by taking third place for MCC Coupage 2017.",
     "opis1": "Na nedavno održanom ocenjivanju srpskih vina u organizaciji Saveza vinara i vinogradara Srbije, vinarija MCC iz okoline Erdevika postigla je zapažen uspeh osvojivši treće mesto za Coupage 2017 MCC u kategoriji crvenih vina od internacionalnih sorti i treće mesto za Traminac 2017 MCC u kategoriji vina proizvedenih tradicionalnom metodom.",
-    "opis1_en":"At the recent evaluation of Serbian wines organized by the Association of Winemakers and Vintners of Serbia, MCC Winery near Erdevik achieved notable success by taking third place for MCC Coupage 2017 in the red wine category from international varieties and third place for MCC Traminer 2017 in the traditional wine category.",
-    "opis2":"Ova mala vinarija koja proizvodi organska vina, doduše i dalje bez zvaničnog sertifikata, a koju je pre desetak godina pokrenuo Škotlanđanin Don McCulloch, prva je počela uspešno da primenjuje metode biodinamike u Srbiji. O tome svedoče sada već brojna priznanja, među kojima su i zlato za Coupage 2012 i srebro za godinu dana stariju berbu na Velikom testu Vino.rs 2014. godine.",
-    "opis2_en":"This small organic winery — still without official certification — was started about ten years ago by Scotsman Don McCulloch and was the first to successfully apply biodynamic methods in Serbia. This is evidenced by numerous awards, including gold for Coupage 2012 and silver for the one-year-older vintage at the Vino.rs Grand Test in 2014.",
-    "opis":"",
-    "opis3":"",
+    "opis1_en": "At the recent evaluation of Serbian wines organized by the Association of Winemakers and Vintners of Serbia, MCC Winery near Erdevik achieved notable success by taking third place for MCC Coupage 2017 in the red wine category from international varieties and third place for MCC Traminer 2017 in the traditional wine category.",
+    "opis2": "Ova mala vinarija koja proizvodi organska vina, doduše i dalje bez zvaničnog sertifikata, a koju je pre desetak godina pokrenuo Škotlanđanin Don McCulloch, prva je počela uspešno da primenjuje metode biodinamike u Srbiji. O tome svedoče sada već brojna priznanja, među kojima su i zlato za Coupage 2012 i srebro za godinu dana stariju berbu na Velikom testu Vino.rs 2014. godine.",
+    "opis2_en": "This small organic winery — still without official certification — was started about ten years ago by Scotsman Don McCulloch and was the first to successfully apply biodynamic methods in Serbia. This is evidenced by numerous awards, including gold for Coupage 2012 and silver for the one-year-older vintage at the Vino.rs Grand Test in 2014.",
+    "opis": "",
+    "opis3": "",
     "datum4": "December 4, 2020",
     "datum4_en": "December 4, 2020",
-    "slike": ["/img/Vesti/Vest6.jpg"]
+    "slike": [
+      "/img/Vesti/Vest6.jpg"
+    ]
   },
-
-
   {
     "id": "7",
     "naziv": "Popodne jednog kabernea",
@@ -287,17 +321,17 @@
     "maliOpis": "Nakon mnogo godina provedenih u službi njenog veličanstva tokom kojih je englesku kraljevsku porodicu direktno čuvao, Škot Don McCulloch se zaljubio u jednu Sremicu i jednu Frušku goru donoseći vinske emocije i znanje iz dalekih, svežih i zelenih vinogorja Novog Zelanda i ugrađujući ga u biodinamički vinograd u Erdeviku.",
     "maliOpis_en": "After many years serving Her Majesty and directly guarding the English royal family, Scotsman Don McCulloch fell in love with a woman from Srem and Fruška Gora, bringing wine emotions and knowledge from the distant, fresh, green vineyards of New Zealand and embedding them into the biodynamic vineyard in Erdevik.",
     "opis1": "Nakon mnogo godina provedenih u službi njenog veličanstva tokom kojih je englesku kraljevsku porodicu direktno čuvao, Škot Don McCulloch se zaljubio u jednu Sremicu i jednu Frušku goru donoseći vinske emocije i znanje iz dalekih, svežih i zelenih vinogorja Novog Zelanda i ugrađujući ga u biodinamički vinograd u Erdeviku.",
-    "opis1_en":"After many years serving Her Majesty and directly guarding the English royal family, Scotsman Don McCulloch fell in love with a woman from Srem and Fruška Gora, bringing wine emotions and knowledge from the distant, fresh, green vineyards of New Zealand and embedding them into the biodynamic vineyard in Erdevik.",
-    "opis2":"Sublimat ovde izrečenog lako se uočava u crvenom vinu, kupaži dve sorte kabernea koje kao da je krajem proleća odjednom sazrelo i eksplodiralo svim svojim atributima. Kaberne fran je sve popularniji u Srbiji, pri čemu ova MCC etiketa dokazuje da je sposoban za vrhunske svetske izazove.",
-    "opis2_en":"The sublime sentiment expressed here is easily noticeable in the red wine, a blend of two cabernet varieties that seemed to ripen all at once at the end of spring and explode with all their attributes. Cabernet Franc is becoming increasingly popular in Serbia, and this MCC label proves it is capable of top global challenges.",
-    "opis":"",
-    "opis3":"",
+    "opis1_en": "After many years serving Her Majesty and directly guarding the English royal family, Scotsman Don McCulloch fell in love with a woman from Srem and Fruška Gora, bringing wine emotions and knowledge from the distant, fresh, green vineyards of New Zealand and embedding them into the biodynamic vineyard in Erdevik.",
+    "opis2": "Sublimat ovde izrečenog lako se uočava u crvenom vinu, kupaži dve sorte Cabernet koje su krajem proleća odjednom sazrele i eksplodirale svim svojim atributima. Cabernet Franc je sve popularniji u Srbiji, pri čemu ova MCC etiketa dokazuje da je sposoban za vrhunske svetske izazove.",
+    "opis2_en": "The sublime sentiment expressed here is easily noticeable in the red wine, a blend of two cabernet varieties that seemed to ripen all at once at the end of spring and explode with all their attributes. Cabernet Franc is becoming increasingly popular in Serbia, and this MCC label proves it is capable of top global challenges.",
+    "opis": "",
+    "opis3": "",
     "datum4": "November 17, 2020",
     "datum4_en": "November 17, 2020",
-    "slike": ["/img/Vesti/Vest7.jpg"]
+    "slike": [
+      "/img/Vesti/Vest7.jpg"
+    ]
   },
-
-
   {
     "id": "8",
     "naziv": "MCC MCCULLOCH WINES: ALL-NATURAL NECTAR OF THE GODS FROM FRUŠKA GORA",
@@ -305,100 +339,101 @@
     "opis1": "In vino veritas and the truth is that love is the key ingredient for a good wine and a good life. McCulloch couple – Englishman Don McCulloch and Serbian-born Seka Nikolić witness about the good life in Vojvodina where one girl's childhood memories live in every corner of Erdevik and the quiet life of Fruška Gora which gives a lot of good energy after intense working years.",
     "opis2": "Don and Seka McCulloch welcomed our DC „dvojac bez kormilara“ offering us to sit in their UK-Yugoslavia beautiful house decorated with interesting details such as cow horns, shell shaped ornaments and Seka's paintings. Don tells us how MCC winery captivates holistic and \"old world\" methodologies to work with nature reminding us that the vines were grown in Fruška Gora as early as 296 AD and that modern viticulture was brought here by the Roman Emperor Probus. \"Our wines are unique being completely organic and our maxima is 'quality is more important than quantity.' As a producer of food – and the wine is soul food – we have a huge responsibility to people who drink our wines not to put chemicals in our bottles. I have heard that as much as 125 mg of chemicals can be traced in a bottle of commercial wine now. When making wine, one has immense responsibility.\"",
     "opis": "https://www.diplomacyandcommerce.rs/mcc-mcculloch-wines-all-natural-nectar-of-the-gods-from-fruska-gora/",
-    "opis3":"",
+    "opis3": "",
     "datum4": "November 17, 2020",
-    "slike": ["/img/Vesti/Vest8.jpg"]
+    "slike": [
+      "/img/Vesti/Vest8.jpg"
+    ]
   },
-
-
   {
     "id": "9",
     "naziv": "DIPLOMATS AND BUSINESS PEOPLE VISIT FRUŠKA GORA – SERBIA HAS ITS TUSCANY!",
     "maliOpis": "Diplomacy & Commerce magazine and Color Media Communications organized a sightseeing wine tour of Fruška Gora for diplomats and the magazine's associates.",
     "opis1": "Diplomacy & Commerce magazine and Color Media Communications organized a sightseeing wine tour of Fruška Gora for diplomats and the magazine's associates.",
-    "opis2":"On the wine tour, the guests visited two monasteries and two wineries and had lunch. The guests gathered in Sremski Karlovci.",
-    "opis":"https://www.diplomacyandcommerce.rs/diplomats-and-business-people-visit-fruska-gora-serbia-has-its-tuscany/",
-    "opis3":"",
+    "opis2": "On the wine tour, the guests visited two monasteries and two wineries and had lunch. The guests gathered in Sremski Karlovci.",
+    "opis": "https://www.diplomacyandcommerce.rs/diplomats-and-business-people-visit-fruska-gora-serbia-has-its-tuscany/",
+    "opis3": "",
     "datum4": "November 17, 2020",
-    "slike": ["/img/Vesti/Vest9.jpg"
-  ]
+    "slike": [
+      "/img/Vesti/Vest9.jpg"
+    ]
   },
-
   {
     "id": "10",
     "naziv": "MCC WINES WIN DECANTER AWARDS MEDAL FOR OUR TRAMINAC",
     "maliOpis": "The Decanter World Wine Awards (DWWA) is the world’s largest and most prestigious wine competition judged by top wine experts from around the world. The DWWA is respected internationally as an unrivalled source of wine recommendations.",
     "opis1": "We are absolutely thrilled to win another medal from The Decanter World Wine Awards!",
-    "opis2":"This time it is a Bronze for the Traminac 2013. We are especially thrilled with this award as this is a white grape that people often don't know much about and therefore dismiss- so by receiving 86 points from the Decanter 2016 judges for a lesser known variety of organic and biodynamically made Serbian wine, it really does feel like an underdog triumph for us!",
-    "opis":"The Decanter World Wine Awards (DWWA) is the world’s largest and most prestigious wine competition judged by top wine experts from around the world. The DWWA is respected internationally as an unrivalled source of wine recommendations. We'll be stickering up the bottles as soon as we can and adding it to our growing trophy cabinet of #award-winning #organic and #biodynamic #Serbian wines!",
-    "opis3":"",
+    "opis2": "This time it is a Bronze for the Traminac 2013. We are especially thrilled with this award as this is a white grape that people often don't know much about and therefore dismiss- so by receiving 86 points from the Decanter 2016 judges for a lesser known variety of organic and biodynamically made Serbian wine, it really does feel like an underdog triumph for us!",
+    "opis": "The Decanter World Wine Awards (DWWA) is the world’s largest and most prestigious wine competition judged by top wine experts from around the world. The DWWA is respected internationally as an unrivalled source of wine recommendations. We'll be stickering up the bottles as soon as we can and adding it to our growing trophy cabinet of #award-winning #organic and #biodynamic #Serbian wines!",
+    "opis3": "",
     "datum4": "May 11, 2016",
-    "slike": ["/img/Vesti/Vesti10.jpeg","/img/Vesti/Vesti10a.jpeg"
-  ]
+    "slike": [
+      "/img/Vesti/Vesti10.jpeg",
+      "/img/Vesti/Vesti10a.jpeg"
+    ]
   },
   {
     "id": "11",
     "naziv": "MCCULLOCHWINES AND THE PRINCE OF WALES",
     "maliOpis": "In March I was kindly invited to meet the Prince of Wales and the Duchess of Cornwall on their visit to Belgrade, Serbia. Along with various figures of Serbian society (from Government, Art, Sports and Media etc) I was asked at this reception hosted at the Serbian Parliament, to represent our British-Serbian wine.",
     "opis1": "In March I was kindly invited to meet the Prince of Wales and the Duchess of Cornwall on their visit to Belgrade, Serbia.",
-    "opis2":"Along with various figures of Serbian society (from Government, Art, Sports and Media etc) I was asked at this reception hosted at the Serbian Parliament, to represent our British-Serbian wine.",
-    "opis":"Here I am telling the Prince how it was in fact the days of working with him on the Duchy of Cornwall farms (in my previous career) that I became aware of Biodynamic farming and subsequently inspired my interests into making wine the way I do. Funny how things go full circle sometimes!",
-    "slike": ["/img/Vesti/Vest12.jpeg","/img/Vesti/Vest12a.jpeg"
-  ]
+    "opis2": "Along with various figures of Serbian society (from Government, Art, Sports and Media etc) I was asked at this reception hosted at the Serbian Parliament, to represent our British-Serbian wine.",
+    "opis": "Here I am telling the Prince how it was in fact the days of working with him on the Duchy of Cornwall farms (in my previous career) that I became aware of Biodynamic farming and subsequently inspired my interests into making wine the way I do. Funny how things go full circle sometimes!",
+    "slike": [
+      "/img/Vesti/Vest12.jpeg",
+      "/img/Vesti/Vest12a.jpeg"
+    ]
   },
-
-
   {
     "id": "12",
     "naziv": "WINES OF FRUŠKA GORA THAT YOU HAVE TO TRY!",
     "maliOpis": "",
     "opis1": "",
-    "opis2":"",
-    "opis":"",
-    "opis3":"",
+    "opis2": "",
+    "opis": "",
+    "opis3": "",
     "datum4": "April 25, 2016",
-    "slike": ["/img/Vesti/Vest11.jpeg"
-  ]
+    "slike": [
+      "/img/Vesti/Vest11.jpeg"
+    ]
   },
   {
     "id": "13",
     "naziv": "VINO GODINE COUNTS OUR COUPAGE 2012 IN ITS TOP TEN BEST WINES",
     "maliOpis": "In January 2016 top Serbian wine magazine 'Vino Godine' counts our Coupage 2012 in its Top Ten Best Wines from the country.",
     "opis1": "In January 2016 top Serbian wine magazine 'Vino Godine' counts our Coupage 2012 in its Top Ten Best Wines from the country.",
-    "opis2":"We grabbed 9th place! Not bad for such a newly established vineyard competing against some of Serbia's oldest and finest companies.",
-    "opis":"",
-    "opis3":"",
+    "opis2": "We grabbed 9th place! Not bad for such a newly established vineyard competing against some of Serbia's oldest and finest companies.",
+    "opis": "",
+    "opis3": "",
     "datum4": "March 3, 2016",
-    "slike": ["/img/Vesti/Vest13.jpeg"
-  ]
+    "slike": [
+      "/img/Vesti/Vest13.jpeg"
+    ]
   },
   {
     "id": "14",
     "naziv": "VINO.RS MAGAZINE - PRESTIGIOUS WINE PUBLICATION (FEBRUARY 2016)",
     "maliOpis": "While only official from next spring, the occasional vineyard in Serbia does carry Organic Certification. We already have several wineries that work on all the requirements of organic production. Some with international varieties, while others boldly blending indigenous and newly discovered variants. But without much doubt, a consensus has been reached that these (MCC Wines) are currently the best Serbian wines in this segment.",
     "opis1": "While only official from next spring, the occasional vineyard in Serbia does carry Organic Certification. We already have several wineries that work on all the requirements of organic production. Some with international varieties, while others boldly blending indigenous and newly discovered variants. But without much doubt, a consensus has been reached that these (MCC Wines) are currently the best Serbian wines in this segment.",
-    "opis2":"https://www.vino.rs/vinske-price/item/1834-vina-koja-su-obelezila-2015-godinu.html",
-    "opis":"",
-    "opis3":"",
+    "opis2": "https://www.vino.rs/vinske-price/item/1834-vina-koja-su-obelezila-2015-godinu.html",
+    "opis": "",
+    "opis3": "",
     "datum4": "March 3, 2016",
-    "slike": ["/img/Vesti/Vest14.png"
-  ]
+    "slike": [
+      "/img/Vesti/Vest14.png"
+    ]
   },
   {
     "id": "15",
     "naziv": "TASTE FROM RUSSIA",
     "maliOpis": "A lovely blog with great tasting notes about McCulloch Wine Merlot-Malbec 2012. Thank you Perica S. Radović, glad you enjoyed!",
     "opis1": "A lovely blog with great tasting notes about McCulloch Wine Merlot-Malbec 2012. Thank you Perica S. Radović, glad you enjoyed!",
-    "opis2":"For full article click here > http://merlo.rs/mcculloch-wines-mcc-merlot-malbec-2012/",
-    "opis":"Tasting notes translated to English > This wine is produced in a limited edition of 975 bottles. The color is beautiful, deep, almost purple. After an hour in the decanter, the nose, at first, surprising. A strange smell that, though, quickly passes, leaving behind quite a pleasant trace of ripe, sweet, crushed blackberries. Dense, powerful and unmolested smell. Alcohol is not too noticeable. Although very strong (15%), great hidden. Taste intense, fruity. Very friendly. Dominated by aromas of small red fruits. Tannins somewhat contentious, good acid. Balance slightly compromised in favor of tannin. And the subsequent intense taste, strong. Chocolate and fruity, with a touch of coffee. It takes a long time, leaves an impression of fullness in the mouth. At the very fringes, brings something spicy aromas. Alcohol noticeable in the mouth and stomach, rather than on the nose. I really like this wine. Unconventional, character. Sharp and smooth, seductive. Attracts attention. Somewhat surprising style of red wine of Fruška Gora. Are the glass behind it remains a very dirty, but it's worth. Excellent. Perica S. Radović",
-    "opis3":"",
+    "opis2": "For full article click here > http://merlo.rs/mcculloch-wines-mcc-merlot-malbec-2012/",
+    "opis": "Tasting notes translated to English > This wine is produced in a limited edition of 975 bottles. The color is beautiful, deep, almost purple. After an hour in the decanter, the nose, at first, surprising. A strange smell that, though, quickly passes, leaving behind quite a pleasant trace of ripe, sweet, crushed blackberries. Dense, powerful and unmolested smell. Alcohol is not too noticeable. Although very strong (15%), great hidden. Taste intense, fruity. Very friendly. Dominated by aromas of small red fruits. Tannins somewhat contentious, good acid. Balance slightly compromised in favor of tannin. And the subsequent intense taste, strong. Chocolate and fruity, with a touch of coffee. It takes a long time, leaves an impression of fullness in the mouth. At the very fringes, brings something spicy aromas. Alcohol noticeable in the mouth and stomach, rather than on the nose. I really like this wine. Unconventional, character. Sharp and smooth, seductive. Attracts attention. Somewhat surprising style of red wine of Fruška Gora. Are the glass behind it remains a very dirty, but it's worth. Excellent. Perica S. Radović",
+    "opis3": "",
     "datum4": "November 18, 2015",
-    "slike": ["/img/Vesti/Vest15.jpeg"
-  ]
+    "slike": [
+      "/img/Vesti/Vest15.jpeg"
+    ]
   }
- 
-
-  
-
-
 ]

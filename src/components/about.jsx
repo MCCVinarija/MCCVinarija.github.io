@@ -3,21 +3,20 @@ import "../css/about.css";
 import { LanguageContext } from "../LanguageContext";
 
 export const AboutCmp = (props) => {
-  const { language = 'sr' } = useContext(LanguageContext) || {};
+  const { language = "sr" } = useContext(LanguageContext) || {};
   const [expanded, setExpanded] = useState({});
   const toggle = (id) => setExpanded((s) => ({ ...s, [id]: !s[id] }));
-  const readMoreLabel = language === 'sr' ? 'Prikaži više' : 'Read more';
-  const readLessLabel = language === 'sr' ? 'Prikaži manje' : 'Read less';
+  const readMoreLabel = language === "sr" ? "Prikaži više" : "Read more";
+  const readLessLabel = language === "sr" ? "Prikaži manje" : "Read less";
   const [highlighted, setHighlighted] = useState(null);
 
-  const collapsibleCards = new Set(['Vinarija', 'Organski', 'organic']);
+  const collapsibleCards = new Set(["Vinarija", "Organski", "organic"]);
   const shouldShowReadMore = (id) => collapsibleCards.has(id);
   const getTextClass = (id) =>
-    `about-card-text ${shouldShowReadMore(id) ? (expanded[id] ? 'expanded' : 'collapsed') : 'expanded'}`;
+    `about-card-text ${shouldShowReadMore(id) ? (expanded[id] ? "expanded" : "collapsed") : "expanded"}`;
   const hoverTimeouts = useRef({});
 
   const handleEnter = (id) => {
-    // cancel pending clear
     if (hoverTimeouts.current[id]) {
       clearTimeout(hoverTimeouts.current[id]);
       hoverTimeouts.current[id] = null;
@@ -26,101 +25,102 @@ export const AboutCmp = (props) => {
   };
 
   const handleLeave = (id) => {
-    // small delay so quick moves between children don't flicker
     hoverTimeouts.current[id] = setTimeout(() => {
       if (highlighted === id) setHighlighted(null);
       hoverTimeouts.current[id] = null;
     }, 180);
   };
 
-  const aboutText = {
-    sr: {
-      aboutTitle: 'O nama',
-      aboutText: `Uzgajanje vinove loze u oblasti Fruške gore u Srbiji beleži se još u 296. godine pre nove ere, dok je
-moderno vinogradarstvo u taj kraj doneo rimski imperator Probus. Ovaj vinograd predstavlja projekat
-oživljavanja bogatstva regiona, kao i priliku da se isprobaju proizvodi njegovih plodova.
-Biodinimački pristup proizvodnji vina omogućava holističku i metodologiju Starog sveta koje nalažu
-da se radi u skladu sa prirodom, a ne protiv nje. Za pospešivanje ukusa, kvaliteta i posebnosti vina,
-ne koriste se nikakva veštačka djubriva ili hemikalije, ni na t!lu ni na voću.
-McC McCulloch Vina su inovativni spoj partnerstva izmedju dvoje supružnika, Engleza Don
-McCulloch-a i! Seke Nikolić, srpskog porekla. Don, svojim francuskim i škotskim nasledjem i svojim
-širokim znanjem, stečenim radom sa uzgajivačima vina širom sveta, osmislio je ovu niskotiražnu
-proizvodnju vina.`,
-      wineryTitle: 'O vinariji',
-      wineryText: `McC Vinarija je izgrađena 2017.godine u Erdeviku, na Fruškoj Gori i proizvodi organska
-i biodinamička vina. Prilikom tretiranja zemlje ne koristimo nikakve hemikalije, pesticide,
-hebricide, veštačka đubriva i druge modifikovane organizme koji trajno mogu uništiti
-prirodni ekosistem.
+  
+const aboutText = {
+  sr: {
+    aboutTitle: "O nama",
+    aboutText: `Vinogradarstvo na području Fruške gore datira još iz 296. godine, kada je rimski car Probus doneo prve zasade vinove loze u ovaj kraj. Inspirisana bogatom tradicijom regiona, vinarija McC nastala je sa željom da oživi autentičan karakter Fruške gore kroz vina koja odražavaju njeno podneblje, istoriju i prirodu.
 
-Posedujemo 3ha zemlje, naše sorte su: -crvene: Merlo, Malbek, Kaberne Fran,
-Kaberne Sovinjon i Pino Noar, bele: Traminac, Rajnski Rizling I Sovinjon Blan.
-Vlasnik vinarije je Don McCulloch , Škot koji je zajedno sa suprugom Sekom Nikolić
-2008. godine kupio vinograd u Erdeviku, 2011.godine proizvedena je prva berba koja
-već osvaja bronzu na Decanteru. Zajedno su počeli da šire svest i znanje o drugačijem i
-kvalitetnijem pristupu uzgoja grožđa.
-Locirani smo na obroncima Fruške Gore ,na vinskom putu, tj ruti Ilok-Erdevik, koji
-značajno doprinosi razvoju vinskog turizma na Fruškoj Gori, na području gde je rimski
-car Probus još 296.godine p.n.e. doneo moderno vinogradarstvo u ovaj kraj.
-Vinarija McC ima površinu 221,17m2 . Godišnje proizvede prosečno 15.000 boca.
-Crvena vina se čuvaju minimum 18 meseci u srpskom hrastovom buretu a u bocama
-leže još minimum 10 meseci.
-Sama izgradnje naše vinarije predstavlja izuzetno lep turistički objekat gde turisti i
-posetioci mogu da uživaju u pogledu, ukusima najkvalitetnijih vina i gde mogu da nauče
-mnogo o našoj bogatoj istoriji. Sastoji se od proizvodnog pogona, barik sale gde
-posetioci mogu da degustiraju vina, sale na gornjem spratu gde prijatelji i posetioci
-mogu da uzivaju uz vino i najbolje meze prelepog Srema uz prijatan ambijent.
+Naša filozofija zasniva se na organskom i biodinamičkom pristupu proizvodnji vina, uz poštovanje prirodnih ciklusa i tradicionalnih metoda Starog sveta. U vinogradu ne koristimo pesticide, herbicide, veštačka đubriva niti druge hemijske tretmane, već negujemo zemlju kako bi vinova loza prirodno razvila svoj puni potencijal.
 
-Od 2011.godine koristimo organski i biodinamički pristup tretiranja zemljišta i vinograda,
-ali tek nakon izgrađene vinarije podneli smo zahtev i dobili ORGANSKI SERTIFIKAT
-REPUBLIKE SRBIJE za organsku proizvodnju i preradu,kao i za izvoz, u novembru
-2020.godine od strane akreditovanog sertifikacionog tela "EKOCERT BALKAN"doo iz
-Zemuna,ovlašćenog od strane Ministarstva poljoprivrede,šumarstva i vodoprivrede.
-2023/2024 dobijamo sertifikat za biodinamičku preradu vina za berbu 2022. od strane
-kompanije "Demeter" -Biodynamic Federation Demeter International.
+McC vina predstavljaju spoj znanja, tradicije i međunarodnog iskustva supružnika Dona McCullocha i Seke Nikolić. Donovo francusko i škotsko nasleđe, zajedno sa dugogodišnjim iskustvom stečenim radom sa vinarima širom sveta, utkano je u svaku bocu naših vina.`,
 
-Sve sorte su odnegovane uz pomoć biodinamičkog pristupa proizvodnji vina i
-tradicionalnih poljoprivrednih metoda. Bez upotrebe veštačkih djubriva ili hemikalija,
-dobija se ukus, kvalitet i individualnost uz minimalnu intervenciju u vinariji.`,
-      companyTitle: 'O kompaniji',
-      companyText:
-        'McC McCulloch Vina su inovativni spoj partnerstva između dvoje supružnika, Engleza Don McCulloch-a i Seke Nikolić, srpskog porekla. Don, svojim francuskim i škotskim nasleđem i svojim širokim znanjem stečenim radom sa uzgajivačima vina širom sveta, osmislio je ovu jedinstvenu proizvodnju vina.',
-      organicTitle: 'Organski i biodinamički pristup',
-      organicText:
-        'Od 2011. godine koristimo organski i biodinamički pristup tretiranju zemljišta i vinograda, ali tek nakon izgrađene vinarije podneli smo zahtev i dobili ORGANSKI I BIODINAMIČKI SERTIFIKAT REPUBLIKE SRBIJE za organsku proizvodnju i preradu, kao i za izvoz, u novembru 2020. godine od strane akreditovanog sertifikacionog tela "EKOCERT BALKAN" d.o.o. iz Zemuna, ovlašćenog od strane Ministarstva poljoprivrede, šumarstva i vodoprivrede. Od 2022. godine dobijamo prvi biodinamički sertifikat od strane Biodynamic Federation - Demeter International. Sertifikacija je rađena po organskim regulativama R. Srbije i EU. Organsko vinogradarstvo i vinarstvo bazirano je na organskim principima gajenja grožđa i proizvodnje vina, ali pre svega predstavlja stanje svesti da je suština povratak prirodi i zemlji i ideja prirodnog gajenja grožđa i proizvodnje vina. To podrazumeva odsustvo bilo kakvih pesticida, herbicida, veštačkih đubriva i drugih mikroorganizama koji mogu trajno da unište prirodni ekosistem. Dodavanjem energije i poštovanjem zemlje, naše grožđe je pažljivo odnegovano, uz primenu modernih metoda u proizvodnji vina. Hranimo zemlju radije nego biljku i na taj način gradimo imunitet vinove loze. Na nasem vinogradu sprovedena su sva nacela bidinamike, ukljucujuci djubrenje iz kravljih rogova. Smatramo da je ono sto objedinjuje sve bidinamicke vinare holisticki pristup vinogradu kao slozenom organizmu koji ce biti zdrav samo ako je u potpunom skladu sa prirodom.',
-      organicDownloadText: 'Preuzmi sertifikate:',
-      tastingTitle: 'Degustacija i posete',
-      tastingText:
-        'Posetite našu vinariju sa grupom od dve do 10 osoba i otkrijte čaroliju vina. Vaša poseta počinje u našim vinogradima, gde ćete saznati više o sortama koje uzgajamo i načinu na koji negujemo naše vinograde. Nakon toga, čeka vas ukusna meza koja će upotpuniti vaše vinsko iskustvo dok uživate u prelepom pogledu na vinograde i Frušku Goru koja se uzdiže u daljini. Naši stručnjaci će vas provesti kroz svako vino, objasniti njegove karakteristike i pomoći vam da pronađete svoje favorite. Degustacija traje maksimalno 2 sata. Da bismo osigurali vaše neometano uživanje, molimo vas da posetu najavite dan ranije, a za vikend posete preporučujemo da to učinite dva dana unapred. Za više informacija i rezervaciju pozovite nas na telefon: +381 63 653 202 ili posetite ',
-      tastingLink: 'ovaj link',
-      harvestTitle: 'Prva berba',
-      harvestText:
-        'Naš prvi proizvod "KUPAŽA 2011" napravljen mešanjem dvostrukog zajedničkog vrenja sorti Merlot i Malbec, kao i sorti Cabernet Franc i Cabernet Sauvignon. Odležao 12 meseci u barik buradima od srpskog hrasta i potom flaširan da odstoji još 14 meseci. Vino je osvojilo bronzu na Decanteru 2014. godine u Londonu.',
-      linkText: 'linku',
-    },
-    en: {
-      aboutTitle: 'About us',
-      aboutText:
-        'McC McCulloch Wines are an innovative partnership between Englishman Don McCulloch and Serbian-born Seka Nikolic. Don used his French and Scottish heritage and his broad experience working with winegrowers around the world to create this unique wine production.',
-      wineryTitle: 'About the winery',
-      wineryText:
-        'The McC winery covers 221.17 m². It produces an average of 15,000 bottles per year. Red wines are aged 12 months in Serbian oak barrels and then rest for at least 10 more months in bottle. White wines also rest for at least 10 months in bottle before release. In 2020 we built a storage facility next to the winery where we keep our wine reserves.',
-      companyTitle: 'About the company',
-      companyText:
-        'McC McCulloch Wines are an innovative partnership between Englishman Don McCulloch and Serbian-born Seka Nikolic. Don used his French and Scottish heritage and his broad experience working with winegrowers around the world to create this unique wine production.',
-      organicTitle: 'Organic and biodynamic',
-      organicText:
-        'Since 2011 we have used an organic and biodynamic approach to treating the soil and vineyards, but only after the winery was built did we apply for and receive the ORGANIC AND BIODYNAMIC CERTIFICATE OF THE REPUBLIC OF SERBIA for organic production and processing, as well as for export, in November 2020 from the accredited certification body "EKOCERT BALKAN" d.o.o. from Zemun, authorized by the Ministry of Agriculture, Forestry and Water Management.',
-      organicDownloadText: 'Download certificates:',
-      tastingTitle: 'Tasting and visits',
-      tastingText:
-        'Visit our winery with a group of two to ten people and discover the magic of wine. Your visit begins in our vineyards, where you will learn more about the varieties we grow and how we care for our vineyards. After that, a delicious platter awaits to complete your wine experience while you enjoy the beautiful view of the vineyards and Fruška Gora in the distance. Our experts will guide you through each wine, explain its characteristics, and help you find your favorites. The tasting lasts a maximum of two hours. To ensure your uninterrupted enjoyment, please let us know one day in advance, and for weekend visits we recommend booking two days ahead. For more information and reservations call us at +381 63 653 202 or visit ',
-      tastingLink: 'this link',
-      harvestTitle: 'First harvest',
-      harvestText:
-        'Our first product "KUPAŽA 2011" was created by blending a double co-fermentation of Merlot and Malbec, as well as Cabernet Franc and Cabernet Sauvignon. It aged 12 months in Serbian oak barrels and then was bottled to rest for another 14 months.',
-      linkText: 'this link',
-    },
-  };
+    wineryTitle: "O vinariji",
+    wineryText: `Vinarija McC izgrađena je 2017. godine u Erdeviku, na obroncima Fruške gore, i posvećena je proizvodnji organskih i biodinamičkih vina. Naša filozofija zasniva se na minimalnoj intervenciji i potpunom poštovanju prirodnog ekosistema.
+
+Obrađujemo tri hektara vinograda na kojima uzgajamo crvene sorte Merlot, Malbec, Cabernet Franc, Cabernet Sauvignon i Pinot Noir, kao i bele sorte Traminac, Rajnski Rizling i Sauvignon Blanc.
+
+Vinograd su 2008. godine kupili Don McCulloch i njegova supruga Seka Nikolić, a prva berba proizvedena je 2011. godine. Već sa prvim vinima osvojena je bronzana medalja na prestižnom Decanter World Wine Awards takmičenju u Londonu.
+
+Vinarija se nalazi na vinskoj ruti Ilok–Erdevik, u srcu Fruške gore, regiona poznatog po dugoj vinskoj tradiciji i razvoju vinskog turizma. Godišnje proizvodimo približno 15.000 boca vina.
+
+Crvena vina odležavaju minimum dve godine u buradima od srpskog hrasta, a zatim dodatno sazrevaju u boci kako bi razvila punu kompleksnost i eleganciju.
+
+Pored proizvodnog dela, vinarija poseduje barik salu za degustacije i prostor namenjen uživanju u vinima i tradicionalnim sremskim specijalitetima, uz pogled na vinograde i pejzaže Fruške gore.`,
+
+    companyTitle: "O kompaniji",
+    companyText:
+      "McC vina predstavljaju jedinstveno partnerstvo Dona McCullocha i Seke Nikolić. Spojem međunarodnog iskustva, tradicionalnog znanja i ljubavi prema vinu nastala je mala, autentična proizvodnja fokusirana na vina izraženog karaktera i porekla.",
+
+    organicTitle: "Organski i biodinamički pristup",
+    organicText:
+      "Od 2011. godine primenjujemo organski i biodinamički pristup u vinogradu i proizvodnji vina. Naša filozofija zasniva se na očuvanju prirodnog balansa zemljišta i vinove loze, bez upotrebe pesticida, herbicida, veštačkih đubriva i drugih hemijskih sredstava koja mogu narušiti ekosistem.\n\nNakon izgradnje vinarije, 2020. godine dobili smo zvanični organski sertifikat Republike Srbije za organsku proizvodnju, preradu i izvoz, izdat od strane akreditovanog sertifikacionog tela „Ekocert Balkan“. Za berbu 2022. godine dobili smo i biodinamički sertifikat organizacije Demeter International.\n\nNaši vinogradi neguju se u skladu sa biodinamičkim principima koji podrazumevaju holistički pristup vinogradu kao živom organizmu. Fokusirani smo na zdravlje zemljišta, prirodnu otpornost vinove loze i minimalnu intervenciju u podrumu, kako bi svako vino autentično izrazilo terroir Fruške gore.",
+
+    organicDownloadText: "Preuzmi sertifikate:",
+
+    tastingTitle: "Degustacije i posete",
+    tastingText:
+      "Posetite našu vinariju i doživite autentično vinsko iskustvo u srcu Fruške gore. Degustacije su organizovane za grupe od dve do deset osoba i započinju obilaskom vinograda, gde ćete saznati više o sortama grožđa i biodinamičkom pristupu koji primenjujemo.\n\nNakon obilaska sledi degustacija vina uz pažljivo odabranu sremsku mezu i pogled na vinograde i prirodu Fruške gore. Tokom degustacije upoznaćete karakter svakog vina i priču koja stoji iza svake berbe.\n\nDegustacije traju do dva sata. Molimo vas da posetu najavite najmanje jedan dan unapred, dok za vikend preporučujemo rezervaciju dva dana ranije.\n\nZa više informacija i rezervacije pozovite nas na +381 63 653 202 ili posetite ",
+
+    tastingLink: "ovaj link",
+
+    harvestTitle: "Prva berba",
+    harvestText:
+      "Naše prvo vino, „Kupaža 2011“, nastalo je zajedničkom fermentacijom sorti Merlot i Malbec, kao i Cabernet Franc i Cabernet Sauvignon. Vino je odležavalo 12 meseci u buradima od srpskog hrasta, a potom dodatno sazrevalo u boci još 14 meseci. Već sa prvom berbom osvojena je bronzana medalja na Decanter World Wine Awards 2014. godine u Londonu.",
+
+    linkText: "ovom linku",
+  },
+
+  en: {
+    aboutTitle: "About Us",
+    aboutText: `Viticulture on the slopes of Fruška Gora dates back to 296 AD, when the Roman emperor Probus introduced the first vineyards to the region. Inspired by the rich heritage of Fruška Gora, McC Winery was created with the vision of reviving the authentic character of the region through wines that reflect its land, history, and nature.
+
+Our philosophy is rooted in organic and biodynamic winemaking, guided by natural cycles and traditional Old World methods. We do not use pesticides, herbicides, artificial fertilizers, or chemical treatments in our vineyards, allowing the vines to develop naturally and express their full character.
+
+McC wines are the result of the partnership between Don McCulloch and Seka Nikolić. Don’s French and Scottish heritage, combined with decades of experience working alongside winemakers around the world, is reflected in every bottle we produce.`,
+
+    wineryTitle: "About the Winery",
+    wineryText: `McC Winery was established in 2017 in Erdevik, on the slopes of Fruška Gora, with a dedication to producing organic and biodynamic wines. Our philosophy is based on minimal intervention and deep respect for the natural ecosystem.
+
+We cultivate three hectares of vineyards planted with red varieties including Merlot, Malbec, Cabernet Franc, Cabernet Sauvignon, and Pinot Noir, alongside white varieties such as Traminer, Rhine Riesling, and Sauvignon Blanc.
+
+The vineyard was purchased in 2008 by Don McCulloch and his wife Seka Nikolić, while the first harvest was produced in 2011. That very first vintage earned a bronze medal at the prestigious Decanter World Wine Awards in London.
+
+Located along the Ilok–Erdevik wine route in the heart of Fruška Gora, the winery contributes to the region’s growing wine tourism and long-standing wine tradition. Today, we produce approximately 15,000 bottles annually.
+
+Our red wines are aged for a minimum of two years in Serbian oak barrels before additional bottle aging, allowing them to develop complexity, elegance, and depth.
+
+Alongside the production area, the winery features a barrique tasting room and a welcoming space where guests can enjoy wine and traditional Srem delicacies overlooking the vineyards and the landscapes of Fruška Gora.`,
+
+    companyTitle: "About the Company",
+    companyText:
+      "McC Wines represents a unique partnership between Don McCulloch and Seka Nikolić. By combining international experience, traditional knowledge, and a shared passion for wine, they created a small-scale winery dedicated to expressive, terroir-driven wines.",
+
+    organicTitle: "Organic & Biodynamic Approach",
+    organicText:
+      "Since 2011, we have embraced an organic and biodynamic approach in both vineyard management and winemaking. Our philosophy is centered on preserving the natural balance of the soil and vines without the use of pesticides, herbicides, artificial fertilizers, or chemical treatments that could harm the ecosystem.\n\nFollowing the completion of the winery, we received the official Organic Certificate of the Republic of Serbia in 2020 for organic production, processing, and export, issued by the accredited certification body “Ekocert Balkan.” For the 2022 harvest, we also received biodynamic certification from Demeter International.\n\nOur vineyards are cultivated according to biodynamic principles, treating the vineyard as a living organism. By focusing on soil vitality, natural vine resistance, and minimal intervention in the cellar, we aim to produce wines that authentically express the terroir of Fruška Gora.",
+
+    organicDownloadText: "Download certificates:",
+
+    tastingTitle: "Tastings & Visits",
+    tastingText:
+      "Visit our winery and experience authentic wine culture in the heart of Fruška Gora. Tastings are organized for groups of two to ten guests and begin with a guided walk through the vineyards, where you will learn more about our grape varieties and biodynamic philosophy.\n\nThe experience continues with a curated tasting accompanied by traditional Srem delicacies, all enjoyed with panoramic views of the vineyards and Fruška Gora. During the tasting, you will discover the character of each wine and the story behind every vintage.\n\nTastings last up to two hours. We kindly ask you to reserve your visit at least one day in advance, while weekend visits should preferably be booked two days ahead.\n\nFor reservations and additional information, please call +381 63 653 202 or visit ",
+
+    tastingLink: "this link",
+
+    harvestTitle: "First Harvest",
+    harvestText:
+      "Our first wine, “Coupage 2011,” was created through the co-fermentation of Merlot and Malbec together with Cabernet Franc and Cabernet Sauvignon. The wine was aged for 12 months in Serbian oak barrels and then further matured in bottle for an additional 14 months. This very first vintage earned a bronze medal at the Decanter World Wine Awards in London in 2014.",
+
+    linkText: "this link",
+  },
+};
 
   return (
     <div id="about">
@@ -128,10 +128,10 @@ dobija se ukus, kvalitet i individualnost uz minimalnu intervenciju u vinariji.`
         <div className="about-grid">
           {/* O nama */}
           <div
-            className={`about-card ${highlighted === 'Vinarija' ? 'highlight' : ''}`}
+            className={`about-card ${highlighted === "Vinarija" ? "highlight" : ""}`}
             id="Vinarija"
-            onMouseEnter={() => handleEnter('Vinarija')}
-            onMouseLeave={() => handleLeave('Vinarija')}
+            onMouseEnter={() => handleEnter("Vinarija")}
+            onMouseLeave={() => handleLeave("Vinarija")}
           >
             <img
               className="about-card-image"
@@ -140,12 +140,10 @@ dobija se ukus, kvalitet i individualnost uz minimalnu intervenciju u vinariji.`
             />
             <div className="about-card-content">
               <h2 className="about-card-title">{aboutText[language].aboutTitle}</h2>
-              <p className={getTextClass('Vinarija')}>
-                {aboutText[language].aboutText}
-              </p>
-              {shouldShowReadMore('Vinarija') && (
-                <button className="read-more-inline" onClick={() => toggle('Vinarija')}>
-                  {expanded['Vinarija'] ? readLessLabel : readMoreLabel}
+              <p className={getTextClass("Vinarija")}>{aboutText[language].aboutText}</p>
+              {shouldShowReadMore("Vinarija") && (
+                <button className="read-more-inline" onClick={() => toggle("Vinarija")}>
+                  {expanded["Vinarija"] ? readLessLabel : readMoreLabel}
                 </button>
               )}
             </div>
@@ -153,26 +151,21 @@ dobija se ukus, kvalitet i individualnost uz minimalnu intervenciju u vinariji.`
 
           {/* O vinariji */}
           <div
-            className={`about-card ${highlighted === 'Organski' ? 'highlight' : ''}`}
+            className={`about-card ${highlighted === "Organski" ? "highlight" : ""}`}
             id="Organski"
-            onMouseEnter={() => handleEnter('Organski')}
-            onMouseLeave={() => handleLeave('Organski')}
+            onMouseEnter={() => handleEnter("Organski")}
+            onMouseLeave={() => handleLeave("Organski")}
           >
-            <video
-              className="about-card-video"
-              controls
-            >
+            <video className="about-card-video" controls>
               <source src="img/Galerija/Video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div className="about-card-content">
               <h2 className="about-card-title">{aboutText[language].wineryTitle}</h2>
-              <p className={getTextClass('Organski')}>
-                {aboutText[language].wineryText}
-              </p>
-              {shouldShowReadMore('Organski') && (
-                <button className="read-more-inline" onClick={() => toggle('Organski')}>
-                  {expanded['Organski'] ? readLessLabel : readMoreLabel}
+              <p className={getTextClass("Organski")}>{aboutText[language].wineryText}</p>
+              {shouldShowReadMore("Organski") && (
+                <button className="read-more-inline" onClick={() => toggle("Organski")}>
+                  {expanded["Organski"] ? readLessLabel : readMoreLabel}
                 </button>
               )}
             </div>
@@ -180,66 +173,52 @@ dobija se ukus, kvalitet i individualnost uz minimalnu intervenciju u vinariji.`
 
           {/* O kompaniji */}
           <div
-            className={`about-card ${highlighted === 'Turizam' ? 'highlight' : ''}`}
+            className={`about-card ${highlighted === "Turizam" ? "highlight" : ""}`}
             id="Turizam"
-            onMouseEnter={() => handleEnter('Turizam')}
-            onMouseLeave={() => handleLeave('Turizam')}
+            onMouseEnter={() => handleEnter("Turizam")}
+            onMouseLeave={() => handleLeave("Turizam")}
           >
-            <img
-              className="about-card-image"
-              src="img/Galerija/31.jpg"
-              alt={aboutText[language].companyTitle}
-            />
+            <img className="about-card-image" src="img/Galerija/31.jpg" alt={aboutText[language].companyTitle} />
             <div className="about-card-content">
               <h2 className="about-card-title">{aboutText[language].companyTitle}</h2>
-              <p className={getTextClass('Turizam')}>
-                {aboutText[language].companyText}
-              </p>
+              <p className={getTextClass("Turizam")}>{aboutText[language].companyText}</p>
             </div>
           </div>
 
           {/* Organski i biodinamički */}
           <div
-            className={`about-card ${highlighted === 'organic' ? 'highlight' : ''}`}
+            className={`about-card ${highlighted === "organic" ? "highlight" : ""}`}
             id="organic"
-            onMouseEnter={() => handleEnter('organic')}
-            onMouseLeave={() => handleLeave('organic')}
+            onMouseEnter={() => handleEnter("organic")}
+            onMouseLeave={() => handleLeave("organic")}
           >
-            <img
-              className="about-card-image"
-              src="img/Galerija/organic.jpg"
-              alt={aboutText[language].organicTitle}
-            />
+            <img className="about-card-image" src="img/Galerija/organic.jpg" alt={aboutText[language].organicTitle} />
             <div className="about-card-content">
               <h2 className="about-card-title">{aboutText[language].organicTitle}</h2>
-              <p className={getTextClass('organic')}>
-                {aboutText[language].organicText}
-              </p>
-              {shouldShowReadMore('organic') && (
+              <p className={getTextClass("organic")}>{aboutText[language].organicText}</p>
+              {shouldShowReadMore("organic") && (
                 <>
-                  {expanded['organic'] && (
+                  {expanded["organic"] && (
                     <div className="about-card-certificates">
-                      <img
-                        className="about-card-certificates-image"
-                        src="/img/sertifikati.png"
-                        alt="Sertifikati"
-                      />
+                      <img className="about-card-certificates-image" src="/img/sertifikati.png" alt="Sertifikati" />
                       <p className="about-card-downloads">
-                        {aboutText[language].organicDownloadText}{' '}
+                        {aboutText[language].organicDownloadText}{" "}
                         <a href="/pdfs/sertifikat 2025 rs.pdf" download>
                           RS
-                        </a>,{' '}
+                        </a>
+                        ,{" "}
                         <a href="/pdfs/sertifikat 2025 eu.pdf" download>
                           EU
-                        </a>,{' '}
+                        </a>
+                        ,{" "}
                         <a href="/pdfs/Demeter certificate_MCC McCulloch Wines d.o.o._20251118_EN-GB.pdf" download>
                           Demeter
                         </a>
                       </p>
                     </div>
                   )}
-                  <button className="read-more-inline" onClick={() => toggle('organic')}>
-                    {expanded['organic'] ? readLessLabel : readMoreLabel}
+                  <button className="read-more-inline" onClick={() => toggle("organic")}>
+                    {expanded["organic"] ? readLessLabel : readMoreLabel}
                   </button>
                 </>
               )}
@@ -248,19 +227,15 @@ dobija se ukus, kvalitet i individualnost uz minimalnu intervenciju u vinariji.`
 
           {/* Degustacija i posete */}
           <div
-            className={`about-card ${highlighted === 'Posete' ? 'highlight' : ''}`}
+            className={`about-card ${highlighted === "Posete" ? "highlight" : ""}`}
             id="Posete"
-            onMouseEnter={() => handleEnter('Posete')}
-            onMouseLeave={() => handleLeave('Posete')}
+            onMouseEnter={() => handleEnter("Posete")}
+            onMouseLeave={() => handleLeave("Posete")}
           >
-            <img
-              className="about-card-image"
-              src="img/Galerija/46.jpg"
-              alt={aboutText[language].tastingTitle}
-            />
+            <img className="about-card-image" src="img/Galerija/46.jpg" alt={aboutText[language].tastingTitle} />
             <div className="about-card-content">
               <h2 className="about-card-title">{aboutText[language].tastingTitle}</h2>
-              <p className={getTextClass('Posete')}>
+              <p className={getTextClass("Posete")}>
                 {aboutText[language].tastingText}
                 <a href="https://liderlimo.rs/usluge/vinski-turizam/" target="_blank" rel="noopener noreferrer">
                   {aboutText[language].tastingLink}
@@ -272,21 +247,15 @@ dobija se ukus, kvalitet i individualnost uz minimalnu intervenciju u vinariji.`
 
           {/* Prva berba */}
           <div
-            className={`about-card ${highlighted === 'harvest' ? 'highlight' : ''}`}
+            className={`about-card ${highlighted === "harvest" ? "highlight" : ""}`}
             id="harvest"
-            onMouseEnter={() => handleEnter('harvest')}
-            onMouseLeave={() => handleLeave('harvest')}
+            onMouseEnter={() => handleEnter("harvest")}
+            onMouseLeave={() => handleLeave("harvest")}
           >
-            <img
-              className="about-card-image"
-              src="img/Galerija/Berba1.jpg"
-              alt={aboutText[language].harvestTitle}
-            />
+            <img className="about-card-image" src="img/Galerija/Berba1.jpg" alt={aboutText[language].harvestTitle} />
             <div className="about-card-content">
               <h2 className="about-card-title">{aboutText[language].harvestTitle}</h2>
-              <p className={getTextClass('harvest')}>
-                {aboutText[language].harvestText}
-              </p>
+              <p className={getTextClass("harvest")}>{aboutText[language].harvestText}</p>
             </div>
           </div>
         </div>
