@@ -279,7 +279,7 @@ export const Vine = (props) => {
 
         <div class="card" id="seka">
           <div class="photoRight">
-            <img src="img/vina/SEKA.png" alt="SEKA" />
+            <img src="img/vina/seka.png" alt="SEKA" />
           </div>
           <div class="descriptionRight">
             <h2>{wineText[language].sekaTitle}</h2>

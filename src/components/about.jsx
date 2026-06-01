@@ -135,7 +135,7 @@ Alongside the production area, the winery features a barrique tasting room and a
           >
             <img
               className="about-card-image"
-              src="img/Vesti/Seka1.jpg"
+              src="img/Vesti/seka1.jpg"
               alt={aboutText[language].aboutTitle}
             />
             <div className="about-card-content">
@@ -200,7 +200,7 @@ Alongside the production area, the winery features a barrique tasting room and a
                 <>
                   {expanded["organic"] && (
                     <div className="about-card-certificates">
-                      <img className="about-card-certificates-image" src="/img/sertifikati.png" alt="Sertifikati" />
+                      <img className="about-card-certificates-image" src="img/sertifikati.png" alt="Sertifikati" />
                       <p className="about-card-downloads">
                         {aboutText[language].organicDownloadText}{" "}
                         <a href="/pdfs/sertifikat 2025 rs.pdf" download>
