@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.cd747e7d.css",
-    "main.js": "/static/js/main.aaa045a6.js",
+    "main.js": "/static/js/main.19680edb.js",
     "static/media/wineBack.png": "/static/media/wineBack.46c9a7f692290c97cb25.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.cd747e7d.css.map": "/static/css/main.cd747e7d.css.map",
-    "main.aaa045a6.js.map": "/static/js/main.aaa045a6.js.map"
+    "main.19680edb.js.map": "/static/js/main.19680edb.js.map"
   },
   "entrypoints": [
     "static/css/main.cd747e7d.css",
-    "static/js/main.aaa045a6.js"
+    "static/js/main.19680edb.js"
   ]
 }
