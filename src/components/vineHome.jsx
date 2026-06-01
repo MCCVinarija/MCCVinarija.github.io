@@ -106,7 +106,7 @@ export const VineHome = () => {
       <Link to="/vines#coupage" className="wine-card-link">
         <div className="wine-card">
           <div className="wine-card-image">
-            <img src="/img/velika vina/coupage.png" alt="Coupage" />
+            <img src="img/velika vina/coupage.png" alt="Coupage" />
           </div>
           <div className="wine-card-content">
             <h3>{vineTitles[language].coupage}</h3>
@@ -118,7 +118,7 @@ export const VineHome = () => {
       <Link to="/vines#pinot" className="wine-card-link">
         <div className="wine-card">
           <div className="wine-card-image">
-            <img src="/img/velika vina/pinot.png" alt="Pinot Noir" />
+            <img src="img/velika vina/pinot.png" alt="Pinot Noir" />
           </div>
           <div className="wine-card-content">
             <h3>{vineTitles[language].pinot}</h3>
@@ -130,7 +130,7 @@ export const VineHome = () => {
       <Link to="/vines#rizling" className="wine-card-link">
         <div className="wine-card">
           <div className="wine-card-image">
-            <img src="/img/velika vina/rajski.png" alt="Rajnski Riesling" />
+            <img src="img/velika vina/rajski.png" alt="Rajnski Riesling" />
           </div>
           <div className="wine-card-content">
             <h3>{vineTitles[language].riesling}</h3>
@@ -142,7 +142,7 @@ export const VineHome = () => {
       <Link to="/vines#blanc" className="wine-card-link">
         <div className="wine-card">
           <div className="wine-card-image">
-            <img src="/img/velika vina/sauvignon.png" alt="Sauvignon Blanc" />
+            <img src="img/velika vina/sauvignon.png" alt="Sauvignon Blanc" />
           </div>
           <div className="wine-card-content">
             <h3>{vineTitles[language].sauvignon}</h3>
@@ -154,7 +154,7 @@ export const VineHome = () => {
       <Link to="/vines#rose" className="wine-card-link">
         <div className="wine-card">
           <div className="wine-card-image">
-            <img src="/img/velika vina/tajna.png" alt="Rose Tajna" />
+            <img src="img/velika vina/tajna.png" alt="Rose Tajna" />
           </div>
           <div className="wine-card-content">
             <h3>{vineTitles[language].rose}</h3>
@@ -166,7 +166,7 @@ export const VineHome = () => {
       <Link to="/vines#traminac" className="wine-card-link">
         <div className="wine-card">
           <div className="wine-card-image">
-            <img src="/img/velika vina/traminac.png" alt="Traminac" />
+            <img src="img/velika vina/traminac.png" alt="Traminac" />
           </div>
           <div className="wine-card-content">
             <h3>{vineTitles[language].traminac}</h3>
@@ -178,7 +178,7 @@ export const VineHome = () => {
       <Link to="/vines#seka" className="wine-card-link">
         <div className="wine-card">
           <div className="wine-card-image">
-            <img src="/img/vina/seka.png" alt="Bela Fantazija Seka" />
+            <img src="img/vina/seka.png" alt="Bela Fantazija Seka" />
           </div>
           <div className="wine-card-content">
             <h3>{vineTitles[language].seka}</h3>
@@ -190,7 +190,7 @@ export const VineHome = () => {
       <Link to="/vines#malbec" className="wine-card-link">
         <div className="wine-card">
           <div className="wine-card-image">
-            <img src="/img/velika vina/merlot.png" alt="Merlot Malbec" />
+            <img src="img/velika vina/merlot.png" alt="Merlot Malbec" />
           </div>
           <div className="wine-card-content">
             <h3>{vineTitles[language].malbec}</h3>
